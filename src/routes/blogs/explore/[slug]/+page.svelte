@@ -1,0 +1,190 @@
+<script>
+	import PostGrid from '$lib/blogs/PostGrid.svelte';
+	import Icon from '@iconify/svelte';
+	export let data;
+
+	let posts;
+	if (data.blogs && data.blogs.length > 0) {
+		posts = data.blogs.map((blog) => ({
+			title: blog.title,
+			description: blog.description,
+			category: blog.category.name,
+			color: blog.category.color,
+			symbol: blog.category.icon,
+			daysAgo: blog.daysAgo,
+			coverImage: blog.featuredImage.asset.url + '?w=400&fm=webp',
+			placeholderImage: blog.featuredImage.asset.metadata.lqip,
+			imageSrc: blog.featuredImage.source,
+			url: `/article/${blog.slug.current}`,
+			ert: '5 mins'
+		}));
+	}
+</script>
+
+<svelte:head>
+	<title />
+	<!-- Primary Meta Tags -->
+	<title>Explore {data.category.name} articles</title>
+	<meta name="title" content="Explore {data.category.name} articles" />
+	<meta name="description" content="Articles related to {data.category.name}Explore categories of all sorts." />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://notyasho.netlify.app/explore/{data.category}" />
+	<meta property="og:title" content="Explore {data.category.name} articles" />
+	<meta property="og:description" content="Articles related to {data.category.name}Explore categories of all sorts." />
+	<meta property="og:image" content={data.category.image.asset.url + '?fm=webp&w=256'} />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://notyasho.netlify.app/explore/{data.category}" />
+	<meta property="twitter:title" content="Explore {data.category.name} articles" />
+	<meta property="twitter:description" content="Articles related to {data.category.name}. Explore categories of all sorts." />
+	<meta property="twitter:image" content={data.category.image.asset.url + '?fm=webp&w=256'} />
+</svelte:head>
+
+{#if data.blogs.length > 0}
+	<section style="--color: {data.category.color}">
+		<div class="cover">
+			<img src={data.category.image.asset.url} alt="alt" />
+			<div class="text">
+				<Icon icon={data.category.icon} />
+				<h1>{data.category.name}</h1>
+				<span id="count">Posts: {posts.length}</span>
+			</div>
+		</div>
+		<PostGrid {posts} />
+	</section>
+{:else}
+	<section class="error">
+		<Icon icon="tabler:line-dotted" />
+		<h1>Nothing but void :/</h1>
+		<p>Looks like nothing has been posted related to <strong>{data.category.name}</strong></p>
+	</section>
+{/if}
+
+<style lang="scss">
+	.cover {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-top: -2rem;
+		margin-inline: -10%;
+		width: 120%;
+		height: 15rem;
+		justify-content: center;
+		margin-bottom: 2rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+		}
+	}
+
+	.text {
+		position: absolute;
+		z-index: 1;
+		text-align: center;
+
+		:global(svg) {
+			font-size: 5rem;
+			color: rgba(var(--color), 1);
+			margin-bottom: 0.5rem;
+		}
+
+		h1 {
+			color: rgba(var(--color), 1);
+			font-size: 2rem;
+		}
+
+		span {
+			color: rgba(var(--color), 1);
+			font-size: 1rem;
+		}
+	}
+
+	img {
+		height: 14rem;
+		z-index: -1;
+		width: 100vw;
+		object-fit: cover;
+		object-position: center;
+		filter: grayscale(0.3) brightness(0.5);
+	}
+
+	section.error {
+		// center
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+
+		text-align: center;
+		opacity: 0.5;
+		transition: opacity 0.5s ease-in-out;
+
+		:global(svg) {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 1rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+	section {
+		margin-bottom: 2rem;
+	}
+
+	section::before,
+	section::after {
+		content: '';
+		width: 50vw;
+		position: fixed;
+		pointer-events: none;
+		height: 100vh;
+		opacity: 0.5;
+		z-index: -100;
+		animation: growGradient 2s ease-in;
+	}
+
+	section::before {
+		left: 0;
+		bottom: 0;
+		background-image: radial-gradient(at 45% 100%, rgba(var(--color), 0.2) 0px, transparent 50%);
+	}
+
+	section::after {
+		right: 0;
+		top: 0;
+		background-image: radial-gradient(at 100% 15%, rgba(var(--color), 0.3) 0px, transparent 50%);
+	}
+
+	@media only screen and (max-width: $tablet) {
+		section::before {
+			background-image: radial-gradient(at 0% 100%, rgba(var(--color), 0.1) 0px, transparent 50%);
+		}
+	}
+
+	@keyframes growGradient {
+		0% {
+			opacity: 0.2;
+		}
+		100% {
+			opacity: 0.5;
+		}
+	}
+</style>

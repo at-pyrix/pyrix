@@ -1,0 +1,314 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+body {
+	color: $clr-text-3;
+	background: $background;
+	font-family: $ui-font;
+	transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	text-rendering: geometricPrecision;
+}
+
+a {
+	all: unset;
+	color: $clr-accent-0;
+	cursor: pointer;
+}
+
+p {
+	font-family: $body-font;
+}
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	outline: none;
+	border: none;
+}
+
+/* Scrollbar */
+
+::selection {
+	color: $clr-text-2;
+	background: $clr-accent-2;
+}
+
+*::-webkit-scrollbar {
+	width: 0.2rem;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: $clr-accent-2;
+}
+
+* {
+	scrollbar-color: #1c1b2b #1c1b2b;
+}
+
+.highlight {
+	background: linear-gradient(to right, $clr-accent-2, $clr-accent-1, $clr-secondary) no-repeat;
+	background-position: 0 100%, 100% 100%;
+	background-size: 50% 0.08em;
+
+	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+	&:hover {
+		background-size: 100% 0.08em;
+	}
+
+	@media only screen and (max-width: $mobile) {
+		background: none;
+	}
+}
+
+.btn {
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 0.8rem 1.8rem;
+	border-radius: 0.5rem;
+
+	background-color: $clr-dark-1;
+	cursor: pointer;
+
+	color: $clr-text-2;
+	font-size: 0.8rem;
+	line-height: 1.7;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.188em;
+
+	&:hover {
+		background-color: $clr-accent-2;
+	}
+}
+
+.btn.btn-primary {
+	background-color: $clr-accent-2;
+
+	&:hover {
+		background-color: $clr-accent-1;
+	}
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn.btn-secondary {
+	color: white;
+	background-color: $clr-secondary;
+
+	&:hover {
+		background-color: #ff3ba7;
+	}
+}
+
+.ripple-button {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.ripple-effect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	transform: scale(0);
+	opacity: 1;
+	transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.ripple-button:active .ripple-effect {
+	transform: scale(2);
+	opacity: 0;
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.btn:disabled {
+	background: #47445a !important;
+	pointer-events: none;
+}
+
+.btn:active {
+	filter: brightness(0.9);
+}
+
+.btn.c2a {
+	&::after {
+		display: inline-block;
+		padding-left: 8px;
+		content: '\0279E';
+		transition: transform 0.1s ease-out;
+	}
+
+	&:hover {
+		&::after {
+			transform: translateX(5px);
+		}
+	}
+}
+
+.btn.loading {
+	pointer-events: none;
+	filter: brightness(0.8);
+	&::after {
+		display: inline-block;
+		padding-left: 10px;
+		content: url('img/svg/loading.svg');
+		transform: translateY(2px);
+	}
+}
+
+@keyframes shine {
+	0% {
+		transform: translateX(-100px) skewX(-15deg);
+	}
+	50% {
+		transform: translateX(150px) skewX(-15deg);
+	}
+	100% {
+		transform: translateX(300px) skewX(-15deg);
+	}
+}
+
+.shine {
+	display: inline-flex;
+	position: relative;
+	overflow: hidden;
+	background-size: 400% 400%;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 60px;
+		height: 100%;
+		filter: blur(30px);
+		transform: translateX(-100px) skewX(-15deg);
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgb(180, 180, 180);
+		width: 30px;
+		height: 100%;
+		top: 0;
+		filter: blur(15px);
+		transform: translateX(-100px) skewX(-15deg);
+	}
+
+	&::before,
+	&::after {
+		animation: shine 3s infinite;
+	}
+}
+
+// Blog specific styling
+
+.ert,
+.date {
+	display: inline-flex;
+	gap: 0.6ch;
+	flex-direction: row;
+	white-space: nowrap;
+	align-items: center;
+	color: $clr-text-4;
+	svg {
+		font-size: 1.25em;
+		margin-right: 0.25rem;
+		color: $clr-text-4;
+	}
+	@media (max-width: $mobile) {
+		svg {
+			display: none;
+		}
+	}
+}
+
+.category {
+	font-weight: 500;
+	color: $clr-text-5;
+	border-radius: 0.3rem;
+	white-space: nowrap;
+	padding: 0.2rem 0.32rem;
+	display: inline-flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.6ch;
+	background-color: rgba(var(--color), 0.07);
+	color: rgb(var(--color));
+
+	&:hover {
+		background: rgb(var(--color));
+		color: $clr-dark-2;
+	}
+
+	svg {
+		font-size: 1.2em;
+	}
+	transition: 0.15s;
+
+	@media (max-width: $mobile) {
+		svg {
+			display: none;
+		}
+	}
+}
+
+#sep {
+	color: $clr-text-5;
+	filter: brightness(1.6);
+}

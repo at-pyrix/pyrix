@@ -1,0 +1,3 @@
+/.netlify/* linguist-vendored
+/.netlify/** linguist-vendored
+studio/* linguist-vendored

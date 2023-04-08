@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="https://www.w3.org/1999/xhtml" 
+      xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
+      xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://notyasho.netlify.app/</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/about</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/contact</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/saved</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Science</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/what-if-you-could-go-supersonic</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Design</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Productivity</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Books</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Programming</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/how-to-find-design-inspirations</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/common-scientific-myths-debunked</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/stop-relying-on-productivity-videos</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/why-do-planes-make-so-much-noise</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/how-to-make-your-code-10-times-faster</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/a-bad-title-that-needs-to-be-10-chars-long</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/blogs/explore/Misc.</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/5-must-read-books-for-improved-productivity</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notyasho.netlify.app/article/how-to-choose-fonts-for-your-design</loc>
+  <lastmod>2023-02-24T14:13:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

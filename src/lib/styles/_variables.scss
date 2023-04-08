@@ -1,0 +1,54 @@
+// Dark mode colors
+
+// Text colors
+$clr-text-1: hsl(0, 0%, 100%);
+$clr-text-2: hsl(0, 0%, 90%);
+$clr-text-3: hsl(257, 100%, 98%);
+$clr-text-350: hsl(240, 5%, 70%);
+$clr-text-4: hsl(240, 20%, 76%);
+$clr-text-450: hsl(240, 5%, 55%);
+$clr-text-5: hsl(240, 16%, 20%);
+
+// Dark colors
+$clr-dark-1: hsl(249, 15%, 17%);
+$clr-dark-2: hsl(252, 19%, 15%);
+$clr-dark-3: hsl(248, 29%, 11%);
+$clr-dark-3-glass: hsla(248, 29%, 11%, 85%);
+$clr-dark-350: hsl(256, 24%, 18%);
+$clr-dark-4: hsl(249, 27%, 10%);
+$clr-dark-450: hsl(240, 25%, 8%);
+$clr-dark-5: hsl(240, 25%, 3%);
+
+// Accent color
+$clr-accent-0: hsl(247, 100%, 80%);
+$clr-accent-05: hsl(261, 100%, 65%);
+$clr-accent-1: hsl(266, 100%, 50%);
+$clr-accent-2: rgb(89, 0, 255);
+$clr-accent-3: hsl(261, 100%, 28%);
+$clr-accent-4: hsl(261, 100%, 14%);
+
+// Theme colors
+$clr-error: hsl(330, 100%, 65%);
+$clr-secondary: hsl(327, 100%, 50%);
+$clr-tertiary: hsl(41, 100%, 50%);
+
+// Misc.
+$background: hsl(248, 29%, 10%);
+$clr-card: hsla(249, 17%, 15%, 0.35);
+
+// Fonts
+$ui-font: 'Poppins', sans-serif;
+$body-font: 'TabletGothicW02', sans-serif;
+$title-font: 'Lexend', sans-serif;
+$title-secondary-font: 'Larsseit', sans-serif;
+
+// Media queries
+$mq-small: 320px;
+$mq-medium: 768px;
+$mq-large: 1024px;
+$mq-xlarge: 1440px;
+
+$mobile-small: 320px;
+$mobile: 420px;
+$tablet: 768px;
+$desktop: 1024px;

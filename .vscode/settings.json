@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        ".netlify": true,
+        ".svelte-kit": true,
+        ".vscode": true,
+        "*/.sanity": true,
+        "*/dist": true,
+        "*/node_modules": true
+    },
+    "git.enabled": true
+    
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TabletGothicW02';
+    src: url('TabletGothicW02-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicW02';
+    src: url('TabletGothicW02-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02-SmBd';
+    src: url('TabletGothicNarrowW02-SmBd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicCompressedW02-Th';
+    src: url('TabletGothicCompressedW02-Th.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02-Rg';
+    src: url('TabletGothicNarrowW02-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TabletGothicNarrowW02';
+    src: url('TabletGothicNarrowW02-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
