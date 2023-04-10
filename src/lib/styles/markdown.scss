@@ -141,8 +141,14 @@ h6 {
 .article-body figure {
 	box-sizing: content-box;
 	margin-inline: auto;
-	display: inline;
 	width: 100%;
+	margin-inline: calc(-3%) !important;
+	width: 106% !important;
+
+	@media screen and (max-width: $tablet) {
+		margin-inline: 0 !important;
+		width: 100% !important;
+	}
 }
 
 .article-body figure img {
@@ -164,7 +170,7 @@ h6 {
 .article-body kbd,
 .article-body pre,
 .article-body samp {
-	font-family: monospace, monospace;
+	font-family: 'Jetbrains Mono', monospace;
 	font-size: 1em;
 }
 
@@ -339,29 +345,28 @@ h6 {
 .article-body dd {
 	margin-left: 0;
 }
-
-pre {
-	position: relative;
-	.copy-code {
-		background: $clr-dark-1;
-		opacity: 0;
-		font-size: 1rem;
-		color: $clr-text-450;
-		padding: 0.5rem;
-		border-radius: 8px;
-		position: absolute;
-		right: 1rem;
-		top: 1rem;
-		transition: 200ms ease;
-		outline: solid 1px #383055;
-		svg {
-			pointer-events: none;
-			display: block;
-		}
-		&:hover {
-			filter: brightness(1.1);
-		}
+.copy-code {
+	background: $clr-dark-1;
+	opacity: 0;
+	color: $clr-text-450;
+	padding: 0.5rem;
+	border-radius: 8px;
+	position: absolute;
+	right: 1rem;
+	top: .5rem;
+	transition: 200ms ease;
+	outline: solid 1px #383055;
+	svg {
+		pointer-events: none;
+		display: block;
 	}
+	&:hover {
+		filter: brightness(1.1);
+	}
+}
+.code-block {
+	position: relative;
+
 	&:hover {
 		.copy-code {
 			pointer-events: all;
@@ -652,27 +657,45 @@ pre.copied .copy-code {
 
 .article-body .header {
 	span {
-		padding: 0.5ch;
+		padding: 0.5ch 0.5ch 0.5ch 0;
 		display: flex;
 		align-items: center;
 		color: $clr-text-450;
+		color: $clr-accent-0;
 		gap: 0.8ch;
 	}
 	background-color: #26213a71;
 	padding-inline: 16px;
-	border-radius: 6px 6px 0 0;
 	border-bottom: 0.1px solid #2b293a;
+	border-radius: 1rem 1rem 0 0 ;
+
+}
+
+.code-block {
+	margin-inline: calc(-3%) !important;
+	width: 106% !important;
+
+	@media screen and (max-width: $tablet) {
+		margin-inline: 0 !important;
+		width: 100% !important;
+	}
+
+	.line-number {
+		color: lighten($clr-text-5, 5);
+		margin-right: 1rem;
+		text-align: right;
+	}
 }
 
 .article-body .highlight pre,
 .article-body pre {
+	border-radius: 0 0 1rem 1rem;
 	padding: 16px;
 	overflow: auto;
 	font-size: 85%;
 	line-height: 1.45;
 	margin: 0;
 	background-color: #1b1729;
-	border-radius: 6px;
 	transition: 0.2s;
 }
 

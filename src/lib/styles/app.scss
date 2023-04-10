@@ -8,6 +8,12 @@
 	box-sizing: border-box;
 }
 
+@media (hover: none) {
+	*:hover {
+		pointer-events: none;
+	}
+}
+
 html {
 	overflow-x: hidden;
 	max-width: 100%;
@@ -59,7 +65,6 @@ select {
 	border: none;
 }
 
-/* Scrollbar */
 
 ::selection {
 	color: $clr-text-2;
@@ -75,7 +80,7 @@ select {
 }
 
 *::-webkit-scrollbar-thumb {
-	background: $clr-accent-2;
+	background: #1c1b2b;
 }
 
 * {
@@ -309,6 +314,7 @@ select {
 }
 
 #sep {
-	color: $clr-text-5;
+	color: lighten($clr-text-5, 10);
+	margin-inline: .2ch;
 	filter: brightness(1.6);
 }

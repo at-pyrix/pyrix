@@ -8,48 +8,45 @@
 	<title>Explore - NotYasho</title>
 </svelte:head>
 
-<main in:fly={{ y: 10, duration: 500 }}>
-	<section>
-		<div class="grid">
-			<div class="header card-item">
-				<h1>Explore Categories</h1>
-				<p>Explore the categories of blogs</p>
-			</div>
-			{#each data.categories as category}
-				<div
-					class="category card-item"
-					style="background: url('{category.image.asset.url + '?w=50&fm=webp&blur=100'}');background-position: center;
+<div class="grid">
+	<div class="header card-item" style="grid-area: item-1;">
+		<h1>Explore Categories</h1>
+		<p>Explore the categories of blogs</p>
+	</div>
+	{#each data.categories as category, i}
+		<div
+			in:fly={{ y: 100, duration: 300, delay: i * 100 }}
+			class="category card-item"
+			style="background: url('{category.image.asset.url + '?w=50&fm=webp&blur=100'}');background-position: center;
 				background-size: cover;
-				background-repeat: no-repeat;"
-				>
-					<a href="/blogs/explore/{category.name}">
-						<div class="overlay" style="background-color: rgba({category.color}, .8);">
-							<Icon icon={category.icon} />
-							<h2>{category.name}</h2>
-							<span class="count">{category.count} posts</span>
-						</div>
-					</a>
+				background-repeat: no-repeat;
+				grid-area: {'item-' + (i + 2)};"
+		>
+			<a href="/blogs/explore/{category.name}">
+				<div class="overlay" style="background-color: rgba({category.color}, .8);">
+					<Icon icon={category.icon} />
+					<h2>{category.name}</h2>
+					<span class="count">{category.count} posts</span>
 				</div>
-			{/each}
+			</a>
 		</div>
-	</section>
-</main>
+	{/each}
+</div>
 
 <style lang="scss">
 	.grid {
-		margin: 0 auto 50px auto;
-		height: 90vh;
+		height: 100vh;
 		display: grid;
 		grid-auto-columns: 1fr;
 		gap: 1em;
 		grid-template-areas:
-			'one two three'
-			'four five three'
-			'four five three'
-			'four six six'
-			'seven seven eight'
-			'nine ten eight'
-			'eleven eleven eight';
+			'item-1 item-2 item-3'
+			'item-4 item-5 item-3'
+			'item-4 item-5 item-3'
+			'item-4 item-6 item-6'
+			'item-7 item-7 item-8'
+			'item-9 item-10 item-8'
+			'item-11 item-11 item-8';
 	}
 
 	.card-item {
@@ -67,49 +64,6 @@
 			border-radius: 0.5rem;
 			transition: all 0.2s ease-in-out;
 		}
-	}
-
-	.card-item:nth-child(1) {
-		grid-area: one;
-	}
-	.card-item:nth-child(2) {
-		grid-area: two;
-	}
-
-	.card-item:nth-child(3) {
-		grid-area: three;
-	}
-
-	.card-item:nth-child(4) {
-		grid-area: four;
-	}
-
-	.card-item:nth-child(5) {
-		grid-area: five;
-	}
-
-	.card-item:nth-child(6) {
-		grid-area: six;
-	}
-
-	.card-item:nth-child(7) {
-		grid-area: seven;
-	}
-
-	.card-item:nth-child(8) {
-		grid-area: eight;
-	}
-
-	.card-item:nth-child(9) {
-		grid-area: nine;
-	}
-
-	.card-item:nth-child(10) {
-		grid-area: ten;
-	}
-
-	.card-item:nth-child(11) {
-		grid-area: eleven;
 	}
 
 	.header {
@@ -158,7 +112,11 @@
 
 	@media screen and (max-width: $tablet) {
 		.grid {
-			grid-template-areas: 'one two three' 'four five six' 'seven eight nine' 'ten eleven eleven';
+			grid-template-areas:
+				'item-1 item-2 item-3'
+				'item-4 item-5 item-6'
+				'item-7 item-8 item-9'
+				'item-10 item-11 item-11';
 		}
 
 		h2 {
@@ -180,24 +138,30 @@
 
 	@media screen and (max-width: 650px) {
 		.grid {
-			grid-template-areas: 'one two' 'three four' 'five six' 'seven eight' 'nine ten' 'eleven eleven';
+			grid-template-areas:
+				'item-1 item-2'
+				'item-3 item-4'
+				'item-5 item-6'
+				'item-7 item-8'
+				'item-9 item-10'
+				'item-11 item-11';
 		}
 	}
 
 	@media screen and (max-width: $mobile) {
 		.grid {
 			grid-template-areas:
-				'one'
-				'two'
-				'three'
-				'four'
-				'five'
-				'six'
-				'seven'
-				'eight'
-				'nine'
-				'ten'
-				'eleven';
+				'item-1'
+				'item-2'
+				'item-3'
+				'item-4'
+				'item-5'
+				'item-6'
+				'item-7'
+				'item-8'
+				'item-9'
+				'item-10'
+				'item-11';
 		}
 	}
 </style>

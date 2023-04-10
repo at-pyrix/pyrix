@@ -27,72 +27,6 @@ export function daysAgo(strDate) {
 	}
 }
 
-function hexToHSL(hex) {
-	// Convert hex to RGB
-	const r = parseInt(hex.slice(1, 3), 16) / 255;
-	const g = parseInt(hex.slice(3, 5), 16) / 255;
-	const b = parseInt(hex.slice(5, 7), 16) / 255;
-
-	// Find the maximum and minimum values of R, G, B
-	const max = Math.max(r, g, b);
-	const min = Math.min(r, g, b);
-
-	// Calculate the hue
-	let h = 0;
-	if (max === min) {
-		h = 0;
-	} else if (max === r) {
-		h = ((g - b) / (max - min) + 1) * 60;
-	} else if (max === g) {
-		h = ((b - r) / (max - min) + 3) * 60;
-	} else {
-		h = ((r - g) / (max - min) + 5) * 60;
-	}
-
-	// Calculate the lightness
-	const l = (max + min) / 2;
-
-	// Calculate the saturation
-	let s = 0;
-	if (max === min) {
-		s = 0;
-	} else if (l < 0.5) {
-		s = (max - min) / (max + min);
-	} else {
-		s = (max - min) / (2 - max - min);
-	}
-
-	// Return the HSL color value as an array
-	return [Math.round(h), Math.round(s * 100), Math.round(l * 100)];
-}
-
-function hslToRGB(h, s, l) {
-	// Convert HSL to RGB
-	let r, g, b;
-
-	if (s === 0) {
-		r = g = b = l;
-	} else {
-		const hue2rgb = (p, q, t) => {
-			if (t < 0) t += 1;
-			if (t > 1) t -= 1;
-			if (t < 1 / 6) return p + (q - p) * 6 * t;
-			if (t < 1 / 2) return q;
-			if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-			return p;
-		};
-
-		const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-		const p = 2 * l - q;
-
-		r = hue2rgb(p, q, h + 1 / 3);
-		g = hue2rgb(p, q, h);
-		b = hue2rgb(p, q, h - 1 / 3);
-	}
-
-	return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-}
-
 export function lighten(hexColor, value) {
 	const colorInt = parseInt(hexColor.slice(1), 16);
 	// Extract the RGB components from the integer
@@ -170,5 +104,6 @@ export function lighten(hexColor, value) {
 
 	// Format the new color as an RGB string
 	const newColor = `${newRed}, ${newGreen}, ${newBlue}`;
+	console.log(newColor)
 	return newColor;
 }

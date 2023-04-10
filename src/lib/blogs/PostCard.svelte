@@ -17,7 +17,7 @@
 	<Toast message={$message} description={$description} show={$showToast} />
 {/if}
 
-<div class="card" in:fly={{ y: 10, duration: 500, delay: i * 200 + 200 }} style={`--color: ${post.color}`}>
+<div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }} style={`--color: ${post.color}`}>
 	<a href={post.url} class="article-link">
 		<div class="card-image">
 			<img data-src={post.coverImage} src={post.placeholderImage} alt="thumbnail" title={post.imageSrc} use:lazyImage={{ threshold: 0.5 }} />

@@ -172,7 +172,16 @@
 		padding: 16px 56px 16px 16px;
 		font-size: 16px;
 		border-radius: 8px;
-		transition: 0.2s;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: $clr-text-450;
+	}
+
+	input:-webkit-autofill {
+		-webkit-background-clip: text;
 	}
 
 	textarea {

@@ -68,14 +68,14 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		margin-top: -2rem;
-		margin-inline: -10%;
-		width: 120%;
-		height: 15rem;
+		margin-top: -3rem;
+		margin-inline: calc(-50vw + 50%);
+		width: 100vw !important;
+		height: 16rem;
 		justify-content: center;
 		margin-bottom: 2rem;
 
-		&::after {
+		img::after {
 			content: '';
 			position: absolute;
 			top: 0;

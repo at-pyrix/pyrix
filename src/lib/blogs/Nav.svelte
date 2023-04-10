@@ -27,7 +27,7 @@
 		</li>
 		<li id="saved" class:active={$page.url.pathname === '/blogs/saved'}>
 			<a href="/blogs/saved">
-				<Icon icon={$page.url.pathname === '/blogs/saved' ? 'bxs:bookmark' : 'bx:bookmark'} />
+				<Icon icon={$page.url.pathname === '/blogs/saved' ? 'mdi:bookmark-multiple' : 'mdi:bookmark-multiple-outline'} />
 				<span>Saved</span>
 			</a>
 		</li>

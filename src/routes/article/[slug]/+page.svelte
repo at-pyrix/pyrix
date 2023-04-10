@@ -6,12 +6,13 @@
 	import './markedSettings';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import { setCode } from './markedSettings';
+	import { lighten } from '$lib/blogs/utils';
+
+	export let data;
 
 	onMount(() => {
 		setCode();
 	});
-
-	export let data;
 
 	let source = data.blogs.body;
 	const html = parse(source);
@@ -56,26 +57,15 @@
 <svelte:window bind:innerWidth />
 <ScrollProgress {articleHeight} />
 <div class="article-body" bind:offsetHeight={articleHeight}>
-	<nav class="breadcrumb" aria-label="breadcrumb">
-		<a href="/blogs">Home</a>
-		<span>&gt;</span>
-		<a href={'/blogs/explore/' + data.blogs.category.name}>{data.blogs.category.name}</a>
-		<span>&gt;</span>
-		<a href={'/article/' + data.blogs.slug.current}>
-			<span>
-				<em style={`color: ${data.blogs.featuredImage.asset.metadata.palette.dominant.background}`}>this</em>
-			</span>
-		</a>
-	</nav>
-
-	<h1 class="title" in:fly={{ y: 10, duration: 500, delay: 100 }}>{data.blogs.title}</h1>
 	<div class="info" in:fly={{ y: 10, duration: 500, delay: 200 }}>
-		<span class="date-published">{`Posted: ${readableDate}`}</span>
-		<a style="color: rgb({data.blogs.category.color})" title="Tag" class="category" href="/blogs/explore/{data.blogs.category.name}">
+		<a style="color: rgb({lighten(data.blogs.featuredImage.asset.metadata.palette.dominant.background, 0.75)})" title="Tag" class="category" href="/blogs/explore/{data.blogs.category.name}">
 			<span>{data.blogs.category.name}</span>
 		</a>
+		<span id="sep">•</span>
+
+		<span class="date-published">{readableDate}</span>
 	</div>
-	<hr />
+	<h1 class="title" in:fly={{ y: 10, duration: 500, delay: 100 }}>{data.blogs.title}</h1>
 	<p class="description">{data.blogs.description}</p>
 
 	<img
@@ -97,6 +87,7 @@
 		margin: -3rem auto;
 		padding: 20px;
 		color: $clr-text-4;
+		margin-top: 40px;
 
 		@media screen and (max-width: 800px) {
 			padding: 10px;
@@ -104,8 +95,9 @@
 	}
 
 	.info {
-		position: relative;
+		text-align: center;
 		height: 2rem;
+		margin-bottom: 1rem;
 
 		a {
 			&:hover {
@@ -114,46 +106,23 @@
 		}
 	}
 
-	.breadcrumb {
-		font-size: smaller;
-
-		a {
-			color: $clr-text-4;
-			&:hover {
-				color: $clr-accent-0;
-			}
-		}
-
-		em {
-			filter: saturate(5);
-		}
-
-		span:not(:last-child) {
-			margin-inline: 0.5ch;
-			color: $clr-text-450;
-		}
-	}
-
 	.title {
 		margin-block: 0.5rem;
+		text-align: center;
 		color: $clr-text-1;
 		font-size: 2.7rem;
-		font-family: 'Larsseit';
+		font-family: $title-secondary-font;
 		font-weight: bold;
 		border: none;
 
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: $tablet) {
 			font-size: 2.4rem;
 		}
 	}
 
-	hr {
-		height: 0.1rem;
-		mix-blend-mode: screen;
-	}
-
 	p.description {
 		color: $clr-text-4;
+		text-align: center;
 		font-family: 'Larsseit', sans-serif !important;
 	}
 
@@ -163,26 +132,11 @@
 		margin-inline: calc(-50vw + 50%);
 		width: 100vw !important;
 		max-width: 100vw;
-		margin-top: 2rem;
+		margin-top: 5rem;
 		margin-bottom: 2rem;
 		object-fit: cover;
 		height: 55rem;
 		width: 100vw;
 	}
-
-	.date-published {
-		position: absolute;
-		left: 0;
-	}
-
-	.category {
-		position: absolute;
-		right: 0;
-		padding: 0;
-		color: var(--color);
-	}
-
-	.article-body {
-		margin-top: 40px;
-	}
+	
 </style>

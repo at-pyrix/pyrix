@@ -5,13 +5,11 @@
 	import '$lib/styles/markdown.scss';
 </script>
 
-<div>
-	<Header />
-	<Nav />
-	<main>
-		<slot />
-	</main>
-</div>
+<Header />
+<Nav />
+<main>
+	<slot />
+</main>
 
 <style lang="scss">
 	main {

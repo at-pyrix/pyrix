@@ -9,7 +9,8 @@
 <main>
 	<section class="error-body">
 		<div class="message">
-			<div class="icon"><Icon icon="bx:error" /></div>
+			<img src="/img/favicon/logo.webp" alt="" />
+
 			<h1>{$page.status} - {$page.error.message} <span>x(</span></h1>
 			<p>
 				There was an error with the page. Please check the URL or <a href="https://github.com/NotYasho/Personal-Blog-Portfolio/issues/new" target="_"
@@ -25,8 +26,9 @@
 	main {
 		height: 100vh;
 		width: 100%;
-		background-color: hsla(0, 100%, 50%, 0);
-		background-image: radial-gradient(at 93% 100%, hsla(330, 100%, 50%, 0.2) 0px, transparent 50%);
+		background-color: hsla(0, 100%, 50%, 0) ;
+		
+		background-image: radial-gradient(at 93% 100%, hsla(337, 100%, 61%, 0.1) 0px, transparent 50%);
 	}
 
 	a {
@@ -48,11 +50,9 @@
 		color: white;
 	}
 
-	.icon {
-		font-size: 6.5em;
-		margin-bottom: 0;
-		color: $clr-secondary;
-		height: 9rem;
+	img {
+		border-radius: 100%;
+		margin-bottom: 2rem;
 	}
 
 	p {

@@ -15,8 +15,8 @@
 		'bx:home-smile',
 		'bxs:compass',
 		'bx:compass',
-		'bxs:bookmark',
-		'bx:bookmark',
+		'mdi:bookmark-multiple',
+		'mdi:bookmark-multiple-outline',
 		'bxs:navigation',
 		'bx:navigation',
 		'fluent:dark-theme-20-filled',
@@ -55,7 +55,7 @@
 </script>
 
 <svelte:head>
-	<title>Loading...</title>
+	<title>NotYasho</title>
 </svelte:head>
 
 {#if loaded}

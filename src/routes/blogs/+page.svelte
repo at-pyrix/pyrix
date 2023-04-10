@@ -4,7 +4,7 @@
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
 	import CategoriesGrid from '$lib/blogs/CategoriesGrid.svelte';
 	import FeaturedCarrousel from '$lib/blogs/FeaturedCarrousel.svelte';
-	import { daysAgo, estimateReadTime, lighten as lighteness } from '$lib/blogs/utils';
+	import { daysAgo, estimateReadTime, lighten } from '$lib/blogs/utils';
 
 	let featuredPosts = data.blogs.filter((blog) => blog.featured === true).slice(0, 1);
 
@@ -13,7 +13,7 @@
 		description: blog.description,
 		category: blog.category.name,
 		slug: blog.slug.current,
-		color: lighteness(blog.featuredImage.asset.metadata.palette.dominant.background, 0.75),
+		color: lighten(blog.featuredImage.asset.metadata.palette.dominant.background, 0.75),
 		symbol: blog.category.icon,
 		featuredImage: blog.featuredImage,
 		coverImage: blog.featuredImage.asset.url + '?w=1000&fm=webp',
@@ -41,7 +41,6 @@
 			url: `/article/${blog.slug.current}`,
 			ert: `${estimateReadTime(blog)} mins`
 		}));
-
 
 	data.categories.forEach((category) => {
 		category.coverImage = category.image.asset.url + '?w=200&fm=webp';

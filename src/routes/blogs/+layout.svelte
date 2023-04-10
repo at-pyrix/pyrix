@@ -1,6 +1,7 @@
 <script>
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
+	import Footer from '$lib/blogs/Footer.svelte';
 	import '$lib/styles/markdown.scss'
 </script>
 
@@ -40,6 +41,8 @@
 <main>
 	<slot />
 </main>
+<Footer />
+
 <style lang="scss">
 	main {
 		max-width: 100%;
