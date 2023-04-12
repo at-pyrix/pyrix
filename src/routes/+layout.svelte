@@ -26,7 +26,14 @@
 		'material-symbols:forward',
 		'ic:twotone-construction',
 		'bx:time',
-		'bx:calendar'
+		'bx:calendar',
+		'material-symbols:bookmark-remove-rounded',
+		'material-symbols:bookmark-add-outline-rounded',
+		'material-symbols:forward',
+		'bx:time',
+		'bx:calendar',
+		'bxs:star',
+		
 	]);
 
 	NProgress.configure({
