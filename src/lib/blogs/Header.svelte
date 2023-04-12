@@ -47,10 +47,6 @@
 			width: 12.5rem;
 		}
 
-		@include hover {
-			filter: brightness(1.3);
-		}
-
 		transition: all 150ms;
 	}
 

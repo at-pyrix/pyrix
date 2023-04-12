@@ -155,7 +155,7 @@
 		width: 50vw;
 		position: fixed;
 		pointer-events: none;
-		height: 100vh;
+		height: 100%;
 		opacity: 0.5;
 		z-index: -100;
 		animation: growGradient 2s ease-in;

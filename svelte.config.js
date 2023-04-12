@@ -10,7 +10,8 @@ const config = {
 	kit: {
 		adapter: adapter({
 			edge: false,
-			split: false
+			split: false,
+			compress: true
 		})
 	}
 };

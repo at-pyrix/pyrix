@@ -5,7 +5,6 @@
 	import Icon from '@iconify/svelte';
 
 	export let data;
-	console.log(data);
 
 	let posts = data.posts.map((blog) => ({
 		title: blog.title,

@@ -104,6 +104,5 @@ export function lighten(hexColor, value) {
 
 	// Format the new color as an RGB string
 	const newColor = `${newRed}, ${newGreen}, ${newBlue}`;
-	console.log(newColor)
 	return newColor;
 }
