@@ -192,7 +192,7 @@
 	.btn.btn-primary {
 		background: $clr-accent-05;
 		margin-inline: auto;
-		&:hover {
+		@include hover {
 			filter: brightness(1.1);
 		}
 		margin-top: 3rem;

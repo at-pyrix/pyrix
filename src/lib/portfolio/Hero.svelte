@@ -19,10 +19,8 @@
 			/>
 			<p>
 				<s>
-					I'm a self-proclaimed developer and designer. Currently working with JS, Python and a bit
-					of Java. Besides that, I really like reading books, sketching and listening to <span
-						class="last-word">music...</span
-					></s
+					I'm a self-proclaimed developer and designer. Currently working with JS, Python and a bit of Java. Besides that, I really like reading
+					books, sketching and listening to <span class="last-word">music...</span></s
 				>
 			</p>
 			<p>This portfolio will be updated soon.</p>
@@ -34,11 +32,7 @@
 	#hero {
 		min-height: 100vh;
 		background-color: rgb(28, 25, 38);
-		background-image: linear-gradient(
-				rgba(28, 25, 38, 0.6),
-				rgba(28, 25, 38, 0.3),
-				rgba(28, 25, 38, 0.4)
-			),
+		background-image: linear-gradient(rgba(28, 25, 38, 0.6), rgba(28, 25, 38, 0.3), rgba(28, 25, 38, 0.4)),
 			url('https://raw.githubusercontent.com/NotYasho/personal-portfolio/master/static/img/bg/hero-bg.webp?token=GHSAT0AAAAAAB4WNDHPMZIMCG6JWFF4P3GCY6ABK4Q');
 		background-size: cover;
 		background-position: center;
@@ -111,9 +105,11 @@
 			width: 20rem;
 		}
 
-		&:hover .bubble {
-			bottom: 60%;
-			opacity: 0.9;
+		@include hover {
+			.bubble {
+				bottom: 60%;
+				opacity: 0.9;
+			}
 		}
 	}
 

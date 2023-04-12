@@ -100,7 +100,7 @@
 		margin-bottom: 1rem;
 
 		a {
-			&:hover {
+			@include hover {
 				filter: brightness(1.1);
 			}
 		}

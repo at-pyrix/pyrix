@@ -52,3 +52,12 @@ $mobile-small: 320px;
 $mobile: 420px;
 $tablet: 768px;
 $desktop: 1024px;
+
+
+@mixin hover {
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			@content;
+		}
+	}
+}

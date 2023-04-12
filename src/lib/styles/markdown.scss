@@ -47,7 +47,7 @@ h6 {
 
 	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-	&:hover {
+	@include hover {
 		background-size: 100% 0.08em;
 	}
 }
@@ -360,14 +360,14 @@ h6 {
 		pointer-events: none;
 		display: block;
 	}
-	&:hover {
+	@include hover {
 		filter: brightness(1.1);
 	}
 }
 .code-block {
 	position: relative;
 
-	&:hover {
+	@include hover {
 		.copy-code {
 			pointer-events: all;
 			opacity: 1;

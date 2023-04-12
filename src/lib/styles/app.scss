@@ -8,12 +8,6 @@
 	box-sizing: border-box;
 }
 
-@media (hover: none) {
-	*:hover {
-		pointer-events: none;
-	}
-}
-
 html {
 	overflow-x: hidden;
 	max-width: 100%;
@@ -65,7 +59,6 @@ select {
 	border: none;
 }
 
-
 ::selection {
 	color: $clr-text-2;
 	background: $clr-accent-2;
@@ -94,7 +87,7 @@ select {
 
 	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-	&:hover {
+	@include hover {
 		background-size: 100% 0.08em;
 	}
 
@@ -118,7 +111,7 @@ select {
 	text-transform: uppercase;
 	letter-spacing: 0.188em;
 
-	&:hover {
+	@include hover {
 		background-color: $clr-accent-2;
 	}
 }
@@ -126,7 +119,7 @@ select {
 .btn.btn-primary {
 	background-color: $clr-accent-2;
 
-	&:hover {
+	@include hover {
 		background-color: $clr-accent-1;
 	}
 }
@@ -140,7 +133,7 @@ select {
 	color: white;
 	background-color: $clr-secondary;
 
-	&:hover {
+	@include hover {
 		background-color: #ff3ba7;
 	}
 }
@@ -197,7 +190,7 @@ select {
 		transition: transform 0.1s ease-out;
 	}
 
-	&:hover {
+	@include hover {
 		&::after {
 			transform: translateX(5px);
 		}
@@ -296,7 +289,7 @@ select {
 	background-color: rgba(var(--color), 0.07);
 	color: rgb(var(--color));
 
-	&:hover {
+	@include hover {
 		background: rgb(var(--color));
 		color: $clr-dark-2;
 	}
@@ -315,6 +308,6 @@ select {
 
 #sep {
 	color: lighten($clr-text-5, 10);
-	margin-inline: .2ch;
+	margin-inline: 0.2ch;
 	filter: brightness(1.6);
 }

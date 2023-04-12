@@ -47,7 +47,7 @@
 			width: 12.5rem;
 		}
 
-		&:hover {
+		@include hover {
 			filter: brightness(1.3);
 		}
 
@@ -76,7 +76,7 @@
 
 			transition: 0.2s;
 
-			&:hover {
+			@include hover {
 				filter: brightness(1.1);
 			}
 
@@ -108,7 +108,7 @@
 
 			transition: 0.2s ease-in-out;
 
-			&:hover {
+			@include hover {
 				filter: brightness(1.2);
 			}
 
@@ -147,7 +147,7 @@
 			width: 1rem;
 			line-height: 1rem;
 		}
-		&:hover {
+		@include hover {
 			background: $clr-accent-2;
 			box-shadow: -2px 12px 123px 4px $clr-accent-2;
 		}

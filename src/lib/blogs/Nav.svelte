@@ -120,7 +120,7 @@
 			margin-top: auto;
 		}
 
-		&:hover {
+		@include hover {
 			filter: brightness(1.2);
 			transition: all 0.1s ease-in-out;
 		}

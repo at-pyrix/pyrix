@@ -3,7 +3,6 @@
 	import Hero from '$lib/portfolio/Hero.svelte';
 	import MyStory from '$lib/portfolio/MyStory.svelte';
 	import Cursor from '$lib/portfolio/Cursor.svelte';
-
 </script>
 
 <svelte:head>

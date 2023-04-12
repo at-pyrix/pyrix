@@ -89,7 +89,7 @@
 				object-position: center center !important;
 				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-				&:hover {
+				@include hover {
 					transform: scale(1.05);
 				}
 			}
@@ -113,7 +113,7 @@
 			a {
 				text-decoration: none;
 				transition: 0.2s;
-				&:hover {
+				@include hover {
 					filter: brightness(0.9);
 				}
 			}
@@ -186,7 +186,7 @@
 						color: rgb(var(--color));
 					}
 
-					&:hover {
+					@include hover {
 						:global(svg) {
 							background: rgba(var(--color), 0.3);
 						}
@@ -207,7 +207,7 @@
 			max-width: 420px;
 		}
 
-		&:hover {
+		@include hover {
 			filter: brightness(1.1);
 			// transform: translateY(-1%);
 			box-shadow: 0px 4px 20px 5px transparentize($clr-dark-450, 0.8);

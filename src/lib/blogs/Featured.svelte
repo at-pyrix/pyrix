@@ -175,7 +175,7 @@
 			-webkit-box-orient: vertical;
 		}
 
-		&:hover {
+		@include hover {
 			filter: brightness(0.9);
 		}
 	}
@@ -196,7 +196,7 @@
 		object-fit: cover;
 		transition: transform 0.3s ease-in-out;
 
-		&:hover {
+		@include hover {
 			transform: scale(1.05);
 		}
 	}
@@ -278,7 +278,7 @@
 			cursor: pointer;
 			color: $clr-text-3;
 
-			&:hover {
+			@include hover {
 				:global(svg) {
 					background: rgba(var(--color), 0.1);
 					color: rgba(var(--color), 1);

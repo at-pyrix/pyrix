@@ -29,7 +29,7 @@
 			color: $clr-accent-0;
 			transition: color 0.2s;
 
-			&:hover {
+			@include hover {
 				color: $clr-text-2;
 			}
 		}
@@ -66,7 +66,7 @@
 						color: $clr-accent-0;
 						transition: color 0.2s;
 
-						&:hover {
+						@include hover {
 							color: $clr-text-2;
 						}
 					}

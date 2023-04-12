@@ -2,7 +2,7 @@
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
 	import Footer from '$lib/blogs/Footer.svelte';
-	import '$lib/styles/markdown.scss'
+	import '$lib/styles/markdown.scss';
 </script>
 
 <svelte:head>
@@ -13,7 +13,7 @@
 		name="description"
 		content="Explore all sorts of blogs written by me, be it on programming, graphic design, productivity etc. This my official blog page for my website."
 	/>
-	<meta name="image" content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/blogs.png">
+	<meta name="image" content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/blogs.png" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />

@@ -59,7 +59,7 @@
 		height: auto;
 		padding: 1rem;
 
-		&:hover {
+		@include hover {
 			cursor: pointer;
 			border-radius: 0.5rem;
 			transition: all 0.2s ease-in-out;
@@ -102,7 +102,7 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 1rem;
-		&:hover {
+		@include hover {
 			filter: brightness(1.1);
 			cursor: pointer;
 			border-radius: 0.5rem;

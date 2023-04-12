@@ -46,7 +46,7 @@
 			transition: all 200ms;
 			color: $clr-text-2;
 
-			&:hover {
+			@include hover {
 				filter: brightness(1.05);
 			}
 
@@ -96,7 +96,7 @@
 		transition: box-shadow 150ms ease-out;
 		box-shadow: 0px 0px 0px 0px rgba(var(--rgb), 0);
 
-		&:hover {
+		@include hover {
 			box-shadow: 0px 0px 90px 5px rgba(var(--rgb), 0.1);
 		}
 	}
