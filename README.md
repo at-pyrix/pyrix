@@ -66,5 +66,3 @@
 - Refactor code
 - Redesign portfolio.
 - Add a light theme.
-- Footer.
-- Logo on error page.
