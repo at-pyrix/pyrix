@@ -57,7 +57,7 @@
 		margin-top: 8.5vh;
 
 		h1 {
-			font-family: 'Jetbrains Mono', monospace;
+			font-family: 'JetBrainsMono', monospace;
 			color: #d0d0d0;
 			font-size: 1.8rem;
 			font-weight: 400;

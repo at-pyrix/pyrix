@@ -35,6 +35,7 @@
 		'bxs:star',
 		
 	]);
+	const fontsLink = { rel: "preload", href: "/fonts/fonts.css", as: "style" };
 
 	NProgress.configure({
 		easing: 'ease',
@@ -63,6 +64,7 @@
 
 <svelte:head>
 	<title>NotYasho</title>
+	<link {...fontsLink} />
 </svelte:head>
 
 {#if loaded}
