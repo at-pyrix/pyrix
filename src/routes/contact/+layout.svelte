@@ -3,6 +3,7 @@
 	import Header from '$lib/blogs/Header.svelte';
 	import '$lib/styles/markdown.scss';
 	import { fade } from 'svelte/transition';
+	import Footer from '$lib/blogs/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -49,6 +50,7 @@
 <main transition:fade>
 	<slot />
 </main>
+<Footer />
 
 <style lang="scss">
 	main {

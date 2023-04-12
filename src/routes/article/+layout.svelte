@@ -3,6 +3,7 @@
 	import Header from '$lib/blogs/Header.svelte';
 	import 'highlight.js/styles/night-owl.css';
 	import '$lib/styles/markdown.scss';
+	import Footer from '$lib/blogs/Footer.svelte';
 </script>
 
 <Header />
@@ -10,6 +11,7 @@
 <main>
 	<slot />
 </main>
+<Footer />
 
 <style lang="scss">
 	main {

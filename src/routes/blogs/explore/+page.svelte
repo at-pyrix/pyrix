@@ -35,7 +35,7 @@
 
 <style lang="scss">
 	.grid {
-		height: 100vh;
+		height: 100%;
 		display: grid;
 		grid-auto-columns: 1fr;
 		gap: 1em;
