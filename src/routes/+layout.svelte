@@ -54,7 +54,6 @@
 </script>
 
 <svelte:head>
-	<title>NotYasho</title>
 	<link {...fontsLink} />
 </svelte:head>
 

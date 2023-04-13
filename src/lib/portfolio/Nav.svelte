@@ -92,7 +92,7 @@
 		transition: 300ms;
 		cursor: pointer;
 		position: relative;
-		bottom: -0.4rem;
+		bottom: 0.6rem;
 	}
 
 	.nav-list {
