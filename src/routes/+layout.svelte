@@ -8,7 +8,7 @@
 	import { navigating } from '$app/stores';
 	import 'nprogress/nprogress.css';
 	import { loadIcons } from '@iconify/svelte';
-	loadIcons([	
+	loadIcons([
 		'ic:round-menu',
 		'ic:round-close',
 		'bxs:home-smile',
@@ -32,10 +32,9 @@
 		'material-symbols:forward',
 		'bx:time',
 		'bx:calendar',
-		'bxs:star',
-		
+		'bxs:star'
 	]);
-	const fontsLink = { rel: "preload", href: "/fonts/fonts.css", as: "style" };
+	const fontsLink = { rel: 'preload', href: '/fonts/fonts.css', as: 'style' };
 
 	NProgress.configure({
 		easing: 'ease',
@@ -55,8 +54,6 @@
 			NProgress.done();
 		}
 	});
-
-	
 
 	let loaded = false;
 	onMount(() => (loaded = true));
@@ -105,7 +102,7 @@
 	}
 
 	:global(#nprogress .bar) {
-		background: linear-gradient(90deg, rgba(255,0,187,1) 0%, rgba(182,0,255,1) 50%, rgba(255,173,0,1) 100%) !important;
+		background: linear-gradient(90deg, rgba(255, 0, 187, 1) 0%, rgba(182, 0, 255, 1) 50%, rgba(255, 173, 0, 1) 100%) !important;
 	}
 
 	img {

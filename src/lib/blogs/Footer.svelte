@@ -77,6 +77,7 @@
 
 	@media screen and (max-width: $tablet) {
 		footer {
+			margin-top: 1rem;
 			margin-bottom: 4rem;
 			.container {
 				margin-inline: auto;
@@ -85,7 +86,7 @@
 				align-items: center;
 
 				.social-links {
-					margin-top: 10px;
+					display: none;
 				}
 			}
 		}

@@ -220,6 +220,7 @@
 		ul li {
 			display: inline;
 			padding: 0 !important;
+			border-radius: 100%;
 
 			:global(svg) {
 				font-size: 1.4rem;
@@ -227,6 +228,9 @@
 
 			&:not(.active) {
 				background: none;
+			}
+			&:hover {
+				background: linear-gradient(136.91deg, $clr-dark-3 0%, $clr-dark-350 50%, $clr-dark-3 100%);
 			}
 		}
 	}

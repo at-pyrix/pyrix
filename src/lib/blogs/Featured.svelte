@@ -76,6 +76,7 @@
 				{/if}
 
 				<div class="actions">
+					
 					<button id="save" title="Save Article" on:click={bookmark(post.slug)}
 						><Icon icon="material-symbols:bookmark{$savedItems.includes(post.slug) ? '-remove-' : '-add-outline-'}rounded" /></button
 					>
