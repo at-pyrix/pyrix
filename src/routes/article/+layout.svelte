@@ -2,7 +2,7 @@
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
 	import 'highlight.js/styles/night-owl.css';
-	import '$lib/styles/markdown.scss';
+	import '../../styles/markdown.scss';
 	import Footer from '$lib/blogs/Footer.svelte';
 </script>
 

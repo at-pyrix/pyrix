@@ -1,7 +1,7 @@
 <script>
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
-	import '$lib/styles/markdown.scss';
+	import '../../styles/markdown.scss';
 	import { fade } from 'svelte/transition';
 	import Footer from '$lib/blogs/Footer.svelte';
 </script>

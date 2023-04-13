@@ -1,5 +1,5 @@
 <script>
-	import '$lib/styles/app.scss';
+	import '../styles/app.scss';
 	import Jumper from '$lib/Other/Jumper.svelte';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';

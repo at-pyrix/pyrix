@@ -2,7 +2,7 @@
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
 	import Footer from '$lib/blogs/Footer.svelte';
-	import '$lib/styles/markdown.scss';
+	import '../../styles/markdown.scss';
 </script>
 
 <svelte:head>

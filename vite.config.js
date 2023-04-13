@@ -1,12 +1,8 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import viteCompression from 'vite-plugin-compression';
+import { sveltekit } from '@sveltejs/kit/vite'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit(), viteCompression()],
-	server: {
-		cors: true
-	}
-};
+	plugins: [sveltekit()],
+}
 
-export default config;
+export default config

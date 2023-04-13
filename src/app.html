@@ -8,7 +8,6 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="/img/favicon/site.webmanifest" />
 		<link rel="shortcut icon" href="/favicon.png" />
-		<link rel="preload" href="/fonts/fonts.css" as="style" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="robots" content="max-image-preview:large" />
 		<meta name="robots" content="index,follow" />
@@ -21,7 +20,7 @@
 		%sveltekit.head%
 	</head>
 
-	<body>
+	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
