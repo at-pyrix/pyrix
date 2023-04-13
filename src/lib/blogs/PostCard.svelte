@@ -179,7 +179,7 @@
 					cursor: pointer;
 					color: $clr-text-3;
 					:global(svg) {
-						font-size: 1.4rem;
+						font-size: 1.3rem;
 						background: rgba(var(--color), 0.1);
 						border-radius: 0.6em;
 						padding: 0.3em 0.3em;

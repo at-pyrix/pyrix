@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import Icon from '@iconify/svelte';
 </script>
 
 <svelte:head>

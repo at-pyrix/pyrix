@@ -2,7 +2,15 @@
 	import Nav from '$lib/blogs/Nav.svelte';
 	import Header from '$lib/blogs/Header.svelte';
 	import Footer from '$lib/blogs/Footer.svelte';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import FirstTime from '$lib/Other/firstTime.svelte';
+	import Jumper from '$lib/Other/Jumper.svelte';
+
 	import '../../styles/markdown.scss';
+
+	let loaded = false;
+	onMount(() => (loaded = true));
 </script>
 
 <svelte:head>
@@ -36,15 +44,26 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/blogs.png" />
 </svelte:head>
 
-<Header />
-<Nav />
-<main>
-	<slot />
-</main>
-<Footer />
+{#if loaded}
+	<FirstTime />
+	<Header />
+	<Nav />
+	<main>
+		<slot />
+	</main>
+	<Footer />
+{:else}
+	<section transition:fade={{ duration: 200 }}>
+		<div class="loader">
+			<Jumper color="	#933b6d" size="125" duration="1.3s" />
+			<img src="../../img/favicon/logo.webp" alt="" />
+		</div>
+	</section>
+{/if}
 
 <style lang="scss">
 	main {
+		height: 100%;
 		max-width: 100%;
 		padding: 1.4rem 2rem 2rem 1rem;
 		margin-left: 4.8rem;
@@ -57,6 +76,53 @@
 			margin: 0;
 			margin-top: 4rem;
 			padding: 4vh 5vw 12vh 5vw;
+		}
+	}
+
+	section::before,
+	section::after {
+		content: '';
+		width: 50vw;
+		position: fixed;
+		pointer-events: none;
+		height: 100vh;
+		opacity: 0.5;
+		z-index: -100;
+		animation: growGradient 2s ease-in;
+	}
+
+	section::before {
+		left: 0;
+		bottom: 0;
+		background-image: radial-gradient(at 45% 100%, hsla(247, 51%, 67%, 0.3) 0px, transparent 50%);
+	}
+
+	section::after {
+		right: 0;
+		top: 0;
+		background-image: radial-gradient(at 100% 15%, hsla(247, 51%, 67%, 0.3) 0px, transparent 50%);
+	}
+
+	img {
+		position: absolute;
+		border-radius: 50%;
+		width: 4rem;
+	}
+
+	.loader {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		inset: 0;
+	}
+
+	@keyframes growGradient {
+		0% {
+			opacity: 0.2;
+		}
+		100% {
+			opacity: 0.5;
 		}
 	}
 </style>

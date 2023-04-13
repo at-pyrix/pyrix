@@ -1,31 +1,25 @@
 <script>
-	import { onMount } from 'svelte';
 	import Icon from '@iconify/svelte';
 	import Logo from '$lib/Other/logo.svelte';
 	import VanishingHeader from './VanishingHeader.svelte';
-
-	let loaded = false;
-	onMount(() => (loaded = true));
 </script>
 
-{#if loaded}
-	<VanishingHeader duration="350ms" offset={50} tolerance={5}>
-		<header>
-			<div class="logo">
-				<a href="/" alt="logo" aria-label="logo"> <Logo /> </a>
-			</div>
+<VanishingHeader duration="350ms" offset={50} tolerance={5}>
+	<header>
+		<div class="logo">
+			<a href="/" alt="logo" aria-label="logo"> <Logo /> </a>
+		</div>
 
-			<div class="search">
-				<input type="text" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
-				<button title="Search"><Icon icon="bx:search" /></button>
-			</div>
+		<div class="search">
+			<input type="text" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
+			<button title="Search"><Icon icon="bx:search" /></button>
+		</div>
 
-			<a title="Write an article (ADMIN only)" class="new-post" href="https://notyasho.sanity.studio/" target="_">
-				<Icon icon="bx:pencil" />
-			</a>
-		</header>
-	</VanishingHeader>
-{/if}
+		<a title="Write an article (ADMIN only)" class="new-post" href="https://notyasho.sanity.studio/" target="_">
+			<Icon icon="bx:pencil" />
+		</a>
+	</header>
+</VanishingHeader>
 
 <style lang="scss">
 	header {

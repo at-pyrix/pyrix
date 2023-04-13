@@ -43,27 +43,33 @@
 	<meta property="twitter:image" content={data.category.image.asset.url + '?fm=webp&w=256'} />
 </svelte:head>
 
-{#if data.blogs.length > 0}
-	<section style="--color: {data.category.color}">
-		<div class="cover">
-			<img src={data.category.image.asset.url} alt="alt" />
-			<div class="text">
-				<Icon icon={data.category.icon} />
-				<h1>{data.category.name}</h1>
-				<span id="count">Posts: {posts.length}</span>
+<main>
+	{#if data.blogs.length > 0}
+		<section style="--color: {data.category.color}">
+			<div class="cover">
+				<img src={data.category.image.asset.url} alt="alt" />
+				<div class="text">
+					<Icon icon={data.category.icon} />
+					<h1>{data.category.name}</h1>
+					<span id="count">Posts: {posts.length}</span>
+				</div>
 			</div>
-		</div>
-		<PostGrid {posts} />
-	</section>
-{:else}
-	<section class="error">
-		<Icon icon="tabler:line-dotted" />
-		<h1>Nothing but void :/</h1>
-		<p>Looks like nothing has been posted related to <strong>{data.category.name}</strong></p>
-	</section>
-{/if}
+			<PostGrid {posts} />
+		</section>
+	{:else}
+		<section class="error">
+			<Icon icon="tabler:line-dotted" />
+			<h1>Nothing but void :/</h1>
+			<p>Looks like nothing has been posted related to <strong>{data.category.name}</strong></p>
+		</section>
+	{/if}
+</main>
 
 <style lang="scss">
+	main {
+		height: 100vh;
+	}
+
 	.cover {
 		position: relative;
 		display: flex;

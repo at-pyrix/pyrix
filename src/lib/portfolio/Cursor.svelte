@@ -14,8 +14,6 @@
 		mouse.y = e.clientY;
 	};
 
-	window.addEventListener('mousemove', updateCoordinates);
-
 	function getAngle(diffX, diffY) {
 		return (Math.atan2(diffY, diffX) * 180) / Math.PI;
 	}
@@ -50,7 +48,11 @@
 		requestAnimationFrame(loop);
 	}
 
-	onMount(() => requestAnimationFrame(loop));
+	onMount(() => {
+		window.addEventListener('mousemove', updateCoordinates);
+
+		requestAnimationFrame(loop);
+	});
 </script>
 
 <div id="cursor" bind:this={cursor}>

@@ -64,5 +64,4 @@
 - Add related articles on the left pane
 - Change mobile blog view from card to something like Reddit's compact view.
 - Refactor code
-- Redesign portfolio.
-- Add a light theme.
+- Redesign portfolio
