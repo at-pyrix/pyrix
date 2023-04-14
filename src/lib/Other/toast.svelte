@@ -33,9 +33,9 @@
 		left: 50%;
 		bottom: 45px;
 		transform: translateX(-50%);
-		background: $clr-dark-3-glass;
+		background: $clr-bg-3-glass;
 		border-radius: 14px;
-		border-left: 0.5rem solid $clr-accent-2;
+		border-left: 0.5rem solid $accent-2;
 		padding: 1.25rem 2.18rem 1.25rem 1.56rem;
 		z-index: 100;
 		overflow: hidden;
@@ -56,14 +56,14 @@
 	}
 
 	.toast .message .text {
-		color: $clr-text-3;
+		color: $clr-fg-3;
 		font-weight: 400;
 		font-size: clamp(0.7rem, 3vmin, 1rem);
 	}
 
 	.toast .message .text-1 {
 		font-weight: 600;
-		color: $clr-text-2;
+		color: $clr-fg-2;
 	}
 
 	.toast .close :global(svg) {
@@ -87,7 +87,7 @@
 		left: 0;
 		height: 3px;
 		width: 100%;
-		background: $clr-accent-3;
+		background: $accent-3;
 	}
 
 	.toast .progress::before {
@@ -97,7 +97,7 @@
 		right: 0;
 		height: 100%;
 		width: 100%;
-		background: $clr-accent-2;
+		background: $accent-2;
 	}
 
 	.toast .progress::before {
@@ -118,7 +118,7 @@
 		/* ORIGINALLY 166 */
 		stroke-width: 2;
 		stroke-miterlimit: 10;
-		stroke: $clr-accent-2;
+		stroke: $accent-2;
 		fill: none;
 		animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 	}
@@ -131,7 +131,7 @@
 		stroke-width: 2;
 		stroke: #fff;
 		stroke-miterlimit: 10;
-		box-shadow: inset 0px 0px 0px $clr-accent-2;
+		box-shadow: inset 0px 0px 0px $accent-2;
 		animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 	}
 
@@ -160,7 +160,7 @@
 	}
 	@keyframes fill {
 		100% {
-			box-shadow: inset 0px 0px 0px 80px $clr-accent-2;
+			box-shadow: inset 0px 0px 0px 80px $accent-2;
 		}
 	}
 

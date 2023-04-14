@@ -120,7 +120,7 @@
 
 			.card-title {
 				font-size: 1.2rem;
-				color: $clr-text-2;
+				color: $clr-fg-2;
 				font-family: $title-secondary-font;
 				font-weight: 500;
 			}
@@ -129,7 +129,7 @@
 				margin-block: 0.7rem;
 				font-size: small;
 				line-height: 1.1rem;
-				color: $clr-text-4;
+				color: $clr-fg-4;
 				overflow: hidden;
 				display: -webkit-box;
 				-webkit-line-clamp: 4;
@@ -146,13 +146,13 @@
 				font-size: 0.8rem;
 				font-family: $ui-font;
 				font-weight: 500;
-				color: $clr-text-4;
+				color: $clr-fg-4;
 
 				.tag-link {
 					display: flex;
 					align-items: center;
 					gap: 0.2rem;
-					color: $clr-text-4;
+					color: $clr-fg-4;
 					border-radius: 1rem;
 					background: lighten($clr-card, 8%);
 					padding: 0.2rem 0.5rem;
@@ -164,7 +164,7 @@
 					font-size: 0.8rem;
 					font-family: $ui-font;
 					font-weight: 500;
-					color: $clr-text-4;
+					color: $clr-fg-4;
 				}
 			}
 
@@ -177,7 +177,7 @@
 				.share-btn {
 					all: unset;
 					cursor: pointer;
-					color: $clr-text-3;
+					color: $clr-fg-3;
 					:global(svg) {
 						font-size: 1.3rem;
 						background: rgba(var(--color), 0.1);
@@ -210,7 +210,7 @@
 		@include hover {
 			filter: brightness(1.1);
 			// transform: translateY(-1%);
-			box-shadow: 0px 4px 20px 5px transparentize($clr-dark-450, 0.8);
+			box-shadow: 0px 4px 20px 5px transparentize($clr-bg-450, 0.8);
 
 			.card-image {
 				filter: brightness(0.9);

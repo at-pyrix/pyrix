@@ -68,7 +68,7 @@
 
 	.header {
 		pointer-events: none;
-		outline: 3px solid lighten($clr-dark-1, 5);
+		outline: 3px solid lighten($clr-bg-1, 5);
 		outline-offset: -3px;
 		background-color: lighten($clr-card, 15);
 		text-align: center;
@@ -90,7 +90,7 @@
 		h2,
 		:global(svg),
 		span {
-			color: $clr-dark-1;
+			color: $clr-bg-1;
 		}
 	}
 

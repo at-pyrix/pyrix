@@ -69,6 +69,7 @@
 	<p class="description">{data.blogs.description}</p>
 
 	<img
+		transition:fade
 		class="cover"
 		data-src={data.blogs.featuredImage.asset.url + '?fm=webp'}
 		src={data.blogs.featuredImage.asset.metadata.lqip}
@@ -86,7 +87,7 @@
 		max-width: 800px;
 		margin: -3rem auto;
 		padding: 20px;
-		color: $clr-text-4;
+		color: $clr-fg-4;
 		margin-top: 40px;
 
 		@media screen and (max-width: 800px) {
@@ -109,7 +110,7 @@
 	.title {
 		margin-block: 0.5rem;
 		text-align: center;
-		color: $clr-text-1;
+		color: $clr-fg-1;
 		font-size: 2.7rem;
 		font-family: $title-secondary-font;
 		font-weight: bold;
@@ -121,7 +122,7 @@
 	}
 
 	p.description {
-		color: $clr-text-4;
+		color: $clr-fg-4;
 		text-align: center;
 		font-family: 'Larsseit', sans-serif !important;
 	}

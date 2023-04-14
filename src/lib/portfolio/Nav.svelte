@@ -9,7 +9,7 @@
 		if (!hamb.classList.contains('active')) {
 			nav.style.right = '0';
 			hambIcon = 'ic:round-close';
-			hamb.style.color = '$clr-accent-0';
+			hamb.style.color = '$accent-0';
 		} else {
 			nav.style.right = '-100%';
 			hambIcon = 'ic:round-menu';
@@ -146,7 +146,7 @@
 			background: rgba(25, 25, 37, 0.92);
 
 			backdrop-filter: blur(10px);
-			transition: 500ms right cubic-bezier(0.57, 0.2, 0.05, 1);
+			transition: 500ms right cubic-bezier(0.86, 0, 0.07, 1);
 			z-index: 10;
 		}
 

@@ -64,6 +64,7 @@
 <style lang="scss">
 	main {
 		height: 100%;
+		min-height: 100vh;
 		max-width: 100%;
 		padding: 1.4rem 2rem 2rem 1rem;
 		margin-left: 4.8rem;

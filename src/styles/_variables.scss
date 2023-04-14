@@ -1,40 +1,10 @@
-// Dark mode colors
-
-// Text colors
-$clr-text-1: hsl(0, 0%, 100%);
-$clr-text-2: hsl(0, 0%, 90%);
-$clr-text-3: hsl(257, 100%, 98%);
-$clr-text-350: hsl(240, 5%, 70%);
-$clr-text-4: hsl(240, 20%, 76%);
-$clr-text-450: hsl(240, 5%, 55%);
-$clr-text-5: hsl(240, 16%, 20%);
-
-// Dark colors
-$clr-dark-1: hsl(249, 15%, 17%);
-$clr-dark-2: hsl(252, 19%, 15%);
-$clr-dark-3: hsl(248, 29%, 11%);
-$clr-dark-3-glass: hsla(248, 29%, 11%, 85%);
-$clr-dark-350: hsl(256, 24%, 18%);
-$clr-dark-4: hsl(249, 27%, 10%);
-$clr-dark-450: hsl(240, 25%, 8%);
-$clr-dark-5: hsl(240, 25%, 3%);
-
-// Accent color
-$clr-accent-0: hsl(247, 100%, 80%);
-$clr-accent-05: hsl(261, 100%, 65%);
-$clr-accent-1: hsl(266, 100%, 50%);
-$clr-accent-2: rgb(89, 0, 255);
-$clr-accent-3: hsl(261, 100%, 28%);
-$clr-accent-4: hsl(261, 100%, 14%);
-
-// Theme colors
-$clr-error: hsl(330, 100%, 65%);
-$clr-secondary: hsl(327, 100%, 50%);
-$clr-tertiary: hsl(41, 100%, 50%);
-
-// Misc.
-$background: hsl(248, 29%, 10%);
-$clr-card: hsla(249, 17%, 15%, 0.35);
+// Colors
+$bg: hsl(248, 28%, 10%);
+$fg: hsl(265, 0%, 100%);
+$accent: hsl(261, 100%, 50%);
+$secondary: hsl(327, 100%, 50%);
+$tertiary: hsl(41, 100%, 50%);
+$error: hsl(330, 100%, 65%);
 
 // Fonts
 $ui-font: 'Poppins', sans-serif;
@@ -52,6 +22,31 @@ $mobile-small: 320px;
 $mobile: 420px;
 $tablet: 768px;
 $desktop: 1024px;
+
+$clr-fg-1: $fg;
+$clr-fg-2: hsl(hue($fg), saturation($fg), lightness($fg) - 10%);
+$clr-fg-3: hsl(hue($fg) - 8deg, saturation($fg), lightness($fg) - 2%);
+$clr-fg-350: hsl(hue($fg) - 25deg, saturation($fg) + 5%, lightness($fg) - 30%);
+$clr-fg-4: hsl(hue($fg) - 25deg, saturation($fg) + 20%, lightness($fg) - 24%);
+$clr-fg-450: hsl(hue($fg) - 25deg, saturation($fg) + 5%, lightness($fg) - 45%);
+$clr-fg-5: hsl(hue($fg) - 25deg, saturation($fg) + 16%, lightness($fg) - 80%);
+
+$clr-bg-1: hsl(hue($bg) + 1deg, saturation($bg) - 14%, lightness($bg) + 7%);
+$clr-bg-2: hsl(hue($bg) + 4deg, saturation($bg) - 10%, lightness($bg) + 5%);
+$clr-bg-3: hsl(hue($bg), saturation($bg), lightness($bg) + 1%);
+$clr-bg-3-glass: hsla(hue($bg), saturation($bg), lightness($bg) + 1%, 85%);
+$clr-bg-350: hsl(hue($bg) + 8deg, saturation($bg) - 5%, lightness($bg) + 8%);
+$clr-bg-4: hsl(hue($bg) + 1deg, saturation($bg) - 2%, lightness($bg));
+$clr-bg-450: hsl(hue($bg) - 8deg, saturation($bg) - 4%, lightness($bg) - 2%);
+$clr-bg-5: hsl(hue($bg) - 8deg, saturation($bg) - 4%, lightness($bg) - 7%);
+$clr-card: hsla(hue($bg), saturation($bg) - 12%, lightness($bg) + 5%, 0.35);
+
+$accent-0: hsl(hue($accent) - 14deg, saturation($accent), lightness($accent) + 30%);
+$accent-05: hsl(hue($accent), saturation($accent), lightness($accent) + 15%);
+$accent-1: hsl(hue($accent) + 15deg, saturation($accent), lightness($accent));
+$accent-2: $accent;
+$accent-3: hsl(hue($accent), saturation($accent), lightness($accent) - 22%);
+$accent-4: hsl(hue($accent), saturation($accent), lightness($accent) - 36%);
 
 
 @mixin hover {

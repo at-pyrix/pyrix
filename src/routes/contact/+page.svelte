@@ -37,12 +37,12 @@
 		const label = e.target.parentNode.parentNode.querySelector('label');
 		if (valid) {
 			e.target.setAttribute('valid', 'true');
-			e.target.style.borderColor = '$clr-accent-0';
-			label.style.color = '$clr-accent-0';
+			e.target.style.borderColor = '#A599FF';
+			label.style.color = '#A599FF';
 		} else {
 			e.target.removeAttribute('valid');
-			e.target.style.borderColor = '$clr-error';
-			label.style.color = '$clr-error';
+			e.target.style.borderColor = '#FF4CA6';
+			label.style.color = '#FF4CA6';
 		}
 	}
 
@@ -135,7 +135,7 @@
 	}
 
 	h2 {
-		color: $clr-accent-0;
+		color: #a599ff;
 
 		font-weight: 500;
 		font-size: 2rem;
@@ -165,10 +165,10 @@
 	textarea {
 		color: rgb(171, 166, 202);
 		font-family: $body-font;
-		background: #423e555b;
+		background: transparentize($clr-bg-350, 0.5);
 		width: 100%;
 		height: 56px;
-		border: 1px solid #302d421a;
+		border: 1px solid #302d4248;
 		padding: 16px 56px 16px 16px;
 		font-size: 16px;
 		border-radius: 8px;
@@ -177,7 +177,7 @@
 
 	input::placeholder,
 	textarea::placeholder {
-		color: $clr-text-450;
+		color: $clr-fg-450;
 	}
 
 	input:-webkit-autofill {
@@ -190,7 +190,7 @@
 	}
 
 	.btn.btn-primary {
-		background: $clr-accent-05;
+		background: #8b4cff;
 		margin-inline: auto;
 		@include hover {
 			filter: brightness(1.1);
@@ -200,7 +200,7 @@
 
 	input:focus,
 	textarea:focus {
-		box-shadow: 0px 0px 0px 2px $clr-text-5;
+		box-shadow: 0px 0px 0px 2px $clr-fg-5;
 	}
 
 	@media only screen and (max-width: $tablet) {

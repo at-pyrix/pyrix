@@ -36,7 +36,6 @@
 				>
 				<span id="sep">•</span>
 				<span class="ert">
-					<Icon icon="bx:time" />
 					<span title="Estimated Read Time">{post.ert}</span>
 				</span>
 				<span class="featured-badge shine featured-text">
@@ -76,7 +75,6 @@
 				{/if}
 
 				<div class="actions">
-					
 					<button id="save" title="Save Article" on:click={bookmark(post.slug)}
 						><Icon icon="material-symbols:bookmark{$savedItems.includes(post.slug) ? '-remove-' : '-add-outline-'}rounded" /></button
 					>
@@ -109,7 +107,7 @@
 	}
 	.info {
 		display: flex;
-		gap: .7ch;
+		gap: 0.7ch;
 		align-items: center;
 	}
 
@@ -123,7 +121,7 @@
 		padding: 0 0.64rem;
 		background: rgba(var(--color));
 		pointer-events: none;
-		color: $clr-dark-4;
+		color: $clr-bg-4;
 
 		span {
 			font-weight: 600;
@@ -210,7 +208,7 @@
 
 	.text-block h2 {
 		margin-top: 1.6rem;
-		color: $clr-text-2;
+		color: $clr-fg-2;
 	}
 
 	p.description {
@@ -262,13 +260,13 @@
 			line-height: 1.1rem;
 
 			#author-name {
-				color: $clr-text-3;
+				color: $clr-fg-3;
 				font-weight: 500;
 			}
 
 			#date-published {
 				font-size: 0.9rem;
-				color: $clr-text-4;
+				color: $clr-fg-4;
 			}
 		}
 	}
@@ -277,7 +275,7 @@
 		button {
 			all: unset;
 			cursor: pointer;
-			color: $clr-text-3;
+			color: $clr-fg-3;
 
 			@include hover {
 				:global(svg) {
@@ -308,7 +306,7 @@
 
 	.btn:hover {
 		background: rgb(var(--color));
-		color: $clr-dark-4;
+		color: $clr-bg-4;
 	}
 
 	@media only screen and (max-width: $tablet) {
@@ -328,7 +326,6 @@
 				width: 100%;
 				height: 100%;
 				border-radius: 1rem;
-				backdrop-filter: grayscale(0.3) blur(10px) brightness(0.3);
 				background: rgba(var(--color), 0.5);
 			}
 		}
@@ -338,7 +335,7 @@
 		}
 
 		.featured-badge {
-			margin-top: .3ch;
+			margin-top: 0.3ch;
 			span {
 				display: none !important;
 			}
@@ -353,13 +350,16 @@
 				position: absolute;
 				width: 100%;
 				height: 100%;
+				img {
+					filter: blur(10px) grayscale(0.3) brightness(0.3);
+				}
 			}
 
 			.text-block {
 				z-index: 2;
 				top: 2rem;
 				width: 100%;
-				color: $clr-text-4;
+				color: $clr-fg-4;
 				min-width: 10rem;
 				padding: 0 3rem 0 2rem;
 				padding-right: min(3vw, 3rem);
@@ -376,7 +376,7 @@
 				line-height: 2rem;
 				font-family: $title-font;
 				font-weight: bolder !important;
-				color: $clr-text-2;
+				color: $clr-fg-2;
 				font-size: clamp(2em, 1.5em, 5%);
 			}
 

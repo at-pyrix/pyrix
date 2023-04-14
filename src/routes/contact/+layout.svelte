@@ -58,7 +58,8 @@
 		padding: 1.4rem 1rem;
 		margin-left: 4.8rem;
 		margin-top: 4.2rem;
-		
+		min-height: 100%;
+
 		display: flex;
 		justify-content: center;
 	}
@@ -96,6 +97,7 @@
 			padding: 5vh 5vw 12vh 5vw;
 			margin-block: 0 5rem;
 			padding-block: 1rem;
+			height: 90vh;
 		}
 
 		main::before {

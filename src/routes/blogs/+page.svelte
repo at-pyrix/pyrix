@@ -79,7 +79,7 @@
 		font-size: 1.5rem;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
-		color: $clr-text-2;
+		color: $clr-fg-2;
 		font-weight: 600;
 	}
 
@@ -91,7 +91,7 @@
 	@media screen and (max-width: $tablet) {
 		h2 {
 			font-size: 1.3rem;
-			color: $clr-text-2;
+			color: $clr-fg-2;
 			font-weight: 400;
 		}
 	}
@@ -102,7 +102,7 @@
 			position: absolute;
 			display: inline;
 			right: 0;
-			color: $clr-accent-0;
+			color: $accent-0;
 		}
 	}
 </style>

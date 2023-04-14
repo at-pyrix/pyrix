@@ -60,7 +60,7 @@
 		color: #fff;
 		padding: 20px;
 		border-radius: 1rem;
-		border: 0.1px solid $clr-accent-0;
+		border: 0.1px solid $accent-0;
 		text-align: center;
 		max-width: 500px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -78,7 +78,7 @@
 	}
 
 	.modal-body {
-		color: $clr-text-2;
+		color: $clr-fg-2;
 		padding-inline: 2rem;
 		margin-bottom: 20px;
 
@@ -99,13 +99,13 @@
 	}
 
 	.cta-btn {
-		border: 1px solid $clr-accent-0;
+		border: 1px solid $accent-0;
 		font-style: bold;
 		margin: 1rem auto;
 	}
 
 	.cta-btn:hover {
-		background: $clr-accent-0;
+		background: $accent-0;
 		color: black;
 	}
 </style>

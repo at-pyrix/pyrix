@@ -44,7 +44,7 @@
 			all: unset;
 			cursor: pointer;
 			transition: all 200ms;
-			color: $clr-text-2;
+			color: $clr-fg-2;
 
 			@include hover {
 				filter: brightness(1.05);
@@ -57,7 +57,7 @@
 
 		#count {
 			font-size: small;
-			color: $clr-text-4;
+			color: $clr-fg-4;
 		}
 
 		h2 {
@@ -102,7 +102,7 @@
 	}
 
 	.square-card:has(.dummy) {
-		background: $clr-dark-1;
+		background: $clr-bg-1;
 	}
 
 	.bg-img {

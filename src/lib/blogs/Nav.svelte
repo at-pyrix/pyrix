@@ -2,6 +2,13 @@
 	import { page } from '$app/stores';
 	import Icon from '@iconify/svelte';
 	let open = false;
+
+	function handleSearch() {
+		let search = document.querySelector('.search input');
+		search.focus()
+		search.closest('.vanishingHeader').classList.remove('hide')
+		search.closest('.vanishingHeader').classList.add('show')
+	}
 </script>
 
 <nav class="sidebar" class:open>
@@ -17,6 +24,12 @@
 			<a href="/blogs">
 				<Icon icon={$page.url.pathname === '/blogs' ? 'bxs:home-smile' : 'bx:home-smile'} />
 				<span>Home</span>
+			</a>
+		</li>
+		<li id="search" class:active={$page.url.pathname.startsWith('/blogs/search')}>
+			<a href="/blogs/search" on:click|preventDefault={handleSearch}>
+				<Icon icon={$page.url.pathname.startsWith('/blogs/search') ? 'bxs:search' : 'bx:search'} />
+				<span>Explore</span>
 			</a>
 		</li>
 		<li id="explore" class:active={$page.url.pathname.startsWith('/blogs/explore')}>
@@ -37,14 +50,11 @@
 				<span>Contact</span>
 			</a>
 		</li>
-		<li id="theme">
-			<button>
-				<Icon icon="fluent:dark-theme-20-filled" />
-				<span>Theme</span>
-			</button>
-		</li>
-		<li id="github" class="link">
-			<a href="https://www.github.com/notyasho/personal-portfolio" target="_"><Icon icon="bxl:github" /><span>Github</span></a>
+		<li id="about" class="link">
+			<a href="/about">
+				<Icon icon={$page.url.pathname === '/about' ? 'material-symbols:info-rounded' : 'material-symbols:info-outline-rounded'} />
+				<span>Contact</span>
+			</a>
 		</li>
 	</ul>
 </nav>
@@ -61,8 +71,8 @@
 		z-index: 102;
 		will-change: transform;
 
-		background: $clr-dark-3;
-		transition: width 0.5s cubic-bezier(0.57, 0.2, 0.05, 1);
+		background: $clr-bg-3;
+		transition: width 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 	}
 
 	.sidebar #hamb {
@@ -74,7 +84,7 @@
 		left: 1.35rem;
 		line-height: 4.1rem;
 
-		color: $clr-text-3;
+		color: $clr-fg-3;
 		cursor: pointer;
 	}
 
@@ -94,8 +104,8 @@
 		position: relative;
 
 		border-radius: 1rem;
-		background: linear-gradient(136.91deg, $clr-dark-3 0%, $clr-dark-350 50%, $clr-dark-3 100%);
-		transition: border-radius 0.2s ease-in-out, filter 0.3s;
+		background: linear-gradient(136.91deg, $clr-bg-3 0%, $clr-bg-350 50%, $clr-bg-3 100%);
+		transition: 0.2s cubic-bezier(0.86, 0, 0.07, 1);
 		cursor: pointer;
 
 		:global(svg) {
@@ -106,12 +116,11 @@
 			font-size: 1.3125rem;
 		}
 
-		a,
-		button {
+		a {
 			all: unset;
 			display: block;
 			padding: 0rem 0.6rem 0 0.6rem;
-			color: $clr-text-350;
+			color: $clr-fg-350;
 			white-space: nowrap;
 			text-decoration: none;
 		}
@@ -142,11 +151,15 @@
 
 	ul li.active {
 		a {
-			color: $clr-text-2;
+			color: $clr-fg-2;
 		}
 
 		&#home {
 			background: linear-gradient(136deg, #6400ff 0%, #802bff 50%, #6400ff 100%);
+		}
+
+		&#search {
+			background: linear-gradient(136deg, #ff3c00 0%, #ff6e2b 50%, #ff3c00 100%);
 		}
 
 		&#explore {
@@ -166,7 +179,7 @@
 		width: 15rem;
 
 		#hamb :global(svg) {
-			color: $clr-accent-0;
+			color: $accent-0;
 		}
 
 		span {
@@ -176,11 +189,11 @@
 
 		ul li {
 			width: calc(95%);
-			background: linear-gradient(90deg, $clr-dark-2 0%, rgba(63, 51, 82, 0.45) 50%, $clr-dark-2 100%);
+			background: linear-gradient(90deg, $clr-bg-2 0%, rgba(63, 51, 82, 0.45) 50%, $clr-bg-2 100%);
 		}
 
 		ul li.active {
-			background: $clr-accent-1;
+			background: $accent-1;
 		}
 
 		ul li {
@@ -190,9 +203,17 @@
 
 	@media only screen and (max-width: $tablet) {
 		.sidebar #hamb,
-		.sidebar #theme,
-		.sidebar #github {
+		.sidebar #search,
+		.sidebar #about {
 			display: none;
+		}
+
+		.sidebar #contact {
+			margin-top: 0;
+		}
+
+		.sidebar li {
+			margin-top: 0;
 		}
 
 		.sidebar {
@@ -202,8 +223,8 @@
 			height: 4rem;
 			position: fixed;
 
-			background: $clr-dark-4;
-			border-top: 1px solid $clr-text-5;
+			background: $clr-bg-4;
+			border-top: 1px solid $clr-fg-5;
 			filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.37));
 			padding: 0 8vw;
 			overflow: hidden;
@@ -227,12 +248,9 @@
 				font-size: 1.4rem;
 			}
 
-			&:not(.active) {
-				background: none;
-			}
-			&:hover {
-				background: linear-gradient(136.91deg, $clr-dark-3 0%, $clr-dark-350 50%, $clr-dark-3 100%);
-			}
+			background: none !important;
+
+			position: relative;
 		}
 	}
 </style>

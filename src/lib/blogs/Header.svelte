@@ -1,6 +1,7 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import Logo from '$lib/Other/logo.svelte';
+	import { goto } from '$app/navigation';
 	import VanishingHeader from './VanishingHeader.svelte';
 </script>
 
@@ -11,12 +12,14 @@
 		</div>
 
 		<div class="search">
-			<input type="text" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
-			<button title="Search"><Icon icon="bx:search" /></button>
+			<form on:submit|preventDefault={(e) => goto(`/blogs/search?q=${e.target.search.value}`)}>
+				<input type="text" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
+				<button title="Search"><Icon icon="bx:search" /></button>
+			</form>
 		</div>
 
-		<a title="Write an article (ADMIN only)" class="new-post" href="https://notyasho.sanity.studio/" target="_">
-			<Icon icon="bx:pencil" />
+		<a title="Source Code" class="github" href="https://www.github.com/NotYasho/NotYasho/" target="_">
+			<Icon icon="fa:github" />
 		</a>
 	</header>
 </VanishingHeader>
@@ -32,7 +35,7 @@
 		padding-inline: 1.5rem 2rem;
 		z-index: 100;
 
-		background-color: $clr-dark-3;
+		background-color: $clr-bg-3;
 	}
 
 	.logo {
@@ -40,8 +43,6 @@
 			margin-top: 2rem;
 			width: 12.5rem;
 		}
-
-		transition: all 150ms;
 	}
 
 	a {
@@ -61,8 +62,8 @@
 			border: 1.8px solid transparent;
 			border-radius: 0.5vmax;
 			font-family: $body-font;
-			color: $clr-text-4;
-			background: $clr-dark-2;
+			color: $clr-fg-4;
+			background: $clr-bg-2;
 
 			transition: 0.2s;
 
@@ -71,13 +72,13 @@
 			}
 
 			&:focus {
-				border-bottom: 1px solid $clr-accent-2;
-				box-shadow: 0 0 1px $clr-dark-4;
+				border-bottom: 1px solid $accent-2;
+				box-shadow: 0 0 1px $clr-bg-4;
 			}
 		}
 
 		input::placeholder {
-			color: $clr-text-4;
+			color: $clr-fg-4;
 			opacity: 0.2;
 		}
 
@@ -91,8 +92,8 @@
 			border-radius: 0.3rem;
 			top: 0.1rem;
 
-			color: $clr-text-450;
-			background: $clr-dark-2;
+			color: $clr-fg-450;
+			background: $clr-bg-2;
 			cursor: pointer;
 			filter: brightness(1.1);
 
@@ -110,8 +111,8 @@
 
 	.search input:focus {
 		button {
-			color: $clr-text-2;
-			background: $clr-accent-2;
+			color: $clr-fg-2;
+			background: $accent-2;
 		}
 
 		&::placeholder {
@@ -119,7 +120,7 @@
 		}
 	}
 
-	.new-post {
+	.github {
 		width: 2rem;
 		height: 2rem;
 		display: flex;
@@ -127,32 +128,32 @@
 		justify-content: center;
 
 		border-radius: 0.6rem;
-		background: $clr-dark-1;
+		background: $clr-bg-1;
 		transition: all 0.3s ease-in-out;
 
-		color: $clr-text-3;
+		color: $clr-fg-350;
 
 		:global(svg) {
 			height: 1rem;
 			width: 1rem;
-			line-height: 1rem;
 		}
 		@include hover {
-			background: $clr-accent-2;
-			box-shadow: -2px 12px 123px 4px $clr-accent-2;
+			background: $accent-2;
+			color: $clr-fg-3;
+			box-shadow: -2px 12px 123px 4px $accent-2;
 		}
 	}
 
 	@media only screen and (max-width: $tablet) {
 		header {
-			background: $clr-dark-3-glass;
+			background: $clr-bg-3-glass;
 			backdrop-filter: blur(10px);
 			margin: 0;
 			justify-content: center;
-			border-bottom: 1px solid $clr-dark-1;
+			border-bottom: 1px solid $clr-bg-1;
 		}
 
-		header .new-post,
+		header .github,
 		header .search {
 			display: none;
 		}

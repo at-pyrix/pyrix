@@ -118,20 +118,20 @@
 		opacity: 0;
 		bottom: 55%;
 		right: 50%;
-		background: $clr-dark-1;
+		background: $clr-bg-1;
 		border-radius: 2rem;
 		padding: 1.5rem;
 		text-align: center;
-		color: $clr-text-3;
+		color: $clr-fg-3;
 		transition: 0.2s ease-out;
 		transition-delay: 0.3s;
 
 		&:before {
 			content: '';
 			position: absolute;
-			border-right: 1.5rem solid $clr-dark-1;
+			border-right: 1.5rem solid $clr-bg-1;
 			border-left: 0.75rem solid transparent;
-			border-top: 0.75rem solid $clr-dark-1;
+			border-top: 0.75rem solid $clr-bg-1;
 			border-bottom: 20px solid transparent;
 			right: 2rem;
 			bottom: -1.5rem;

@@ -54,6 +54,7 @@
 					<span id="count">Posts: {posts.length}</span>
 				</div>
 			</div>
+			<h2 class="highlight">{data.category.name} Posts</h2>
 			<PostGrid {posts} />
 		</section>
 	{:else}
@@ -112,6 +113,11 @@
 			color: rgba(var(--color), 1);
 			font-size: 1rem;
 		}
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
 	}
 
 	img {

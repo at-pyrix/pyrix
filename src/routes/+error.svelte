@@ -31,7 +31,7 @@
 	}
 
 	a {
-		color: $clr-secondary;
+		color: $error;
 	}
 
 	.error-body {
@@ -68,11 +68,11 @@
 	button {
 		background: none;
 		border-radius: 0;
-		outline: solid 1px #ff3ba7;
+		outline: solid 1px $error;
 		border-radius: 0.4rem;
 	}
 
 	span:not(.back) {
-		color: $clr-secondary;
+		color: $error;
 	}
 </style>

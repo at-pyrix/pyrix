@@ -14,8 +14,8 @@ html {
 }
 
 body {
-	color: $clr-text-3;
-	background: $background;
+	color: $clr-fg-3;
+	background: $bg;
 	font-family: $ui-font;
 	transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -36,7 +36,7 @@ body {
 
 a {
 	all: unset;
-	color: $clr-accent-0;
+	color: $accent-0;
 	cursor: pointer;
 }
 
@@ -60,8 +60,8 @@ select {
 }
 
 ::selection {
-	color: $clr-text-2;
-	background: $clr-accent-2;
+	color: $clr-fg-2;
+	background: $accent-2;
 }
 
 *::-webkit-scrollbar {
@@ -81,7 +81,7 @@ select {
 }
 
 .highlight {
-	background: linear-gradient(to right, $clr-accent-2, $clr-accent-1, $clr-secondary) no-repeat;
+	background: linear-gradient(to right, $accent-2, $accent-1, $secondary) no-repeat;
 	background-position: 0 100%, 100% 100%;
 	background-size: 50% 0.08em;
 
@@ -101,10 +101,10 @@ select {
 	padding: 0.8rem 1.8rem;
 	border-radius: 0.5rem;
 
-	background-color: $clr-dark-1;
+	background-color: $clr-bg-1;
 	cursor: pointer;
 
-	color: $clr-text-2;
+	color: $clr-fg-2;
 	font-size: 0.8rem;
 	line-height: 1.7;
 	font-weight: bold;
@@ -112,15 +112,15 @@ select {
 	letter-spacing: 0.188em;
 
 	@include hover {
-		background-color: $clr-accent-2;
+		background-color: $accent-2;
 	}
 }
 
 .btn.btn-primary {
-	background-color: $clr-accent-2;
+	background-color: $accent-2;
 
 	@include hover {
-		background-color: $clr-accent-1;
+		background-color: $accent-1;
 	}
 }
 
@@ -131,7 +131,7 @@ select {
 
 .btn.btn-secondary {
 	color: white;
-	background-color: $clr-secondary;
+	background-color: $secondary;
 
 	@include hover {
 		background-color: #ff3ba7;
@@ -174,7 +174,7 @@ select {
 }
 
 .btn:disabled {
-	background: #47445a !important;
+	background: $clr-bg-350 !important;
 	pointer-events: none;
 }
 
@@ -263,11 +263,11 @@ select {
 	flex-direction: row;
 	white-space: nowrap;
 	align-items: center;
-	color: $clr-text-4;
+	color: $clr-fg-4;
 	svg {
 		font-size: 1.25em;
 		margin-right: 0.25rem;
-		color: $clr-text-4;
+		color: $clr-fg-4;
 	}
 	@media (max-width: $mobile) {
 		svg {
@@ -278,7 +278,7 @@ select {
 
 .category {
 	font-weight: 500;
-	color: $clr-text-5;
+	color: $clr-fg-5;
 	border-radius: 0.3rem;
 	white-space: nowrap;
 	padding: 0.2rem 0.32rem;
@@ -291,7 +291,7 @@ select {
 
 	@include hover {
 		background: rgb(var(--color));
-		color: $clr-dark-2;
+		color: $clr-bg-2;
 	}
 
 	svg {
@@ -307,7 +307,7 @@ select {
 }
 
 #sep {
-	color: lighten($clr-text-5, 10);
+	color: lighten($clr-fg-5, 10);
 	margin-inline: 0.2ch;
 	filter: brightness(1.6);
 }

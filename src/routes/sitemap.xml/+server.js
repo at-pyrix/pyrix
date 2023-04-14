@@ -4,13 +4,11 @@ const siteUrl = 'https://notyasho.netlify.app/'
 
 async function getPostsData() {
 	const blogs = await client.fetch(`*[_type == "blog"]`)
-	console.log(blogs)
 	return blogs
 }
 
 async function categories() {
 	const categories = await client.fetch(`*[_type == "category"]`)
-	console.log(categories)
 	return categories
 }
 

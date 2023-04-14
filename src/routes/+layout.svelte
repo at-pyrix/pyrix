@@ -6,30 +6,27 @@
 	import 'nprogress/nprogress.css';
 	import { loadIcons } from '@iconify/svelte';
 	loadIcons([
-		'ic:round-menu',
-		'ic:round-close',
-		'bxs:home-smile',
-		'bx:home-smile',
-		'bxs:compass',
+		'bx:calendar',
 		'bx:compass',
+		'bx:home-smile',
+		'bx:navigation',
+		'bx:search',
+		'bx:time',
+		'bxs:compass',
+		'bxs:home-smile',
+		'bxs:navigation',
+		'bxs:search',
+		'bxs:star',
+		'ic:round-close',
+		'ic:round-menu',
+		'ic:twotone-construction',
 		'mdi:bookmark-multiple',
 		'mdi:bookmark-multiple-outline',
-		'bxs:navigation',
-		'bx:navigation',
-		'fluent:dark-theme-20-filled',
-		'bxl:github',
-		'material-symbols:bookmark-remove-rounded',
 		'material-symbols:bookmark-add-outline-rounded',
-		'material-symbols:forward',
-		'ic:twotone-construction',
-		'bx:time',
-		'bx:calendar',
 		'material-symbols:bookmark-remove-rounded',
-		'material-symbols:bookmark-add-outline-rounded',
 		'material-symbols:forward',
-		'bx:time',
-		'bx:calendar',
-		'bxs:star'
+		'material-symbols:info-outline-rounded',
+		'material-symbols:info-rounded'
 	]);
 	const fontsLink = { rel: 'preload', href: '/fonts/fonts.css', as: 'style' };
 

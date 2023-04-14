@@ -6,7 +6,7 @@
 
 <main>
 	<div class="preloader">{textBefore} <span>{span}</span></div>
-	<BarLoader color="$clr-accent-1" size="100" />
+	<BarLoader color="$accent-1" size="100" />
 </main>
 
 <style lang="scss">
@@ -41,7 +41,7 @@
 		color: #fff;
 
 		span {
-			color: $clr-tertiary;
+			color: $tertiary;
 		}
 	}
 </style>

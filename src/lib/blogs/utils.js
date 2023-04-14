@@ -14,7 +14,7 @@ export function daysAgo(strDate) {
 		return 'Today';
 	} else if (days < 30) {
 		if (days > 7) {
-			return Math.floor(days / 7) + (days / 7 <= 1 ? ' week' : ' weeks');
+			return Math.floor(days / 7) + (Math.floor(days / 7) == 1 ? ' week' : ' weeks');
 		}
 		return days + ' day' + (days > 1 ? 's' : '');
 	} else if (days < 365) {
@@ -28,8 +28,8 @@ export function daysAgo(strDate) {
 }
 
 export function lighten(hexColor, value) {
-	const colorInt = parseInt(hexColor.slice(1), 16);
 	// Extract the RGB components from the integer
+	const colorInt = parseInt(hexColor.slice(1), 16);
 	const red = (colorInt >> 16) & 255;
 	const green = (colorInt >> 8) & 255;
 	const blue = colorInt & 255;

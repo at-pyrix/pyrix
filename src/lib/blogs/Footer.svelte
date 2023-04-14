@@ -23,14 +23,14 @@
 		position: relative;
 		margin-top: 3rem;
 		padding: 20px 0;
-		background: $clr-dark-3;
+		background: $clr-bg-3;
 
 		a {
-			color: $clr-accent-0;
+			color: $accent-0;
 			transition: color 0.2s;
 
 			@include hover {
-				color: $clr-text-2;
+				color: $clr-fg-2;
 			}
 		}
 
@@ -63,11 +63,11 @@
 
 					:global(svg) {
 						font-size: 18px;
-						color: $clr-accent-0;
+						color: $accent-0;
 						transition: color 0.2s;
 
 						@include hover {
-							color: $clr-text-2;
+							color: $clr-fg-2;
 						}
 					}
 				}

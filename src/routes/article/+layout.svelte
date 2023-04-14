@@ -66,7 +66,7 @@
 			width: 100%;
 			margin: 0;
 			margin-bottom: 2.2rem;
-			padding: 5vh 5vw 12vh 5vw;
+			padding: 5vh 3vw 12vh 3vw;
 		}
 	}
 </style>

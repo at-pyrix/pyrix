@@ -19,7 +19,7 @@
 
 @media screen and (max-width: $tablet) {
 	.article-body p:nth-of-type(2)::first-letter {
-		color: $clr-accent-0;
+		color: $accent-0;
 		float: left;
 		font-size: 85px;
 		padding-top: 0.175ch;
@@ -41,7 +41,7 @@ h6 {
 .highlight,
 .article-body h2 {
 	display: inline-block;
-	background: linear-gradient(to right, $clr-accent-1, $clr-secondary, $clr-tertiary) no-repeat;
+	background: linear-gradient(to right, $accent-1, $secondary, $tertiary) no-repeat;
 	background-position: 0 100%, 100% 100%;
 	background-size: 50% 0.08em;
 
@@ -52,23 +52,23 @@ h6 {
 	}
 }
 .article-body h1:not(h1.title) {
-	color: $clr-text-1;
+	color: $clr-fg-1;
 }
 
 .article-body h2 {
-	color: $clr-text-2;
+	color: $clr-fg-2;
 }
 
 .article-body h3 {
-	color: lighten($clr-text-3, 1.5);
+	color: lighten($clr-fg-3, 1.5);
 }
 
 .article-body h2 a[href^='#'] {
-	color: $clr-text-2 !important;
+	color: $clr-fg-2 !important;
 }
 
 .article-body p {
-	color: transparentize($clr-text-3, 0.1);
+	color: transparentize($clr-fg-3, 0.1);
 	margin-block: 1rem 1.5rem;
 	line-height: 1.7rem;
 
@@ -157,7 +157,7 @@ h6 {
 
 .article-body figcaption {
 	font-size: 14px;
-	color: $clr-text-450;
+	color: $clr-fg-450;
 	font-weight: 100;
 	font-style: italic;
 	text-align: center;
@@ -289,15 +289,15 @@ h6 {
 	border-radius: 2px;
 
 	@media screen and (max-width: $tablet) {
-		border-block: 8px solid $clr-accent-0;
+		border-block: 8px solid $accent-0;
 		border-inline: 0;
 	}
 
-	border-left: 8px solid $clr-accent-0;
-	background: $clr-dark-3;
+	border-left: 8px solid $accent-0;
+	background: $clr-bg-3;
 
 	p {
-		color: transparentize($clr-text-3, 0.25);
+		color: transparentize($clr-fg-3, 0.25);
 		font-family: $ui-font;
 		font-weight: 500;
 	}
@@ -305,7 +305,7 @@ h6 {
 	&::before {
 		font-family: $body-font;
 		content: '❝';
-		color: $clr-accent-0;
+		color: $accent-0;
 		font-size: 4em;
 		position: absolute;
 		left: 0.625rem;
@@ -317,7 +317,7 @@ h6 {
 		font-size: smaller;
 		font-weight: normal;
 		display: block;
-		color: $clr-text-350;
+		color: $clr-fg-350;
 		margin-top: 1em;
 	}
 }
@@ -346,9 +346,9 @@ h6 {
 	margin-left: 0;
 }
 .copy-code {
-	background: $clr-dark-1;
+	background: $clr-bg-1;
 	opacity: 0;
-	color: $clr-text-450;
+	color: $clr-fg-450;
 	padding: 0.5rem;
 	border-radius: 8px;
 	position: absolute;
@@ -380,7 +380,7 @@ pre.copied .copy-code {
 	opacity: 1;
 	pointer-events: all;
 	cursor: pointer;
-	color: $clr-accent-0;
+	color: $accent-0;
 	outline: solid 1px #8e83de;
 }
 
@@ -392,7 +392,7 @@ pre.copied .copy-code {
 }
 
 .article-body code:not(pre code) {
-	color: $clr-accent-0;
+	color: $accent-0;
 }
 
 .article-body pre {
@@ -660,8 +660,8 @@ pre.copied .copy-code {
 		padding: 0.5ch 0.5ch 0.5ch 0;
 		display: flex;
 		align-items: center;
-		color: $clr-text-450;
-		color: $clr-accent-0;
+		color: $clr-fg-450;
+		color: $accent-0;
 		gap: 0.8ch;
 	}
 	background-color: #26213a71;
@@ -681,7 +681,7 @@ pre.copied .copy-code {
 	}
 
 	.line-number {
-		color: lighten($clr-text-5, 5);
+		color: lighten($clr-fg-5, 5);
 		margin-right: 1rem;
 		text-align: right;
 	}
