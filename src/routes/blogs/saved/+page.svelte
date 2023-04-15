@@ -1,6 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
+	import { blur } from 'svelte/transition';
 	import { daysAgo, estimateReadTime } from '$lib/blogs/utils.js';
 	import Icon from '@iconify/svelte';
 
@@ -30,8 +31,8 @@
 
 <section class="main" in:fly={{ y: 10, duration: 500 }}>
 	{#if data.posts.length === 0}
-		<section class="error">
-			<Icon icon="ph:book-bookmark-thin" />
+		<section class="error" in:blur>
+			<Icon icon="solar:book-bookmark-minimalistic-broken" />
 			<h1>Nothing saved yet</h1>
 			<p>Save your favorite blogs to read them later</p>
 		</section>
@@ -42,11 +43,10 @@
 </section>
 
 <style lang="scss">
-
 	h1 {
 		margin-bottom: 1rem;
 	}
-	
+
 	section.main {
 		position: relative;
 		min-height: 80vh;
@@ -69,6 +69,10 @@
 			width: 100px;
 			height: 100px;
 			margin-bottom: 1rem;
+		}
+
+		:global(svg path) {
+			stroke-width: .8px !important;
 		}
 
 		h1 {

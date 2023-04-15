@@ -1,6 +1,12 @@
 <script>
 	import PostCard from './PostCard.svelte';
+	import { daysAgo, estimateReadTime } from './utils';
 	export let posts;
+
+	posts.forEach((post) => {
+		post.ert = estimateReadTime(post.body) + ' mins read';
+		post.daysAgo = daysAgo(post.date);
+	});
 
 	let grid;
 </script>

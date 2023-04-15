@@ -47,8 +47,6 @@ async function fetch() {
 	} | order(-count) [0...5]
 	`);
 
-
-	
 	if (blogs && categories) {
 		blogs.forEach((blog) => {
 			blog.ert = estimateReadTime(blog.body) + ' mins read';

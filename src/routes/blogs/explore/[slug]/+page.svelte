@@ -1,6 +1,7 @@
 <script>
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
 	import Icon from '@iconify/svelte';
+	import { blur } from 'svelte/transition';
 	export let data;
 
 	let posts;
@@ -58,7 +59,7 @@
 			<PostGrid {posts} />
 		</section>
 	{:else}
-		<section class="error">
+		<section class="error" in:blur>
 			<Icon icon="tabler:line-dotted" />
 			<h1>Nothing but void :/</h1>
 			<p>Looks like nothing has been posted related to <strong>{data.category.name}</strong></p>
@@ -104,6 +105,8 @@
 			margin-bottom: 0.5rem;
 		}
 
+
+
 		h1 {
 			color: rgba(var(--color), 1);
 			font-size: 2rem;
@@ -146,6 +149,7 @@
 			height: 100px;
 			margin-bottom: 1rem;
 		}
+		
 
 		h1 {
 			font-size: 2rem;

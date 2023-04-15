@@ -5,6 +5,18 @@
 	import VanishingHeader from './VanishingHeader.svelte';
 </script>
 
+<svelte:window
+	on:keydown={(e) => {
+		if (e.key === 'Escape') {
+			document.querySelector('input').blur();
+		}
+		if (e.key === '/') {
+			e.preventDefault();
+			document.querySelector('input').focus();
+		}
+	}}
+/>
+
 <VanishingHeader duration="350ms" offset={50} tolerance={5}>
 	<header>
 		<div class="logo">

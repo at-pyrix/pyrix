@@ -46,7 +46,6 @@
 <main>
 	<Cursor />
 	<Hero><Nav /></Hero>
-	<MyStory />
 </main>
 
 <style lang="scss">
