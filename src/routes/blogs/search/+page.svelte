@@ -22,12 +22,9 @@
 
 	let results = [];
 
-
-	onMount(() => {
-		searchQuery = $page.url.searchParams.toString().split('q=')[1];
-		search(searchQuery).then((res) => {
-			results = res;
-		});
+	$: searchQuery = $page.url.searchParams.toString().split('q=')[1];
+	search(searchQuery).then((res) => {
+		results = res;
 	});
 </script>
 
