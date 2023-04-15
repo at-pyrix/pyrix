@@ -4,43 +4,19 @@
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
 	import CategoriesGrid from '$lib/blogs/CategoriesGrid.svelte';
 	import FeaturedCarrousel from '$lib/blogs/FeaturedCarrousel.svelte';
-	import { daysAgo, estimateReadTime, lighten } from '$lib/blogs/utils';
+	import { lighten } from '$lib/blogs/utils.js';
 
 	let featuredPosts = data.blogs.filter((blog) => blog.featured === true).slice(0, 1);
+	let latestPosts = data.blogs.filter((blog) => !featuredPosts.find((fp) => fp.title === blog.title));
 
-	featuredPosts = featuredPosts.map((blog) => ({
-		title: blog.title,
-		description: blog.description,
-		category: blog.category.name,
-		slug: blog.slug.current,
-		color: lighten(blog.featuredImage.asset.metadata.palette.dominant.background, 0.75),
-		symbol: blog.category.icon,
-		featuredImage: blog.featuredImage,
-		coverImage: blog.featuredImage.asset.url + '?w=1000&fm=webp',
-		imageSrc: blog.featuredImage.asset.creditLine || blog.featuredImage.source,
-		url: `/article/${blog.slug.current}`,
-		ert: `${estimateReadTime(blog)} mins`,
-		daysAgo: daysAgo(blog.date)
-	}));
+	featuredPosts.forEach((post) => {
+		post.coverImage = post.coverImage + '?w=1000&fm=webp';
+		post.color = lighten(post.avgColor, 0.75);
+	});
 
-	let latestPosts = data.blogs
-		.filter((blog) => !featuredPosts.find((fp) => fp.title === blog.title))
-		.map((blog) => ({
-			title: blog.title,
-			description: blog.description,
-			category: blog.category.name,
-			slug: blog.slug.current,
-			color: blog.category.color,
-			symbol: blog.category.icon,
-			daysAgo: daysAgo(blog.date),
-			coverImage: blog.featuredImage.asset.url + '?w=400&fm=webp',
-			placeholderImage: blog.featuredImage.asset.metadata.lqip,
-			imageSrc: blog.featuredImage.asset.creditLine || blog.featuredImage.source,
-			tags: blog.tags,
-			daysAgo: daysAgo(blog.date),
-			url: `/article/${blog.slug.current}`,
-			ert: `${estimateReadTime(blog)} mins`
-		}));
+	latestPosts.forEach((post) => {
+		post.coverImage = post.coverImage + '?w=400&fm=webp';
+	});
 
 	data.categories.forEach((category) => {
 		category.coverImage = category.image.asset.url + '?w=200&fm=webp';

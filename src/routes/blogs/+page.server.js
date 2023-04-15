@@ -1,4 +1,5 @@
 import client from '$lib/blogs/sanityClient';
+import { estimateReadTime, daysAgo } from '$lib/blogs/utils.js';
 import { writable } from 'svelte/store';
 let fetched = writable({ blogs: null, categories: null });
 
@@ -9,13 +10,22 @@ fetched.subscribe((value) => {
 });
 
 async function fetch() {
-	const blogs = await client.fetch(`*[_type == "blog"] | order(_updatedAt desc) {
-		...,
-		category->{
-			name,
-			icon,
-			color
-		},
+	const blogs = await client.fetch(`
+	*[_type == "blog"] | order(_updatedAt desc) {
+		title,
+		description,
+		body,
+		date,
+		"category": category->name,
+		"slug": slug.current,
+		"color": category->color,
+		"symbol": category->icon,
+		tags,
+		"coverImage": featuredImage.asset->url,
+		"url": "/article/" + slug.current,
+		"imageSrc": featuredImage.asset -> creditLine,
+		featured,
+		"avgColor": featuredImage.asset->metadata.palette.dominant.background,
 		featuredImage{
 			asset->{
 				...,
@@ -24,7 +34,8 @@ async function fetch() {
 		}
 	}
 	`);
-	const categories = await client.fetch(`*[_type == "category"]{
+	const categories = await client.fetch(`
+	*[_type == "category"]{
 		...,
 		image {
 			asset->{
@@ -33,12 +44,16 @@ async function fetch() {
 			}
 		},
 		"count": count(*[_type == "blog" && references(^._id)])
-	}
-	| order(-count)
-	[0...5]
+	} | order(-count) [0...5]
 	`);
 
+
+	
 	if (blogs && categories) {
+		blogs.forEach((blog) => {
+			blog.ert = estimateReadTime(blog.body) + ' mins read';
+			blog.daysAgo = daysAgo(blog.date);
+		});
 		data = { blogs, categories };
 		fetched.set({ blogs, categories });
 		return {

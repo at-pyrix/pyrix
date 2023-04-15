@@ -14,16 +14,9 @@
 		<p>Explore the categories of blogs</p>
 	</div>
 	{#each data.categories as category, i}
-		<div
-			in:fly={{ y: 100, duration: 300, delay: i * 100 }}
-			class="category card-item"
-			style="background: url('{category.image.asset.url + '?w=50&fm=webp&blur=100'}');background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				grid-area: {'item-' + (i + 2)};"
-		>
+		<div in:fly={{ y: 100, duration: 300, delay: i * 100 }} class="category card-item" style="grid-area: {'item-' + (i + 2)};">
 			<a href="/blogs/explore/{category.name}">
-				<div class="overlay" style="background-color: rgba({category.color}, .8);">
+				<div class="overlay" style="background-color: rgba({category.color}, 1);">
 					<Icon icon={category.icon} />
 					<h2>{category.name}</h2>
 					<span class="count">{category.count} posts</span>
@@ -102,11 +95,12 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 1rem;
+		transition: border-radius 0.2s ease-in-out, filter 0.3s;
+
 		@include hover {
 			filter: brightness(1.1);
 			cursor: pointer;
 			border-radius: 0.5rem;
-			transition: border-radius 0.2s ease-in-out, filter 0.3s;
 		}
 	}
 

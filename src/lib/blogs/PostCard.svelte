@@ -20,7 +20,7 @@
 <div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }} style={`--color: ${post.color}`}>
 	<a href={post.url} class="article-link">
 		<div class="card-image">
-			<img data-src={post.coverImage} src={post.placeholderImage} alt="thumbnail" title={post.imageSrc} use:lazyImage={{ threshold: 0.5 }} />
+			<img data-src={post.coverImage} src={post.featuredImage.asset.metadata.lqip} alt="thumbnail" title={post.imageSrc} use:lazyImage={{ threshold: 0.5 }} />
 		</div>
 	</a>
 	<div class="card-content">

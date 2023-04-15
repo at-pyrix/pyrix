@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
-	import { daysAgo, estimateReadTime } from '$lib/blogs/utils';
+	import { daysAgo, estimateReadTime } from '$lib/blogs/utils.js';
 	import Icon from '@iconify/svelte';
 
 	export let data;

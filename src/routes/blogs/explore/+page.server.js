@@ -1,5 +1,6 @@
 import client from '$lib/blogs/sanityClient';
 import { writable } from 'svelte/store';
+
 let fetched = writable({ categories: null });
 
 let data;
@@ -11,12 +12,6 @@ fetched.subscribe((value) => {
 async function fetch() {
 	const categories = await client.fetch(`*[_type == "category"] {
             ...,
-			image {
-				asset->{
-					...,
-					metadata
-				}
-			},
             "count": count(*[_type == "blog" && references(^._id)])
         }
 	`);

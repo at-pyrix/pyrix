@@ -29,7 +29,7 @@
 		<li id="search" class:active={$page.url.pathname.startsWith('/blogs/search')}>
 			<a href="/blogs/search" on:click|preventDefault={handleSearch}>
 				<Icon icon={$page.url.pathname.startsWith('/blogs/search') ? 'bxs:search' : 'bx:search'} />
-				<span>Explore</span>
+				<span>Search</span>
 			</a>
 		</li>
 		<li id="explore" class:active={$page.url.pathname.startsWith('/blogs/explore')}>
@@ -50,10 +50,10 @@
 				<span>Contact</span>
 			</a>
 		</li>
-		<li id="about" class="link">
+		<li id="about" class="link" class:active={$page.url.pathname === '/about'}>
 			<a href="/about">
 				<Icon icon={$page.url.pathname === '/about' ? 'material-symbols:info-rounded' : 'material-symbols:info-outline-rounded'} />
-				<span>Contact</span>
+				<span>About</span>
 			</a>
 		</li>
 	</ul>
@@ -105,7 +105,8 @@
 
 		border-radius: 1rem;
 		background: linear-gradient(136.91deg, $clr-bg-3 0%, $clr-bg-350 50%, $clr-bg-3 100%);
-		transition: 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+		transition: 0.2s cubic-bezier(0.86, 0, 0.07, 1), filter 0.3s;
+		transition-delay: 0.1s;
 		cursor: pointer;
 
 		:global(svg) {
@@ -146,6 +147,7 @@
 			opacity: 0;
 			pointer-events: none;
 			transition: all 0.1s ease-in-out;
+			transition-delay: 0.2s;
 		}
 	}
 
@@ -163,15 +165,19 @@
 		}
 
 		&#explore {
-			background: linear-gradient(136deg, #ff0077 0%, #ff2ec7 50%, #ff0076 100%);
+			background: linear-gradient(136deg, #F94A81 0%, #ff2ec7 50%, #F94A81 100%);
 		}
 
 		&#saved {
-			background: linear-gradient(136deg, #2ba1d8 0%, #69a8db 50%, #2b78a5 100%);
+			background: linear-gradient(136deg, #008af9 0%, #1b98ff 50%, #008af9 100%);
 		}
 
 		&#contact {
 			background: linear-gradient(136deg, #8a68e9 0%, #af71ff 50%, #995bd3 100%);
+		}
+
+		&#about {
+			background: linear-gradient(136deg, #4c8077 0%, #63baab 50%, #4c8077 100%);
 		}
 	}
 

@@ -17,6 +17,8 @@
 		'bxs:navigation',
 		'bxs:search',
 		'bxs:star',
+		'ic:twotone-construction',
+		'ph:book-bookmark-thin',
 		'ic:round-close',
 		'ic:round-menu',
 		'ic:twotone-construction',

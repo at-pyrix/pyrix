@@ -8,40 +8,28 @@
 
 <svelte:head>
 	<!-- Primary Meta Tags -->
-	<title>Contact | NotYasho</title>
-	<meta name="title" content="Contact | NotYasho" />
+	<title>About | NotYasho</title>
+	<meta name="title" content="About | NotYasho" />
 	<meta
 		name="description"
-		content="Official contact page for my website. Contact me through this contact form. (writing these long-ass descriptions is such a pain)"
+        content="About page - NotYasho. I'm a developer/designer who loves to code. This is my personal website where I post my projects and blogs."
 	/>
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://notyasho.netlify.app/contact" />
-	<meta property="og:title" content="Contact | NotYasho" />
+	<meta property="og:url" content="https://notyasho.netlify.app/about" />
+	<meta property="og:title" content="About | NotYasho" />
 	<meta
 		property="og:description"
-		content="Official contact page for my website. Contact me through this contact form. (writing these long-ass descriptions is such a pain)"
-	/>
-	<meta
-		property="og:image"
-		content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/contact.png"
+		content="About page - NotYasho. I'm a developer/designer who loves to code. This is my personal website where I post my projects and blogs."
 	/>
 
 	<!-- Twitter -->
-	<meta
-		property="twitter:card"
-		content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/contact.png"
-	/>
-	<meta property="twitter:url" content="https://notyasho.netlify.app/contact" />
-	<meta property="twitter:title" content="Contact | NotYasho" />
+	<meta property="twitter:url" content="https://notyasho.netlify.app/about" />
+	<meta property="twitter:title" content="About | NotYasho" />
 	<meta
 		property="twitter:description"
-		content="Official contact page for my website. Contact me through this contact form. (writing these long-ass descriptions is such a pain)"
-	/>
-	<meta
-		property="twitter:image"
-		content="https://raw.githubusercontent.com/NotYasho/notyasho.netlify.app/master/static/img/thumbnails/contact.png"
+		content="About page - NotYasho. I'm a developer/designer who loves to code. This is my personal website where I post my projects and blogs."
 	/>
 </svelte:head>
 
@@ -55,6 +43,8 @@
 <style lang="scss">
 	main {
 		max-width: 100%;
+		min-height: 100vh !important;
+		height: 100% !important;
 		padding: 1.4rem 1rem;
 		margin-left: 4.8rem;
 		margin-top: 4.2rem;
@@ -97,7 +87,6 @@
 			padding: 5vh 5vw 12vh 5vw;
 			margin-block: 0 5rem;
 			padding-block: 1rem;
-			height: 90vh;
 		}
 
 		main::before {
