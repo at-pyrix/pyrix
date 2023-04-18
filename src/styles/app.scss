@@ -118,6 +118,7 @@ select {
 
 .btn.btn-primary {
 	background-color: $accent-2;
+	color: white;
 
 	@include hover {
 		background-color: $accent-1;

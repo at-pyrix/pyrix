@@ -23,7 +23,7 @@
 				<h2>Under Construction</h2>
 			</div>
 			<div class="modal-body">
-				<p>Thanks for visiting! Just a heads up: <strong>this site is still under development</strong>. If something breaks, that's the reason.</p>
+				<p>Thanks for visiting! Just a heads up: <strong><a href="/about"><s>this site is still under development</s></a></strong>. If something breaks, that's the reason.</p>
 				<p>
 					The articles are mostly placeholders and AI-generated, so <strong
 						>they may contain false information</strong

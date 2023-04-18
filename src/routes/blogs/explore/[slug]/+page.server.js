@@ -1,36 +1,5 @@
-import sanityClient from '@sanity/client';
-
-const client = sanityClient({
-	projectId: 'u62jjaxi',
-	dataset: 'production',
-	apiVersion: '2023-01-05',
-	useCdn: false
-});
-
-function daysAgo(strDate) {
-	let date = new Date(strDate.replaceAll('-', '/'));
-	let today = new Date();
-	const days = parseInt((today - date) / (1000 * 60 * 60 * 24), 10);
-
-	if (days === 0) {
-		return 'today';
-	} else if (days < 30) {
-		if (days > 7) {
-			return Math.floor(days / 7) + (days / 7 <= 1 ? ' week' : ' weeks') + ' ago';
-		}
-		return days + ' day' + (days > 1 ? 's' : '') + ' ago';
-	} else if (days < 365) {
-		let months = Math.floor(days / 30);
-		return months + ' month' + (months > 1 ? 's' : '') + ' ago';
-	} else {
-		let years = Math.floor(days / 365);
-		let remainingDays = days % 365;
-		return (
-			years + ' year' + (years > 1 ? 's' : '') + (remainingDays > 0 ? ' ' + remainingDays + ' day' + (remainingDays > 1 ? 's' : '') : '') + ' ago'
-		);
-	}
-}
-
+import client from '$lib/blogs/sanityClient.js';
+import { daysAgo, estimateReadTime } from '$lib/blogs/utils.js';
 export async function load({ params }) {
 	const category = await client.fetch(`*[_type == "category" && name == "${params.slug}"][0] {
 		...,
@@ -43,27 +12,35 @@ export async function load({ params }) {
 	}
 	`);
 	const blogs = await client.fetch(`*[_type == "blog" && category._ref=="${category._id}"] {
-		...,
-		category->{
-		  name,
-		  image,
-		  icon,
-		  color
-		},
+		title,
+		description,
+		body,
+		date,
+		"category": category->name,
+		"slug": slug.current,
+		"color": category->color,
+		"symbol": category->icon,
+		tags,
+		"coverImage": featuredImage.asset->url,
+		"url": "/article/" + slug.current,
+		"imageSrc": featuredImage.asset -> creditLine,
+		featured,
+		"avgColor": featuredImage.asset->metadata.palette.dominant.background,
 		featuredImage{
 			asset->{
 				...,
 				metadata
 			}
 		}
-	  }`);
+	}`);
 
 	if (category && blogs) {
+		blogs.forEach((blog) => {
+			blog.ert = estimateReadTime(blog.body) + ' mins read';
+			blog.daysAgo = daysAgo(blog.date);
+		});
 		return {
-			blogs: blogs.map((blog) => ({
-				...blog,
-				daysAgo: daysAgo(blog.date)
-			})),
+			blogs,
 			category
 		};
 	}

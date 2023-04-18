@@ -1,25 +1,13 @@
 <script>
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
 	import Icon from '@iconify/svelte';
-	import { blur } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	export let data;
 
-	let posts;
-	if (data.blogs && data.blogs.length > 0) {
-		posts = data.blogs.map((blog) => ({
-			title: blog.title,
-			description: blog.description,
-			category: blog.category.name,
-			color: blog.category.color,
-			symbol: blog.category.icon,
-			daysAgo: blog.daysAgo,
-			coverImage: blog.featuredImage.asset.url + '?w=400&fm=webp',
-			placeholderImage: blog.featuredImage.asset.metadata.lqip,
-			imageSrc: blog.featuredImage.source,
-			url: `/article/${blog.slug.current}`,
-			ert: '5 mins'
-		}));
-	}
+	let posts = data.blogs;
+	posts.forEach((post) => {
+		post.coverImage = post.coverImage + '?w=400&fm=webp';
+	});
 </script>
 
 <svelte:head>
@@ -59,7 +47,7 @@
 			<PostGrid {posts} />
 		</section>
 	{:else}
-		<section class="error" in:blur>
+		<section class="error" in:fade>
 			<Icon icon="tabler:line-dotted" />
 			<h1>Nothing but void :/</h1>
 			<p>Looks like nothing has been posted related to <strong>{data.category.name}</strong></p>
@@ -69,7 +57,8 @@
 
 <style lang="scss">
 	main {
-		height: 100vh;
+		min-height: 100vh;
+		height: 100%;
 	}
 
 	.cover {

@@ -1,7 +1,6 @@
 <script>
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
-	import { blur } from 'svelte/transition';
 	import { daysAgo, estimateReadTime } from '$lib/blogs/utils.js';
 	import Icon from '@iconify/svelte';
 
@@ -31,7 +30,7 @@
 
 <section class="main" in:fly={{ y: 10, duration: 500 }}>
 	{#if data.posts.length === 0}
-		<section class="error" in:blur>
+		<section class="error" in:fade>
 			<Icon icon="solar:book-bookmark-minimalistic-broken" />
 			<h1>Nothing saved yet</h1>
 			<p>Save your favorite blogs to read them later</p>
