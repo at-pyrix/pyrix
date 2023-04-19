@@ -25,7 +25,7 @@
 
 		<div class="search">
 			<form on:submit|preventDefault={(e) => goto(`/blogs/search?q=${e.target.search.value}`)}>
-				<input type="text" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
+				<input type="search" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
 				<button title="Search"><Icon icon="bx:search" /></button>
 			</form>
 		</div>
