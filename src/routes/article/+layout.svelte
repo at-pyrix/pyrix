@@ -29,7 +29,7 @@
 		pointer-events: none;
 		height: 100vh;
 		opacity: 0.5;
-		z-index: -100;
+		z-index: 100;
 		animation: growGradient 2s ease-in;
 	}
 

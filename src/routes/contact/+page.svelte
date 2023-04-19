@@ -82,7 +82,7 @@
 <div class="contact">
 	<form action="https://formspree.io/f/xyyordbl" method="POST" on:submit|preventDefault={onSubmit}>
 		<header in:fly={{ y: -10, duration: 500, delay: 100 }}>
-			<h2>Say hello!</h2>
+			<h2>Say Hello!</h2>
 			<p>Your email information, name or anything will not be published.</p>
 		</header>
 		<div class="input-wrapper" in:fly={{ y: 10, duration: 500, delay: 200 }}>
@@ -181,7 +181,9 @@
 	}
 
 	input:-webkit-autofill {
-		-webkit-background-clip: text;
+		-webkit-text-fill-color: $clr-fg-4 !important;
+		-webkit-box-shadow: 0 0 0px 300px #1E1A2C inset !important;
+		border: 1px solid $accent-0 !important;
 	}
 
 	textarea {

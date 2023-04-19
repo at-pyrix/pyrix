@@ -77,7 +77,7 @@
 		title={data.blogs.featuredImage.source}
 		use:lazyImage={{ threshold: 0.5 }}
 	/>
-	<article transition:fly>
+	<article transition:fly class="main-content">
 		{@html html}
 	</article>
 </div>

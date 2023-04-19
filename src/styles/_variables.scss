@@ -1,6 +1,6 @@
 // Colors
 $bg: hsl(248, 28%, 10%);
-$fg: hsl(265, 0%, 100%);
+$fg: hsl(248, 5%, 100%);
 $accent: hsl(261, 100%, 50%);
 $secondary: hsl(327, 100%, 50%);
 $tertiary: hsl(41, 100%, 50%);
@@ -30,6 +30,7 @@ $clr-fg-350: hsl(hue($fg) - 25deg, saturation($fg) + 5%, lightness($fg) - 30%);
 $clr-fg-4: hsl(hue($fg) - 25deg, saturation($fg) + 20%, lightness($fg) - 24%);
 $clr-fg-450: hsl(hue($fg) - 25deg, saturation($fg) + 5%, lightness($fg) - 45%);
 $clr-fg-5: hsl(hue($fg) - 25deg, saturation($fg) + 16%, lightness($fg) - 80%);
+$clr-text: hsl(247, 53%, 90%);
 
 $clr-bg-1: hsl(hue($bg) + 1deg, saturation($bg) - 14%, lightness($bg) + 7%);
 $clr-bg-2: hsl(hue($bg) + 4deg, saturation($bg) - 10%, lightness($bg) + 5%);
@@ -43,7 +44,7 @@ $clr-card: hsla(hue($bg), saturation($bg) - 12%, lightness($bg) + 5%, 0.35);
 
 $accent-0: hsl(hue($accent) - 14deg, saturation($accent), lightness($accent) + 30%);
 $accent-05: hsl(hue($accent), saturation($accent), lightness($accent) + 15%);
-$accent-1: hsl(hue($accent) + 15deg, saturation($accent), lightness($accent));
+$accent-1: hsl(hue($accent) + 5deg, saturation($accent), lightness($accent) + 5%);
 $accent-2: $accent;
 $accent-3: hsl(hue($accent), saturation($accent), lightness($accent) - 22%);
 $accent-4: hsl(hue($accent), saturation($accent), lightness($accent) - 36%);

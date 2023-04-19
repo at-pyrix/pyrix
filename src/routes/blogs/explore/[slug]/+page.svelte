@@ -38,7 +38,6 @@
 			<div class="cover">
 				<img src={data.category.image.asset.url} alt="alt" />
 				<div class="text">
-					<Icon icon={data.category.icon} />
 					<h1>{data.category.name}</h1>
 					<span id="count">Posts: {posts.length}</span>
 				</div>
@@ -72,14 +71,14 @@
 		justify-content: center;
 		margin-bottom: 2rem;
 
-		img::after {
+		&::after {
 			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+			background: linear-gradient(to top, $bg 5%, transparent 100%);
 		}
 	}
 
@@ -88,22 +87,16 @@
 		z-index: 1;
 		text-align: center;
 
-		:global(svg) {
-			font-size: 5rem;
-			color: rgba(var(--color), 1);
-			margin-bottom: 0.5rem;
-		}
-
-
-
 		h1 {
 			color: rgba(var(--color), 1);
-			font-size: 2rem;
+			filter: saturate(0.4);
+			font-size: 2.3rem;
 		}
 
 		span {
 			color: rgba(var(--color), 1);
-			font-size: 1rem;
+			filter: saturate(0.4);
+			font-size: 1.3rem;
 		}
 	}
 
@@ -138,7 +131,6 @@
 			height: 100px;
 			margin-bottom: 1rem;
 		}
-		
 
 		h1 {
 			font-size: 2rem;
@@ -161,8 +153,8 @@
 		position: fixed;
 		pointer-events: none;
 		height: 100%;
+		z-index: 100;
 		opacity: 0.5;
-		z-index: -100;
 		animation: growGradient 2s ease-in;
 	}
 
@@ -175,7 +167,7 @@
 	section::after {
 		right: 0;
 		top: 0;
-		background-image: radial-gradient(at 100% 15%, rgba(var(--color), 0.3) 0px, transparent 50%);
+		background-image: radial-gradient(at 100% 15%, rgba(var(--color), 0.2) 0px, transparent 50%);
 	}
 
 	@media only screen and (max-width: $tablet) {

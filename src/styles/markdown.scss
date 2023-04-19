@@ -16,15 +16,15 @@
 		font-size: medium;
 	}
 }
-
 @media screen and (max-width: $tablet) {
-	.article-body p:nth-of-type(2)::first-letter {
+	.article-body .main-content p:first-of-type::first-letter {
 		color: $accent-0;
+		font-weight: bold;
+		font-size: 70px;
 		float: left;
-		font-size: 85px;
-		padding-top: 0.175ch;
-		font-family: circular;
-		padding-right: 0.1ch;
+		line-height: 1;
+		padding-right: 8px;
+		margin-top: -3px;
 	}
 }
 
@@ -68,7 +68,7 @@ h6 {
 }
 
 .article-body p {
-	color: transparentize($clr-fg-3, 0.1);
+	color: $clr-text;
 	margin-block: 1rem 1.5rem;
 	line-height: 1.7rem;
 
@@ -135,7 +135,7 @@ h6 {
 }
 
 .article-body img {
-	border-radius: 10px;
+	border-radius: 6px;
 }
 
 .article-body figure {
@@ -158,8 +158,6 @@ h6 {
 .article-body figcaption {
 	font-size: 14px;
 	color: $clr-fg-450;
-	font-weight: 100;
-	font-style: italic;
 	text-align: center;
 	margin-top: 10px;
 	margin: 0.6rem auto 0rem auto;
@@ -353,7 +351,7 @@ h6 {
 	border-radius: 8px;
 	position: absolute;
 	right: 1rem;
-	top: .5rem;
+	top: 0.5rem;
 	transition: 200ms ease;
 	outline: solid 1px #383055;
 	svg {
@@ -667,8 +665,7 @@ pre.copied .copy-code {
 	background-color: #26213a71;
 	padding-inline: 16px;
 	border-bottom: 0.1px solid #2b293a;
-	border-radius: 1rem 1rem 0 0 ;
-
+	border-radius: 1rem 1rem 0 0;
 }
 
 .code-block {
@@ -715,4 +712,8 @@ pre.copied .copy-code {
 .article-body .warning {
 	background: yellow;
 	color: black;
+}
+
+.article-body .hljs-comment {
+	color: #6a677a !important;
 }

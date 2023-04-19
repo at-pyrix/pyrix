@@ -110,6 +110,8 @@ select {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.188em;
+	flex-wrap: nowrap;
+	white-space: nowrap;
 
 	@include hover {
 		background-color: $accent-2;

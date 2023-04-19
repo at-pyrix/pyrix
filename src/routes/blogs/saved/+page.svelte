@@ -1,27 +1,15 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
-	import { daysAgo, estimateReadTime } from '$lib/blogs/utils.js';
 	import Icon from '@iconify/svelte';
 
 	export let data;
+	let posts = data.posts;
+	posts.forEach((post) => {
+		post.coverImage = post.coverImage + '?w=400&fm=webp';
+	});
 
-	let posts = data.posts.map((blog) => ({
-		title: blog.title,
-		description: blog.description,
-		category: blog.category.name,
-		slug: blog.slug.current,
-		color: blog.category.color,
-		symbol: blog.category.icon,
-		daysAgo: daysAgo(blog.date),
-		coverImage: blog.featuredImage.asset.url + '?w=400&fm=webp',
-		placeholderImage: blog.featuredImage.asset.metadata.lqip,
-		imageSrc: blog.featuredImage.source,
-		tags: blog.tags,
-		daysAgo: daysAgo(blog.date),
-		url: `/article/${blog.slug.current}`,
-		ert: `${estimateReadTime(blog)} mins`
-	}));
+	
 </script>
 
 <svelte:head>
@@ -29,7 +17,7 @@
 </svelte:head>
 
 <section class="main" in:fly={{ y: 10, duration: 500 }}>
-	{#if data.posts.length === 0}
+	{#if posts.length === 0}
 		<section class="error" in:fade>
 			<Icon icon="solar:book-bookmark-minimalistic-broken" />
 			<h1>Nothing saved yet</h1>

@@ -215,6 +215,7 @@
 		margin-block: 1.5rem;
 		font-family: $title-secondary-font;
 		font-size: clamp(0.8rem, 1.9vw, 1.1rem);
+		color: $clr-text;
 
 		overflow: hidden;
 		display: -webkit-box;

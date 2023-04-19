@@ -4,7 +4,7 @@ import adapter from '@sveltejs/adapter-netlify';
 const config = {
 	preprocess: preprocessor({
 		scss: {
-			prependData: `@use './src/styles/_variables.scss' as *;`
+			prependData: `@use './src/styles/variables.scss' as *;`
 		}
 	}),
 	kit: {
@@ -12,7 +12,12 @@ const config = {
 			edge: false,
 			split: false,
 			compress: true
-		})
+		}),
+		alias: {
+			'fonts': '/static/fonts',
+			'img': '/static/img',
+			'styles': '/src/styles'
+        }
 	}
 };
 

@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import FirstTime from '$lib/Other/firstTime.svelte';
 	import Jumper from '$lib/Other/Jumper.svelte';
-
+	import '../../styles/fonts.css';
 	import '../../styles/markdown.scss';
 
 	let loaded = false;
@@ -88,7 +88,7 @@
 		pointer-events: none;
 		height: 100vh;
 		opacity: 0.5;
-		z-index: -100;
+		z-index: 100;
 		animation: growGradient 2s ease-in;
 	}
 

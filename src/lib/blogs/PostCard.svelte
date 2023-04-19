@@ -20,8 +20,13 @@
 <div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }} style={`--color: ${post.color}`}>
 	<a href={post.url} class="article-link">
 		<div class="card-image">
-			<img data-src={post.coverImage} src={post.featuredImage.asset.metadata.lqip
-			} alt="thumbnail" title={post.imageSrc} use:lazyImage={{ threshold: 0.5 }} />
+			<img
+				data-src={post.coverImage}
+				src={post.featuredImage.asset.metadata.lqip}
+				alt="thumbnail"
+				title={post.imageSrc}
+				use:lazyImage={{ threshold: 0.5 }}
+			/>
 		</div>
 	</a>
 	<div class="card-content">
@@ -29,16 +34,20 @@
 			<a category={post.category} class="category" title="Category" href="/blogs/explore/{post.category}" style="--color: {post.color}"
 				><Icon icon={post.symbol} /><span>{post.category}</span></a
 			>
-			<span id="sep">•</span>
-			<span class="ert">
-				<Icon icon="bx:time" />
-				<span title="Estimated reading time">{post.ert}</span>
-			</span>
-			<span id="sep">•</span>
-			<span class="date">
-				<Icon icon="bx:calendar" />
-				<span title="Date Published">{post.daysAgo}</span>
-			</span>
+			{#if post.ert}
+				<span id="sep">•</span>
+				<span class="ert">
+					<Icon icon="bx:time" />
+					<span title="Estimated reading time">{post.ert}</span>
+				</span>
+			{/if}
+			{#if post.daysAgo}
+				<span id="sep">•</span>
+				<span class="date">
+					<Icon icon="bx:calendar" />
+					<span title="Date Published">{post.daysAgo}</span>
+				</span>
+			{/if}
 		</div>
 		<div class="card-info">
 			<a href={post.url} class="article-link" data-sveltekit-preload-data="hover">

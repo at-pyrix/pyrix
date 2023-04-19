@@ -84,7 +84,7 @@
 		left: 1.35rem;
 		line-height: 4.1rem;
 
-		color: $clr-fg-3;
+		color: $clr-fg-350;
 		cursor: pointer;
 	}
 

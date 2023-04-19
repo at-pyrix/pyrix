@@ -49,9 +49,11 @@ async function fetch() {
 
 	if (blogs && categories) {
 		blogs.forEach((blog) => {
-			blog.ert = estimateReadTime(blog.body) + ' mins read';
+			blog.ert = estimateReadTime(blog.body) + ' min read';
 			blog.daysAgo = daysAgo(blog.date);
+			delete blog.body;
 		});
+
 		data = { blogs, categories };
 		fetched.set({ blogs, categories });
 		return {

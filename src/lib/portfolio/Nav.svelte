@@ -39,7 +39,7 @@
 				<a href="/blogs">Blogs</a>
 			</li>
 			<li>
-				<a href="#my-story">About</a>
+				<a href="/about">About</a>
 			</li>
 			<li>
 				<a href="/contact">Contact</a>

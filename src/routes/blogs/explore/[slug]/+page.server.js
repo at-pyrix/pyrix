@@ -36,8 +36,9 @@ export async function load({ params }) {
 
 	if (category && blogs) {
 		blogs.forEach((blog) => {
-			blog.ert = estimateReadTime(blog.body) + ' mins read';
+			blog.ert = estimateReadTime(blog.body) + ' min read';
 			blog.daysAgo = daysAgo(blog.date);
+			delete blog.body;
 		});
 		return {
 			blogs,

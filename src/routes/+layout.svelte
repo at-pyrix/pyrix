@@ -28,9 +28,13 @@
 		'material-symbols:bookmark-remove-rounded',
 		'material-symbols:forward',
 		'material-symbols:info-outline-rounded',
-		'material-symbols:info-rounded'
+		'material-symbols:info-rounded',
+		'solar:arrow-to-top-left-broken',
+		'tabler:line-dotted',
+		'solar:book-bookmark-minimalistic-broken',
+		'solar:ghost-broken'
 	]);
-	const fontsLink = { rel: 'preload', href: '/fonts/fonts.css', as: 'style' };
+	const fontsLink = { rel: 'preload', href: '/src/styles/fonts.css', as: 'style' };
 
 	NProgress.configure({
 		easing: 'ease',

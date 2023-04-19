@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import client from '$lib/blogs/sanityClient';
 	import PostGrid from '$lib/blogs/PostGrid.svelte';
+	import { estimateReadTime, daysAgo } from '$lib/blogs/utils';
 	import Icon from '@iconify/svelte';
 	import { fade } from 'svelte/transition';
 
@@ -11,8 +12,9 @@
 	async function search(query) {
 		timeout = false;
 		results = [];
-		const result = await client.fetch(
-			`*[_type == "blog" && (title match $query || description match $query || tags[] match $query)] | order(date desc) {
+		let response = await client
+			.fetch(
+				`*[_type == "blog" && (title match $query || description match $query || tags[] match $query)] | order(date desc) {
 				title,
 				description,
 				body,
@@ -34,14 +36,21 @@
 					}
 				}
 			}`,
-			{ query }
-		);
+				{ query }
+			)
+			.then((res) => {
+				return res.map((post) => {
+					return {
+						...post,
+						ert: estimateReadTime(post.body) + ' min read',
+						daysAgo: daysAgo(post.date),
+						coverImage: post.coverImage + '?w=400&fm=webp'
+					};
+				});
+			});
 
-		setTimeout(() => {
-			timeout = true;
-		}, 500);
-
-		return result;
+		timeout = true;
+		return response;
 	}
 
 	let results = [];
@@ -50,19 +59,21 @@
 	$: search(searchQuery).then((res) => {
 		results = res;
 	});
-
-	$: console.log(results);
 </script>
 
-<h1>Search results for "{searchQuery}"</h1>
-
-{#if !timeout && !results.length}
+{#if !searchQuery}
+	<section class="error" in:fade>
+		<Icon icon="solar:arrow-to-top-left-broken" />
+		<h1>No search query</h1>
+		<p>Try searching from the search bar above.</p>
+	</section>
+{:else if !timeout && !results.length}
 	<svg width="48" class="loader" height="48" viewBox="0 0 24	 24" xmlns="http://www.w3.org/2000/svg">
-		<style lang="scss">
+		<style>
 			.spinner_7mtw {
 				transform-origin: center;
 				animation: spinner_jgYN 0.6s linear infinite;
-				fill: white;
+				fill: #828394;
 			}
 			@keyframes spinner_jgYN {
 				100% {

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('JetBrainsMonoNerdFontComplete-Regular.woff2') format('woff2');
+    src: url('/fonts/JetbrainsMono/JetBrainsMonoNerdFontComplete-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('JetBrainsMonoNerdFontComplete-Italic.woff2') format('woff2');
+    src: url('/fonts/JetbrainsMono/JetBrainsMonoNerdFontComplete-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
