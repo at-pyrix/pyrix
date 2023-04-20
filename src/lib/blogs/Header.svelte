@@ -3,9 +3,33 @@
 	import Logo from '$lib/Other/logo.svelte';
 	import { goto } from '$app/navigation';
 	import VanishingHeader from './VanishingHeader.svelte';
+
+	let width;
+	let open;
+
+	function clearSearch() {
+		document.querySelector('.search input').value = '';
+		document.querySelector('header').classList.remove('open');
+		open = false;
+	}
+
+	function searchMobile(e) {
+		if (width < 768) {
+			if (open) {
+				document.querySelector('.search input').blur();
+				open = false;
+				return;
+			} else {
+				e.preventDefault();
+				open = true;
+				document.querySelector('.search input').focus();
+			}
+		}
+	}
 </script>
 
 <svelte:window
+	bind:innerWidth={width}
 	on:keydown={(e) => {
 		if (e.key === 'Escape') {
 			document.querySelector('input').blur();
@@ -18,15 +42,18 @@
 />
 
 <VanishingHeader duration="350ms" offset={50} tolerance={5}>
-	<header>
+	<header class:open>
 		<div class="logo">
-			<a href="/" alt="logo" aria-label="logo"> <Logo /> </a>
+			<Logo />
 		</div>
 
-		<div class="search">
+		<div class="search" on:blur={() => (open = false)}>
 			<form on:submit|preventDefault={(e) => goto(`/blogs/search?q=${e.target.search.value}`)}>
-				<input type="search" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" />
-				<button title="Search"><Icon icon="bx:search" /></button>
+				<back-btn on:click|preventDefault={clearSearch} on:keydown={() => 0}>
+					<Icon icon="bx:arrow-back" />
+				</back-btn>
+				<input type="search" name="search" placeholder="Try searching 'Why doesn't the search bar work?'" on:blur={(open = false)} />
+				<button title="Search" class="search-btn" action="submit" on:click={searchMobile}><Icon icon="bx:search" /></button>
 			</form>
 		</div>
 
@@ -37,6 +64,10 @@
 </VanishingHeader>
 
 <style lang="scss">
+	.search-btn :global(svg),
+	back-btn :global(svg) {
+		pointer-events: none;
+	}
 	header {
 		height: 4.2rem;
 		display: flex;
@@ -64,6 +95,14 @@
 	header .search {
 		width: calc(100% - 20rem);
 		z-index: 103;
+		transition: width 0.2s ease-in-out;
+
+		&:focus-within {
+			.search-btn:hover {
+				background: $accent-2;
+				color: $clr-fg-3;
+			}
+		}
 
 		input {
 			width: 70%;
@@ -94,11 +133,15 @@
 			opacity: 0.2;
 		}
 
-		button {
+		.search-btn {
+			display: inline-flex;
+		}
+
+		.search-btn,
+		back-btn {
 			width: 2.3rem;
 			height: 2.3rem;
 			position: relative;
-			display: inline-flex;
 			justify-content: center;
 			align-items: center;
 			border-radius: 0.3rem;
@@ -122,7 +165,8 @@
 	}
 
 	.search input:focus {
-		button {
+		.search-btn,
+		back-btn {
 			color: $clr-fg-2;
 			background: $accent-2;
 		}
@@ -156,17 +200,97 @@
 		}
 	}
 
+	back-btn {
+		display: none;
+	}
+
 	@media only screen and (max-width: $tablet) {
+		.logo {
+			margin-right: auto;
+		}
+
 		header {
 			background: $clr-bg-3-glass;
 			backdrop-filter: blur(10px);
 			margin: 0;
-			justify-content: center;
 			border-bottom: 1px solid $clr-bg-1;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding-inline: 5vw;
+			gap: 0.5rem;
 		}
 
-		header .github,
+		.search {
+			width: min-content !important;
+			margin: 0;
+			padding: 0;
+		}
+
 		header .search {
+			input {
+				display: none;
+			}
+
+			.search-btn {
+				border-radius: 100%;
+				background: none;
+				font-size: 1.2rem;
+				display: flex;
+
+				@include hover {
+					background: $clr-card;
+				}
+			}
+
+			.search-btn {
+				color: $clr-fg-4;
+			}
+		}
+
+		header.open {
+			background: $clr-bg-3;
+			justify-content: space-between;
+
+			.logo {
+				display: none;
+			}
+
+			.search {
+				width: calc(100% - 10vw) !important;
+				input {
+					display: block;
+				}
+			}
+			.search {
+				back-btn {
+					display: inline-flex;
+					position: absolute;
+					left: 5vw;
+					top: 1rem;
+				}
+
+				input {
+					position: absolute;
+					left: calc(5vw + 10%);
+					width: calc(80% - 10vw);
+				}
+				.search-btn,
+				back-btn {
+					border-radius: 0.3rem;
+				}
+
+				.search-btn {
+					position: relative;
+					left: 2.5rem;
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: $mobile) {
+		header .github {
 			display: none;
 		}
 	}

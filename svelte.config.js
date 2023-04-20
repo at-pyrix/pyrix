@@ -12,12 +12,7 @@ const config = {
 			edge: false,
 			split: false,
 			compress: true
-		}),
-		alias: {
-			'fonts': '/static/fonts',
-			'img': '/static/img',
-			'styles': '/src/styles'
-        }
+		})
 	}
 };
 

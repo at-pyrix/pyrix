@@ -34,7 +34,6 @@
 		'solar:book-bookmark-minimalistic-broken',
 		'solar:ghost-broken'
 	]);
-	const fontsLink = { rel: 'preload', href: '/src/styles/fonts.css', as: 'style' };
 
 	NProgress.configure({
 		easing: 'ease',
@@ -55,10 +54,6 @@
 		}
 	});
 </script>
-
-<svelte:head>
-	<link {...fontsLink} />
-</svelte:head>
 
 <FirstTime />
 <slot />

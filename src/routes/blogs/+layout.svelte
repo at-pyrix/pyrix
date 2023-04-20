@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import FirstTime from '$lib/Other/firstTime.svelte';
 	import Jumper from '$lib/Other/Jumper.svelte';
-	import '../../styles/fonts.css';
+	import '../../styles/fonts.scss';
 	import '../../styles/markdown.scss';
 
 	let loaded = false;
