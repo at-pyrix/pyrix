@@ -251,7 +251,7 @@
 			border-radius: 100%;
 
 			:global(svg) {
-				font-size: 1.4rem;
+				font-size: 1.5rem;
 			}
 
 			background: none !important;
