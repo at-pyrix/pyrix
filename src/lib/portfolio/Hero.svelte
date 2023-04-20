@@ -5,7 +5,7 @@
 	<slot />
 	<div class="hero__content" data-scroll>
 		<p>This portfolio will be updated once I get time to work on it. More information <a href="/about">here</a>.</p>
-		Meanwhile you can...
+		
 		<a class="btn btn-secondary" href="/blogs">READ THE BLOG</a>
 	</div>
 </section>
