@@ -1,5 +1,5 @@
 <main>
-	<h1>ABOUT ME</h1>
+	<h1>ABOUT</h1>
 	<hr />
 	<img
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
