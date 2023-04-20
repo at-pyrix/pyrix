@@ -70,7 +70,7 @@
 		position: relative;
 		font-size: larger;
 		top: -20px;
-		right: -10px;
+		right: -12px;
 		cursor: pointer;
 		opacity: 0.7;
 		transition: opacity 0.3s;
