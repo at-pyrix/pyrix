@@ -16,6 +16,7 @@ export const GET = async () => {
 	const pages = [
 		'about',
 		'contact',
+		'blogs',
 		'blogs/saved',
 		'blogs/explore',
 		...await getPostsData().then((data) => data.map((post) => `article/${post.slug.current}`)),
