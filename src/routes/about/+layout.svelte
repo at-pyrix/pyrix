@@ -82,7 +82,7 @@
 		main {
 			width: 100%;
 			margin: 0;
-			margin-top: 4.2rem !important;
+			margin-top: 5rem !important;
 			margin-bottom: 4rem;
 			padding: 5vh 5vw 12vh 5vw;
 			margin-block: 0 5rem;
