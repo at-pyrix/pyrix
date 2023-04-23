@@ -1,15 +1,22 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
 
 	let showModal = false;
 
 	onMount(() => {
 		const hasUnderstood = localStorage.getItem('hasUnderstood');
-		if (!hasUnderstood) showModal = true;
+		if (!hasUnderstood)
+			setTimeout(() => {
+				showModal = true;
+				setTimeout(() => {
+					showModal = false;
+				}, 10000);
+			}, 4000);
 	});
 
-	function destroy(e) {
+	function destroy() {
 		showModal = false;
 		localStorage.setItem('hasUnderstood', true);
 	}
@@ -17,22 +24,24 @@
 
 {#if showModal}
 	<div class="modal-overlay">
-		<div class="modal">
+		<div class="modal" transition:slide={{ duration: 200 }}>
 			<div class="modal-header">
-				<Icon icon="ic:twotone-construction" />
-				<h2>Under Construction</h2>
+				<Icon icon="mdi:warning-octagon" />
+				<h2>Heads Up</h2>
 			</div>
 			<div class="modal-body">
-				<p>Thanks for visiting! Just a heads up: <strong><a href="/about"><s>this site is still under development</s></a></strong>. If something breaks, that's the reason.</p>
 				<p>
-					The articles are mostly placeholders and AI-generated, so <strong
-						>they may contain false information</strong
-					>. Once the site is working, I'll delete them and post actual content.
+					Apologies for interrupting. <br />
+					Just a heads up: I <strong>no longer work on the developement of this site.</strong> <a href="/about">What happened?</a>
 				</p>
-				<p><strong>Thank you!</strong></p>
+				<p>
+					The articles are mostly placeholders and AI-generated, so <strong>they may contain false information</strong>. They will be deleted however,
+					once the site becomes saturated with actual content.
+				</p>
+				<p><strong>Thank you! and feel free to explore!</strong></p>
 			</div>
 			<div class="modal-footer">
-				<button class="cta-btn btn" on:click={destroy}>I understand</button>
+				<button class="cta-btn btn" on:click={destroy}>I UNDERSTAND</button>
 			</div>
 		</div>
 	</div>
@@ -40,8 +49,7 @@
 
 <style lang="scss">
 	.modal-overlay {
-		z-index: 1000000;
-		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 10000;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -50,12 +58,14 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 	.modal {
+		position: relative;
 		margin: 2rem;
 		font-family: 'Larsseit', sans-serif !important;
-		background-color: #1d1c2986;
+		background-color: #1d1c29c5;
 		backdrop-filter: blur(10px);
 		color: #fff;
 		padding: 20px;
@@ -63,7 +73,7 @@
 		border: 0.1px solid $accent-0;
 		text-align: center;
 		max-width: 500px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
 	}
 
 	.modal-header {
@@ -74,6 +84,7 @@
 		:global(svg) {
 			font-size: 3rem;
 			margin-bottom: 1rem;
+			color: $accent-0;
 		}
 	}
 
@@ -102,6 +113,7 @@
 		border: 1px solid $accent-0;
 		font-style: bold;
 		margin: 1rem auto;
+		background: transparent;
 	}
 
 	.cta-btn:hover {

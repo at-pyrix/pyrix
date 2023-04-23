@@ -25,7 +25,7 @@
 		Anyway, I just wanted to let you know what's going on. Don't worry, though - I'll be back at it as soon as I can. In the meantime, keep checking
 		the site for updates and don't hesitate to <a href="/contact">drop me a line if you've got any questions or comments.</a>
 	</p>
-	<p>Take care, stay awesome, and keep reading my AI-generated blogs!</p>
+	<p>Take care, stay awesome, and keep reading :)</p>
 	<p>
 		Best regards, <br />
 		<s>Not</s>Yasho
@@ -58,7 +58,7 @@
 	}
 
 	hr {
-		border-color: $clr-bg-5;
+		border-color: $clr-fg-5;
 		margin-block: 2rem;
 		width: 100%;
 	}
@@ -90,6 +90,15 @@
 		font-family: 'Larsseit', $body-font, sans-serif;
 		span {
 			color: $clr-fg-450;
+		}
+	}
+
+	p {
+		font-size: 19px;
+		font-family: $body-font;
+
+		@media screen and (max-width: $tablet) {
+			font-size: 17px;
 		}
 	}
 </style>

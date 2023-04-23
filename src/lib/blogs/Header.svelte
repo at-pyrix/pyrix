@@ -267,7 +267,7 @@
 					display: inline-flex;
 					position: absolute;
 					left: 5vw;
-					top: 1rem;
+					top: .8rem;
 				}
 
 				input {

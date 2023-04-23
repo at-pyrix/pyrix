@@ -4,7 +4,6 @@
 	import Footer from '$lib/blogs/Footer.svelte';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import FirstTime from '$lib/Other/firstTime.svelte';
 	import Jumper from '$lib/Other/Jumper.svelte';
 	import '../../styles/fonts.scss';
 	import '../../styles/markdown.scss';
@@ -45,7 +44,6 @@
 </svelte:head>
 
 {#if loaded}
-	<FirstTime />
 	<Header />
 	<Nav />
 	<main>

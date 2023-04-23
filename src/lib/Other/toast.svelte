@@ -20,9 +20,9 @@
 			</div>
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div class="close">
-			<Icon icon="material-symbols:close-rounded" on:click={() => show = false} />
+				<Icon icon="material-symbols:close-rounded" on:click={() => (show = false)} />
 			</div>
-				<div class="progress" />
+			<div class="progress" />
 		</div>
 	</div>
 {/if}
@@ -35,7 +35,7 @@
 		transform: translateX(-50%);
 		background: $clr-bg-3-glass;
 		border-radius: 14px;
-		border-left: 0.5rem solid $accent-2;
+		border-left: 0.5rem solid $accent-0;
 		padding: 1.25rem 2.18rem 1.25rem 1.56rem;
 		z-index: 100;
 		overflow: hidden;
@@ -87,7 +87,7 @@
 		left: 0;
 		height: 3px;
 		width: 100%;
-		background: $accent-3;
+		background: $accent-0;
 	}
 
 	.toast .progress::before {
@@ -97,7 +97,7 @@
 		right: 0;
 		height: 100%;
 		width: 100%;
-		background: $accent-2;
+		background: $accent-0;
 	}
 
 	.toast .progress::before {
@@ -118,7 +118,7 @@
 		/* ORIGINALLY 166 */
 		stroke-width: 2;
 		stroke-miterlimit: 10;
-		stroke: $accent-2;
+		stroke: $accent-0;
 		fill: none;
 		animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 	}
@@ -131,7 +131,7 @@
 		stroke-width: 2;
 		stroke: #fff;
 		stroke-miterlimit: 10;
-		box-shadow: inset 0px 0px 0px $accent-2;
+		box-shadow: inset 0px 0px 0px $accent-0;
 		animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 	}
 
@@ -160,7 +160,7 @@
 	}
 	@keyframes fill {
 		100% {
-			box-shadow: inset 0px 0px 0px 80px $accent-2;
+			box-shadow: inset 0px 0px 0px 80px $accent-0;
 		}
 	}
 
