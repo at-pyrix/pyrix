@@ -73,7 +73,7 @@
 			.spinner_7mtw {
 				transform-origin: center;
 				animation: spinner_jgYN 0.6s linear infinite;
-				fill: #828394;
+				fill: #ff2600;
 			}
 			@keyframes spinner_jgYN {
 				100% {
