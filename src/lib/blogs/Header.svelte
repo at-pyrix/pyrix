@@ -252,7 +252,7 @@
 			background: $clr-bg-3;
 			justify-content: space-between;
 
-			.logo {
+			.logo, .github {
 				display: none;
 			}
 
@@ -266,8 +266,11 @@
 				back-btn {
 					display: inline-flex;
 					position: absolute;
-					left: 5vw;
-					top: .8rem;
+					left: 3vw;
+					top: 1rem;
+					border-radius: 100%;
+					background: none !important;
+					font-size: 1.2rem;
 				}
 
 				input {
@@ -281,9 +284,13 @@
 				}
 
 				.search-btn {
-					position: relative;
-					left: 2.5rem;
-					margin-left: auto;
+					margin-left: 102%;
+					right: 0;
+
+					&:hover {
+						background: $clr-bg-2;
+						color: $clr-fg-4;
+					}
 				}
 			}
 		}
