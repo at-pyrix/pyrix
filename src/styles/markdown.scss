@@ -17,7 +17,7 @@
 	}
 }
 @media screen and (max-width: $tablet) {
-	/*.article-body .main-content > p:first-of-type::first-letter {
+	.article-body .main-content > p:first-of-type::first-letter {
 		color: $accent-0;
 		font-weight: bold;
 		font-size: 70px;
@@ -25,7 +25,7 @@
 		line-height: 1;
 		padding-right: 8px;
 		margin-top: -3px;
-	}*/
+	}
 }
 
 h1,
@@ -301,7 +301,7 @@ h6 {
 	}
 
 	&::before {
-		font-family: $body-font;
+		font-family: $body-font, sans-serif !important;
 		content: '❝';
 		color: $accent-0;
 		font-size: 4em;
