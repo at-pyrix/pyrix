@@ -17,7 +17,7 @@
 	}
 }
 @media screen and (max-width: $tablet) {
-	.article-body .main-content p:first-of-type::first-letter {
+	.article-body .main-content > p:first-of-type::first-letter {
 		color: $accent-0;
 		font-weight: bold;
 		font-size: 70px;
