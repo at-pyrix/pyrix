@@ -243,7 +243,7 @@
 			background: $clr-bg-4;
 			border-top: 1px solid $clr-fg-5;
 			filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.37));
-			padding: 0 12vw 0 8vw;
+			padding: 0 8vw;
 			overflow: hidden;
 		}
 
@@ -264,7 +264,7 @@
 			display: inline;
 			padding: 0 !important;
 			border-radius: 0 !important;
-			width: 100% !important;
+			
 			
 
 
@@ -277,5 +277,8 @@
 
 			position: relative;
 		}
+		ul li:not(:last-child) {
+			width: 100% !important;
+		} 
 	}
 </style>
