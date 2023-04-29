@@ -249,10 +249,10 @@
 
 		.sidebar .nav-list {
 			flex-direction: row;
-			flex-direction: row;
-                        justify-content: space-evenly;
+
+                        justify-content: space-between;
                         align-items: center;
-                        flex-wrap: wrap;
+                        flex-wrap: nowrap;
                        
 		        position: relative;
   
@@ -264,7 +264,7 @@
 			display: inline;
 			padding: 0 !important;
 			border-radius: 0 !important;
-			flex-grow: 1;
+
 
 
 			:global(svg) {
