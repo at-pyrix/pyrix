@@ -69,13 +69,13 @@
 	main::before {
 		left: 0;
 		bottom: 0;
-		background-image: radial-gradient(at 45% 100%, hsla(170, 29%, 49%, 0.3) 0px, transparent 50%);
+		background-image: radial-gradient(at 45% 100%, hsla(170, 29%, 49%, 0.2) 0px, transparent 50%);
 	}
 
 	main::after {
 		right: 0;
 		top: 0;
-		background-image: radial-gradient(at 100% 15%, hsla(147, 29%, 49%, 0.4) 0px, transparent 50%);
+		background-image: radial-gradient(at 100% 15%, hsla(147, 29%, 49%, 0.3) 0px, transparent 50%);
 	}
 
 	@media only screen and (max-width: $tablet) {

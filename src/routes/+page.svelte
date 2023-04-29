@@ -58,6 +58,30 @@
 		}
 	}
 
+	main::before,
+	main::after {
+		content: '';
+		width: 50vw;
+		position: fixed;
+		pointer-events: none;
+		height: 100vh;
+		opacity: 0.5;
+		z-index: 100;
+		animation: growGradient 2s ease-in;
+	}
+
+	main::before {
+		left: 0;
+		bottom: 0;
+		background-image: radial-gradient(at 45% 100%, rgba(103, 108, 201, 0.2) 0px, transparent 50%);
+	}
+
+	main::after {
+		right: 0;
+		top: 0;
+		background-image: radial-gradient(at 100% 15%, rgba(103, 108, 201, 0.3) 0px, transparent 50%);
+	}
+
 	p {
 		display: none;
 		font-family: 'Nofex', sans-serif;
