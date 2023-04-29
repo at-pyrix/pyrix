@@ -287,6 +287,8 @@
 
 				.search-btn {
 					margin-left: 102%;
+					margin-bottom:2%;
+					
 					right: 0;
 
 					&:hover {
