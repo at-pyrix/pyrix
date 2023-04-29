@@ -294,7 +294,7 @@
 					
 					right: 0;
 
-					&:hover {
+					@include hover {
 						background: $clr-bg-2;
 						color: $clr-fg-4;
 					}
