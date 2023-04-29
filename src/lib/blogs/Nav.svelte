@@ -264,6 +264,8 @@
 			display: inline;
 			padding: 0 !important;
 			border-radius: 0 !important;
+			flex-grow: 1;
+
 
 			:global(svg) {
 				font-size: 1.5rem;
