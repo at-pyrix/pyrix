@@ -124,6 +124,15 @@
 			color: $clr-fg-350;
 			white-space: nowrap;
 			text-decoration: none;
+			transition:.2s;
+			
+			
+			&:active {
+			transform: scale(0.95);
+			} 
+			
+			
+			
 		}
 
 		&:nth-last-child(2) {
@@ -137,6 +146,8 @@
 
 		&:active {
 			filter: brightness(0.9);
+			
+			
 		}
 		span {
 			font-size: smaller;
