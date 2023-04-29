@@ -277,7 +277,8 @@
 
 				input {
 					position: absolute;
-					bottom: 0;
+					top: 1rem;
+					
 					
 					left: calc(5vw + 10%);
 					width: calc(80% - 10vw);
@@ -289,7 +290,7 @@
 
 				.search-btn {
 					margin-left: 102%;
-					margin-bottom:2%;
+
 					
 					right: 0;
 
