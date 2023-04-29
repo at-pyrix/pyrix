@@ -264,6 +264,8 @@
 			display: inline;
 			padding: 0 !important;
 			border-radius: 0 !important;
+			width: 100% !important;
+			
 
 
 
