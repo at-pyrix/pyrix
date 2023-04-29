@@ -249,17 +249,21 @@
 
 		.sidebar .nav-list {
 			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: nowrap;
-			position: relative;
+			flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-wrap: wrap;
+                       
+		        position: relative;
+  
+
 			bottom: 2.5rem;
 		}
 
 		ul li {
 			display: inline;
 			padding: 0 !important;
-			border-radius: 0! important;
+			border-radius: 0 !important;
 
 			:global(svg) {
 				font-size: 1.5rem;
