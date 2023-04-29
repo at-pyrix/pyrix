@@ -259,7 +259,7 @@
 		ul li {
 			display: inline;
 			padding: 0 !important;
-			border-radius: 100%;
+			border-radius: 0! important;
 
 			:global(svg) {
 				font-size: 1.5rem;
