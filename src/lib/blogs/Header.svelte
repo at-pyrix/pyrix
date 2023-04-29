@@ -237,6 +237,8 @@
 				background: none;
 				font-size: 1.2rem;
 				display: flex;
+				transition: background 0.2s;
+				
 
 				@include hover {
 					background: $clr-card;
