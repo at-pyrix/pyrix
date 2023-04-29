@@ -243,7 +243,7 @@
 			background: $clr-bg-4;
 			border-top: 1px solid $clr-fg-5;
 			filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.37));
-			padding: 0 8vw 0 6vw;
+			padding: 0 12vw 0 16vw;
 			overflow: hidden;
 		}
 
