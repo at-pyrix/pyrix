@@ -277,6 +277,8 @@
 
 				input {
 					position: absolute;
+					bottom: 0;
+					
 					left: calc(5vw + 10%);
 					width: calc(80% - 10vw);
 				}
