@@ -87,7 +87,7 @@
 		left: 0;
 		height: 3px;
 		width: 100%;
-		background: $accent-0;
+		background: darken($accent-0, 10%);
 	}
 
 	.toast .progress::before {
