@@ -124,6 +124,15 @@
 			color: $clr-fg-350;
 			white-space: nowrap;
 			text-decoration: none;
+			transition:.2s;
+			
+			
+			&:active {
+			transform: scale(0.98);
+			} 
+			
+			
+			
 		}
 
 		&:nth-last-child(2) {
@@ -137,6 +146,8 @@
 
 		&:active {
 			filter: brightness(0.9);
+			
+			
 		}
 		span {
 			font-size: smaller;
@@ -238,17 +249,25 @@
 
 		.sidebar .nav-list {
 			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: nowrap;
-			position: relative;
+
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                       
+		        position: relative;
+  
+
 			bottom: 2.5rem;
 		}
 
 		ul li {
 			display: inline;
 			padding: 0 !important;
-			border-radius: 100%;
+			border-radius: 0 !important;
+			
+			
+
+
 
 			:global(svg) {
 				font-size: 1.5rem;
@@ -258,5 +277,8 @@
 
 			position: relative;
 		}
+		
+
+		
 	}
 </style>

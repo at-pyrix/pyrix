@@ -87,7 +87,7 @@
 		left: 0;
 		height: 3px;
 		width: 100%;
-		background: $accent-0;
+		background: darken($accent-0, 10%);
 	}
 
 	.toast .progress::before {
@@ -129,7 +129,7 @@
 		border-radius: 50%;
 		display: block;
 		stroke-width: 2;
-		stroke: #fff;
+		stroke: #000000;
 		stroke-miterlimit: 10;
 		box-shadow: inset 0px 0px 0px $accent-0;
 		animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;

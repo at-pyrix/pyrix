@@ -237,6 +237,8 @@
 				background: none;
 				font-size: 1.2rem;
 				display: flex;
+				transition: background 0.2s;
+				
 
 				@include hover {
 					background: $clr-card;
@@ -275,6 +277,9 @@
 
 				input {
 					position: absolute;
+					top: 1rem;
+					
+					
 					left: calc(5vw + 10%);
 					width: calc(80% - 10vw);
 				}
@@ -285,9 +290,11 @@
 
 				.search-btn {
 					margin-left: 102%;
+
+					
 					right: 0;
 
-					&:hover {
+					@include hover {
 						background: $clr-bg-2;
 						color: $clr-fg-4;
 					}
