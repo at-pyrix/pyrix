@@ -54,6 +54,7 @@
 			p {
 				margin: 0;
 				font-size: 14px;
+				color: $clr-fg-4;
 			}
 
 			.social-links {
@@ -63,11 +64,11 @@
 
 					:global(svg) {
 						font-size: 18px;
-						color: $accent-0;
+						color: darken($accent-0, 10%);
 						transition: color 0.2s;
-
+						
 						@include hover {
-							color: $clr-fg-2;
+							color: $accent-0;
 						}
 					}
 				}
