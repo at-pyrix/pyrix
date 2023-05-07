@@ -5,7 +5,7 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import Jumper from '$lib/Other/Jumper.svelte';
-	import '../../styles/fonts.scss';
+	import '../../styles/fonts.css';
 	import '../../styles/markdown.scss';
 
 	let loaded = false;

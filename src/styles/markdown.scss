@@ -6,12 +6,13 @@
 	-webkit-text-size-adjust: 100%;
 	margin: 0;
 	font-size: 18px;
-	line-height: 1.5;
-	word-wrap: break-word;
 
 	* {
-		font-family: $body-font;
+		line-height: 30px;
+		font-family: $body-font, sans-serif !important;
+		word-wrap: break-word;
 	}
+
 	@media screen and (max-width: $tablet) {
 		font-size: medium;
 	}
