@@ -10,10 +10,10 @@
 			<a href="https://www.netlify.com/">Netlify</a>.
 		</p>
 		<div class="social-links">
-			<a href="https://www.twitter.com/not_yasho" rel="noreferrer" target="_blank"><Icon icon="mdi:twitter" /></a>
-			<a href="https://www.github.com/notyasho" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
-			<a href="https://discord.com/users/1077943866314981466" rel="noreferrer" target="_blank"><Icon icon="ic:round-discord" /></a>
-			<a href="https://www.reddit.com/u/probablynotyasho" rel="noreferrer" target="_blank"><Icon icon="ic:round-reddit" /></a>
+			<a href="https://www.github.com/notyasho" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
+			<a href="https://t.me/unwantedseventytwo" title="Telegram" rel="noreferrer" target="_blank"><Icon icon="ic:round-telegram" /></a>
+			<a href="https://www.reddit.com/u/probablynotyasho" title="Reddit" rel="noreferrer" target="_blank"><Icon icon="ic:round-reddit" /></a>
+			<a href="https://www.twitter.com/not_yasho" title="Twitter" rel="noreferrer" target="_blank"><Icon icon="mdi:twitter" /></a>
 		</div>
 	</div>
 </footer>
