@@ -4,7 +4,7 @@
 <section id="hero" data-scroll-section>
 	<slot />
 	<div class="hero__content" data-scroll>
-		<img src="/img/svg/avatar_sad.svg" alt="">
+		<img src="/img/svg/avatar.svg" alt="">
 		<p>This portfolio isn't completed yet, however it's <strong>not</strong> under construction either. It may get updated once I get time to work on it. More information <a href="/about">here</a> :(</p>
 		
 		<a class="btn" href="/blogs">READ THE BLOG</a>
