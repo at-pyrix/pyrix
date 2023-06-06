@@ -50,7 +50,7 @@
 
 ### Listening To
 
-![https://github.com/kittinan/spotify-github-profile](https://spotify-github-profile.vercel.app/api/view.svg?uid=f165c6e7ncm5zhpyfw53q7nd0&cover_image=true&theme=natemoo-re&bar_color=5b34eb)
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31xc4ybqutsanubzoxxdx4v5jyiq&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=31xc4ybqutsanubzoxxdx4v5jyiq&redirect=true)
 
 ### Contact Me
 
