@@ -48,10 +48,6 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NotYasho&layout=compact&bg_color=0D1117&icon_color=FFFFFF&text_color=ffffff&hide_border=true&title_color=afa6ff)](https://github.com/anuraghazra/github-readme-stats) 
 [![Yasho's github stats](https://github-readme-stats.vercel.app/api?username=NotYasho&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=afa6ff&icon_color=FFFFFF&text_color=FFFFFF&bg_color=0D1117&hide_border=true)](https://github.com/NotYasho)
 
-### Listening To
-
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31xc4ybqutsanubzoxxdx4v5jyiq&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=31xc4ybqutsanubzoxxdx4v5jyiq&redirect=true)
-
 ### Contact Me
 
 <!-- mail -->
