@@ -47,17 +47,3 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NotYasho&layout=compact&bg_color=0D1117&icon_color=FFFFFF&text_color=ffffff&hide_border=true&title_color=afa6ff)](https://github.com/anuraghazra/github-readme-stats) 
 [![Yasho's github stats](https://github-readme-stats.vercel.app/api?username=NotYasho&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=afa6ff&icon_color=FFFFFF&text_color=FFFFFF&bg_color=0D1117&hide_border=true)](https://github.com/NotYasho)
-
-### Contact Me
-
-<!-- mail -->
-[![image](https://img.shields.io/badge/mail-DDB6F2?style=for-the-badge&amp;logo=gmail&amp;logoColor=black)](https://notyasho.netlify.app/contact)
-[![image](https://img.shields.io/badge/discord-96cdfb?style=for-the-badge&amp;logo=discord&amp;logoColor=black)](https://discord.com/users/1077943866314981466)
-
-## TODO
-
-- Add a TOC pane on the left of each article
-- Add related articles on the left pane
-- Change mobile blog view from card to something like Reddit's compact view.
-- Refactor code
-- Redesign portfolio
