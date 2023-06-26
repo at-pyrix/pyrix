@@ -42,8 +42,3 @@
 [![SASS](https://img.shields.io/badge/-SASS-black?style=for-the-badge&logo=sass&color=cc6699&logoColor=white)](https://sass-lang.com/)
 [![Netlify](https://img.shields.io/badge/-Netlify-black?style=for-the-badge&logo=netlify&color=00c7b7&logoColor=white)](https://www.netlify.com/)
 [![Sanity](https://img.shields.io/badge/-Sanity.io-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://www.sanity.io/)
-
-### Stats
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NotYasho&layout=compact&bg_color=0D1117&icon_color=FFFFFF&text_color=ffffff&hide_border=true&title_color=afa6ff)](https://github.com/anuraghazra/github-readme-stats) 
-[![Yasho's github stats](https://github-readme-stats.vercel.app/api?username=NotYasho&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=afa6ff&icon_color=FFFFFF&text_color=FFFFFF&bg_color=0D1117&hide_border=true)](https://github.com/NotYasho)
