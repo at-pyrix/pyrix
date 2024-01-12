@@ -1,5 +1,3 @@
-## Hi, I'm ~~Not~~Yasho
-
 [![image](https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png)](https://notyasho.netlify.app/blogs)
 
 ### My Projects
