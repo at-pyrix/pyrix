@@ -8,10 +8,10 @@
 	<p>'Sup?</p>
 	<p />
 	<p>
-		Hi, I'm Yasho! I'm a 17 y/o guy from India. I started coding back in 2020. This blog was supposed to be an online diary or something, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content.<s>
+		Hi, I'm Yasho! I'm a 17 y/o guy from India. My interests include reading books, singing (:P), and music of course. I wanna get into data visualisation, hacking (BRING THOSE EVIL CORPORATIONS DOWN!!!) and scientific research (big dreams ik). I started coding back in 2020. This blog was supposed to be an online diary or something, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content. Don't worry though, I'll get back here ASAP<s>
 	</p>
         <p>
-                I publish the articles from a CMS <a href="Sanity">sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite yanky at times. And now that I look back, some of the elements here really cringe me out lmao
+                I publish the articles from a CMS <a href="sanity.io">Sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite yanky at times. And now that I look back, some of the elements here really cringe me out lmao
         </p>
 	<p>
 		With all the AI stuff going on currently, I'm quite pessimistic about the future of devs lol. However, I still love coding and when I'm back, I'm planning to get into Android app development with the MDY guidelines and want to do more privacy-friendly FOSS projects in the future.
@@ -22,13 +22,13 @@
 	<p>
 		Anyway, I just wanted to say Hi and let you know what's going on.
 	</p>
-	<p>Until we meet again</p>
+	<p>Until we meet again 👋</p>
 	<p>
 		Best regards, <br />
-		Yasho 
+		<s>probablynot</s>yasho 
 
-
-                <i>Last updated: March 26, 2024</i>
+               <br/>
+                <span><i>Last updated: March 26, 2024</i></span>
 	</p>
 </main>
 
@@ -87,7 +87,7 @@
 		color: $clr-fg-4;
 		filter: brightness(1.1);
 		line-height: 1.5;
-		font-family: 'Larsseit', $body-font, sans-serif;
+		font-family: serif, 'Larsseit', $body-font, sans-serif;
 		span {
 			color: $clr-fg-450;
 		}
