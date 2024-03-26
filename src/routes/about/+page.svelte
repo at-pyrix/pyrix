@@ -58,7 +58,7 @@
 	}
 
 	hr {
-		border-color: $clr-fg-5;
+		border-color: #223b39;
 		margin-block: 2rem;
 		width: 100%;
 	}
