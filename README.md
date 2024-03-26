@@ -33,7 +33,7 @@
 
  [![Figma](https://img.shields.io/badge/figma-F5C2E7.svg?style=for-the-badge&logo=figma&logoColor=black)](https://www.figma.com/)
 [![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-96CDFB.svg?style=for-the-badge&logo=visual-studio-code&logoColor=black)](https://code.visualstudio.com/)
-[![Endeavour OS(KDE)](https://img.shields.io/badge/EndeavourOS-c6b6f0?style=for-the-badge&logo=endeavouros&logoColor=black)](endeavouros.com)
+[![Endeavour OS(KDE)](https://img.shields.io/badge/EndeavourOS-c6b6f0?style=for-the-badge&logo=endeavouros&logoColor=black)](https://www.endeavouros.com)
 
 [![SvelteKit](https://img.shields.io/badge/-SvelteKit-black?style=for-the-badge&logo=svelte&color=orangered&logoColor=white)](https://kit.svelte.dev/)
 [![SASS](https://img.shields.io/badge/-SASS-black?style=for-the-badge&logo=sass&color=cc6699&logoColor=white)](https://sass-lang.com/)
