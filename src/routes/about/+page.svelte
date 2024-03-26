@@ -5,30 +5,30 @@
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
 		alt="goodbye"
 	/>
-	<p>Hey there!</p>
+	<p>'Sup?</p>
 	<p />
 	<p>
-		So, I've got some news to share with you about this awesome site we've been working on. I've been working on it for almost 2 years now, and I've
-		loved every minute of it - adding features, switching frameworks — wayyy too many times — debugging like crazy, and even deploying some silly code
-		to production!
+		Hi, I'm Yasho! I'm a 17 y/o guy from India. I started coding back in 2020. This blog was supposed to be an online diary or something, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content.<s>
 	</p>
+        <p>
+                I publish the articles from a CMS <a href="Sanity">sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite yanky at times. And now that I look back, some of the elements here really cringe me out lmao
+        </p>
 	<p>
-		It's been a wild ride, but now it's time for me to take a break. <span> (*cough* JEE *cough*) </span>
-		Unfortunately, I have some big exams coming up that I need to focus on, which means I won't be able to work on the site for a while. How long, you
-		ask? Well, nearly 2 years! I know, it's a bummer. But hey, life happens, right?
+		With all the AI stuff going on currently, I'm quite pessimistic about the future of devs lol. However, I still love coding and when I'm back, I'm planning to get into Android app development with the MDY guidelines and want to do more privacy-friendly FOSS projects in the future.
 		<br />
 		<br />
-		Like seriously, I've got a LOT of studying to do and I won't be able to code for a while. So, some of the pages might be a little wonky, and some stuff
-		might not work right. So apologies for that. I'll try to fix them when I get time, but I can't promise anything.
+                   
 	</p>
 	<p>
-		Anyway, I just wanted to let you know what's going on. Don't worry, though - I'll be back at it as soon as I can. In the meantime, keep checking
-		the site for updates and don't hesitate to <a href="/contact">drop me a line if you've got any questions or comments.</a>
+		Anyway, I just wanted to say Hi and let you know what's going on.
 	</p>
-	<p>Take care, stay awesome, and keep reading :)</p>
+	<p>Until we meet again</p>
 	<p>
 		Best regards, <br />
-		<s>Not</s>Yasho
+		Yasho 
+
+
+                <i>Last updated: March 26, 2024</i>
 	</p>
 </main>
 
