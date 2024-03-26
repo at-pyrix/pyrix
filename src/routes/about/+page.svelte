@@ -87,7 +87,7 @@
 		color: $clr-fg-4;
 		filter: brightness(1.1);
 		line-height: 1.5;
-		font-family: serif, 'Larsseit', $body-font, sans-serif;
+		font-family: 'Larsseit', $body-font, sans-serif;
 		span {
 			color: $clr-fg-450;
 		}
