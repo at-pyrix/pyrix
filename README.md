@@ -6,22 +6,21 @@
 
 - **Good Looking and Functional UI:** Enjoy a visually appealing and user-friendly interface.
   
-- **Article Search Functionality:** Easily find the articles you're looking for with our search feature.
+- **Article Search Functionality:** Easily find the articles you're looking for with our search feature. 🔍
 
-- **Categorisation of Articles:** Explore articles conveniently categorized for a seamless reading experience.
+- **Categorisation of Articles:** Explore articles conveniently categorized for a seamless reading experience. 📚
 
-- **Save for Later System:** Save your favorite articles to read them later at your convenience.
+- **Save for Later System:** Save your favorite articles to read them later at your convenience. 💾
 
-- **Markdown to HTML Rendering and Styling:** Write your articles in Markdown and let our system render them beautifully in HTML with customized styling.
+- **Markdown to HTML Rendering and Styling:** Write your articles in Markdown and let our system render them beautifully in HTML with customized styling. ✍️
 
-- **Integration with Sanity CMS:** Manage your articles effortlessly through the Sanity CMS frontend.
+- **Integration with Sanity CMS:** Manage your articles effortlessly through the Sanity CMS frontend. 🛠️
 
-- **Loading Screen:** Experience a smooth loading process with our loading screen while fetching data.
+- **Loading Screen:** Experience a smooth loading process with our loading screen while fetching data. ⏳
 
-- **Quick, Blurry Placeholders for Images:** Enjoy quick loading times with placeholder images that add a touch of style while images load.
+- **Quick, Blurry Placeholders for Images:** Enjoy quick loading times with placeholder images that add a touch of style while images load. 🖼️
 
-- **In-Site Contact System:** Reach out to the developer easily through our in-site contact system.
-
+- **In-Site Contact System:** Reach out to the developer easily through our in-site contact system. 📧
 
 ### My Projects 
 
