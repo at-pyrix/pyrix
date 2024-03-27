@@ -1,4 +1,27 @@
+# Personal Blog Site
+
 [![image](https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png)](https://notyasho.netlify.app/blogs)
+
+## Features
+
+- **Good Looking and Functional UI:** Enjoy a visually appealing and user-friendly interface.
+  
+- **Article Search Functionality:** Easily find the articles you're looking for with our search feature.
+
+- **Categorisation of Articles:** Explore articles conveniently categorized for a seamless reading experience.
+
+- **Save for Later System:** Save your favorite articles to read them later at your convenience.
+
+- **Markdown to HTML Rendering and Styling:** Write your articles in Markdown and let our system render them beautifully in HTML with customized styling.
+
+- **Integration with Sanity CMS:** Manage your articles effortlessly through the Sanity CMS frontend.
+
+- **Loading Screen:** Experience a smooth loading process with our loading screen while fetching data.
+
+- **Quick, Blurry Placeholders for Images:** Enjoy quick loading times with placeholder images that add a touch of style while images load.
+
+- **In-Site Contact System:** Reach out to the developer easily through our in-site contact system.
+
 
 ### My Projects 
 
@@ -39,3 +62,11 @@
 [![SASS](https://img.shields.io/badge/-SASS-black?style=for-the-badge&logo=sass&color=cc6699&logoColor=white)](https://sass-lang.com/)
 [![Netlify](https://img.shields.io/badge/-Netlify-black?style=for-the-badge&logo=netlify&color=00c7b7&logoColor=white)](https://www.netlify.com/)
 [![Sanity](https://img.shields.io/badge/-Sanity.io-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://www.sanity.io/)
+
+## Contributing
+
+We welcome contributions to improve Yasho's Personal Blog! Fork the repository, make your changes, and submit a pull request.
+
+## License
+
+You are free to use this code as you want (with proper credit) - see the [LICENSE](LICENSE) file for details.
