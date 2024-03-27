@@ -38,10 +38,6 @@
 [![Netlify](https://img.shields.io/badge/-Netlify-black?style=for-the-badge&logo=netlify&color=00c7b7&logoColor=white)](https://www.netlify.com/)
 [![Sanity](https://img.shields.io/badge/-Sanity.io-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://www.sanity.io/)
 
-## Contributing
-
-We welcome contributions to improve Yasho's Personal Blog! Fork the repository, make your changes, and submit a pull request.
-
 ## License
 
 You are free to use this code as you want (with proper credit) - see the [LICENSE](LICENSE) file for details.
