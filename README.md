@@ -18,33 +18,9 @@
 
 - **⭕ Loading Screen:** YES GUYS WE HAVE A FUCKING LOADING SCREEN 🤯🤯🤯
 
-- **🖼️ Low quality placeholders for Images: **: for quick fetching
+- **🖼️ Low quality placeholders for Images:**: for quick fetching
 
 - **✉️ In-Site Contact System:** Reach out to the dev without having to leave your browser.
-
-### My Projects 
-
-<details><summary>PYCMD - A Command Line Interface for Managing your Projects (Archived) </summary><ul> 
-<li>Language: <strong>Python</strong></li>
-<li>Source Code: <strong><a href = "https://www.github.com/NotYasho/PyCMD">Github</a></strong></li>
-<li>Features: <strong>Create, Open, Delete, Push to GitHub Projects with just one command. Manage your github repos, Auto Generate Boiler plate... </strong></li>
-</ul>
-</details>
-
-<details><summary>Purple - Discord Bot (Archived)</summary><ul?> 
-<li>Language: <strong>Node.js</strong></li>
-<li>Source Code: <strong><a href = "https://github.com/NotYasho/Purple-DiscordBot">Github</a></strong> </li>
-<li>Features: <strong>Auto-Mod, Meme, Auto-Role Assignment... </strong> [Beta]</li>
-</ul>
-</details>
-
-<details><summary>Reddit Story Bot (Archived)</summary><ul?> 
-<li>Language: <strong>Python</strong></li>
-<li>Source Code: <strong><a href = "https://github.com/NotYasho/story-bot">Github</a></strong> </li>
-<li>Description: <strong>The bot gets 500 random stories from the subreddit <code>r/stories</code>, writes them to a JSON, creates a script and writes it into multiple txt file, filtering all the profanity. Converts them to text to speech, adds a background track depending on the story, Outputs an audio file, generally 2 - 3 mins.</strong>
-<br><br></li><strong><em> Please Contribute 💖</em> </strong>
-</ul>
-</details>
 
 ### Languages and tools
 
