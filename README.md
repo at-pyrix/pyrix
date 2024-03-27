@@ -4,25 +4,25 @@
 
 ## Features
 
-- **✨ Good Looking and Functional UI**
+- **✨ Good Looking and Functional UI**: I took inspiration from many other sites and design systems to come up with this.
   
-- **🔎 Article Search Functionality**
+- **🔎 Article Search Functionality**: Title and description matching.
 
-- **🏷️ Categorisation of Articles**
+- **🏷️ Categorisation of Articles**: Articles are manually categorised according to category upon creating.
 
-- **🔖 Save for Later System**
+- **🔖 Save for Later System**: (locally inside your browser)
 
 - **📝 Markdown to HTML Rendering and Styling**
 
-- **✏️ Integration with Sanity CMS**
+- **✏️ Integration with Sanity CMS**: You can create an article from their frontend.
 
 - **⭕ Loading Screen:** YES GUYS WE HAVE A FUCKING LOADING SCREEN 🤯🤯🤯
 
-- **🖼️ Low quality placeholders for Images:**: for quick fetching
+- **🖼️ Low quality placeholders for Images:** for quick fetching
 
 - **✉️ In-Site Contact System:** Reach out to the dev without having to leave your browser.
 
-### Languages and tools
+### Languages and tools I use
 
 [![Python](https://img.shields.io/badge/python-96CDFB?style=for-the-badge&logo=python&logoColor=black)](https://www.python.org/) 
 [![JavaScript](https://img.shields.io/badge/javascript-FAE3B0?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/) 
