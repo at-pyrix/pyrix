@@ -4,7 +4,7 @@
 
 <footer>
 	<div class="container">
-		<p>Licensed under the Mozilla Public License Version 2.0.</p>
+		<p>Licensed under the Mozilla Public License v2.0.</p>
 		<p>
 			Made with <span style="color: #eb345e">♥</span> using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
 			<a href="https://www.netlify.com/">Netlify</a>.
