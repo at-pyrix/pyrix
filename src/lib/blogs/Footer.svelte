@@ -4,7 +4,7 @@
 
 <footer>
 	<div class="container">
-		<p>&copy; <span id="year" />NotYasho {new Date().getFullYear()}. All rights reserved.</p>
+		<p>Licensed under the Mozilla Public License Version 2.0.</p>
 		<p>
 			Made with <span style="color: #eb345e">♥</span> using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
 			<a href="https://www.netlify.com/">Netlify</a>.
