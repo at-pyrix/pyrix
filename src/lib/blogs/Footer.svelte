@@ -4,16 +4,14 @@
 
 <footer>
 	<div class="container">
-		<p>Licensed under the Mozilla Public License v2.0.</p>
+		<p>Licensed under MPL 2.0 on <a href="https://notyasho.netlify.app/">Github</a></p>
 		<p>
 			Made with <span style="color: #eb345e">♥</span> using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
 			<a href="https://www.netlify.com/">Netlify</a>.
 		</p>
 		<div class="social-links">
-			<a href="https://www.github.com/notyasho" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
-			<a href="https://t.me/unwantedseventytwo" title="Telegram" rel="noreferrer" target="_blank"><Icon icon="basil:telegram-solid" /></a>
-			<a href="https://www.reddit.com/u/probablynotyasho" title="Reddit" rel="noreferrer" target="_blank"><Icon icon="ic:round-reddit" /></a>
-			<a href="https://www.twitter.com/not_yasho" title="Twitter" rel="noreferrer" target="_blank"><Icon icon="mdi:twitter" /></a>
+			<a href="https://www.github.com/probablynotyasho" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
+			<a href="https://t.me/ppyrixx" title="Telegram" rel="noreferrer" target="_blank"><Icon icon="basil:telegram-solid" /></a>
 		</div>
 	</div>
 </footer>
