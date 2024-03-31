@@ -4,7 +4,7 @@
 
 <footer>
 	<div class="container">
-		<p>Licensed under MPL 2.0 on <a href="github.com/probablynotyasho/probablynotyasho">Github</a></p>
+		<p>Licensed under MPL 2.0 on <a href="https://www.github.com/probablynotyasho/probablynotyasho">Github</a></p>
 		<p>
 			Made with <span style="color: #eb345e">♥</span> using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
 			<a href="https://www.netlify.com/">Netlify</a>.
