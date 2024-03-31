@@ -22,7 +22,7 @@ export function daysAgo(strDate) {
 		return months + ' month' + (months > 1 ? 's' : '');
 	} else {
 		let years = Math.floor(days / 365);
-		return years + ' year' + (years > 1 ? 's' : ''));
+		return years + ' year' + (years > 1 ? 's' : '');
 	}
 }
 
