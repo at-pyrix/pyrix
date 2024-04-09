@@ -4,14 +4,14 @@
 
 <footer>
 	<div class="container">
-		<p>Licensed under MPL 2.0 on <a href="https://www.github.com/probablynotyasho/probablynotyasho">Github</a></p>
+		<p>Licensed under MPL 2.0 on <a href="https://www.github.com/pyyrix/pyrix">Github</a></p>
 		<p>
 			Made with <span style="color: #eb345e">♥</span> using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
 			<a href="https://www.netlify.com/">Netlify</a>.
 		</p>
 		<div class="social-links">
-			<a href="https://www.github.com/probablynotyasho" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
-			<a href="https://t.me/ppyrixx" title="Telegram" rel="noreferrer" target="_blank"><Icon icon="basil:telegram-solid" /></a>
+			<a href="https://www.github.com/pyyrix" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
+			<a href="https://t.me/pyyrix" title="Telegram" rel="noreferrer" target="_blank"><Icon icon="basil:telegram-solid" /></a>
 		</div>
 	</div>
 </footer>
