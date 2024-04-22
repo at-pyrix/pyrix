@@ -9,7 +9,7 @@
   
 - **🔎 Article Search Functionality**: Title and description matching.
 
-- **🏷️ Categorisation of Articles**: Articles are manually categorised according to category upon creating.
+- **🏷️ Categorisation of Articles**: Articles are manually categorised according to category upon creation.
 
 - **🔖 Save for Later System**: (locally inside your browser)
 
