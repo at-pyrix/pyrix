@@ -1,8 +1,9 @@
-# personal blog site
+# pyrix — personal weblog site
 
-[![image](https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png)](https://notyasho.netlify.app/blogs)
+<p align="center">
+  <a href="https://notyasho.netlify.app/blogs" ><img src="https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png"/></a></p>
 
-
+![](https://repository-images.githubusercontent.com/495805507/ccb3594e-b276-4ae5-9d3f-081e9307613c)
 ## Features
 
 - **✨ Good Looking and Functional UI**: I took inspiration from many other sites and design systems to come up with this.
