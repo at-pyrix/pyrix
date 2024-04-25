@@ -12,8 +12,8 @@
 				showModal = true;
 				setTimeout(() => {
 					showModal = false;
-				}, 10000);
-			}, 4000);
+				}, 20000);
+			}, 10000);
 	});
 
 	function destroy() {
