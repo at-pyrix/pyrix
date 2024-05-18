@@ -3,7 +3,11 @@
 <h1 align=center>personal weblog</h1>
 
 <p align="center">
-  <a href="https://notyasho.netlify.app/blogs" ><img src="https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png"/></a></p>
+  <a href="https://github.com/at-pyrix/pyrix" ><img src="https://img.shields.io/github/stars/at-pyrix/pyrix?style=for-the-badge&logo=GitHub&labelColor=%23322e38&color=%23FF3E7F"/></a>
+  <a href="https://github.com/at-pyrix/pyrix/fork" ><img src="https://img.shields.io/github/forks/at-pyrix/pyrix?style=for-the-badge&logo=git&logoColor=white&labelColor=%23322e38&color=%23E49C5E"/></a></p>
+
+
+<p align=center><i>A digital garden made with SvelteKit, using Sanity for content management.</p></p>
 
 ---
 
