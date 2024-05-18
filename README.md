@@ -7,7 +7,7 @@
   <a href="https://github.com/at-pyrix/pyrix/fork" ><img src="https://img.shields.io/github/forks/at-pyrix/pyrix?style=for-the-badge&logo=git&logoColor=white&labelColor=%23322e38&color=%23E49C5E"/></a></p>
 
 
-<p align=center><i>A digital garden made with SvelteKit, using Sanity for content management.</p></p>
+<p align=center><i>A digital garden made with SvelteKit, using Sanity for content management.</i></p>
 
 ---
 
