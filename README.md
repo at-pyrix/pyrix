@@ -1,10 +1,11 @@
-# pyrix — personal weblog site
+<p align="center">
+  <a href="https://notyasho.netlify.app/blogs" ><img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/favicon/android-chrome-192x192.png"/></a></p>
+<h1 align=center>personal weblog</h1>
 
 <p align="center">
   <a href="https://notyasho.netlify.app/blogs" ><img src="https://user-images.githubusercontent.com/90166733/229889532-31b3f627-d0b8-4194-bd91-48293c667793.png"/></a></p>
 
-
-## Features
+---
 
 ### **✨ Good Looking and Functional UI**
 I took inspiration from many sites and interfaces before coming up with this design. Besides, purple is my favourite color anyway :P
