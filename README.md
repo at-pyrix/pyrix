@@ -14,7 +14,7 @@
 ### **✨ Good Looking and Functional UI**
 I took inspiration from many sites and interfaces before coming up with this design. Besides, purple is my favourite color anyway :P
 
-![](https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/nine.jpg)
+![](https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/desktop.png)
 
 ### 📱 Responsive Design
 I have tested the responsiveness on various devices to provide an (almost) consistent look and feel on various screen sizes.
