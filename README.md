@@ -11,63 +11,63 @@
 
 ---
 
-### **✨ Good Looking and Functional UI**
+### 1. **Good Looking and Functional UI ✨**
 I took inspiration from many sites and interfaces before coming up with this design. Besides, purple is my favourite color anyway :P
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/desktop.png" width="600"/>
 </p>
 
-### 📱 Responsive Design
+### 2. Responsive Design  📱
 I have tested the responsiveness on various devices to provide an (almost) consistent look and feel on various screen sizes.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/eight.gif" width=800/>
 </p>
 
-### **🔎 Article Search Functionality**
+### **3. Article Search Functionality 🔎**
 The search feature queries the title and the description for a term.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/%20one.png" width=400/>
 </p>
 
-### **🏷️ Categorization of Articles**
+### **4. Categorization of Articles 🏷️**
 This is done manually upon the creation of an article. Helps in the navigating the site much faster. It's specially handy if you've got a bunch of stuff on here.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/two.jpeg" width=500/>
 </p>
 
-### **🔖 Save for Later System**
+### **5. Save for Later System 🔖**
 You can bookmark articles for later reading, which is stored in the local storage of your browser.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/three.png" width=500/>
 </p>
 
-### **📝 Markdown to HTML Rendering and Styling**
+### **6. Markdown to HTML Rendering and Styling 📝**
 This was made possible thanks to [marked.js](https://github.com/markedjs/marked)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/four.png" width=400/>
 </p>
 
-### **⭕ Loading Screen**
-Inspired from Reddit.
+### **7. Loading Screen ⭕**
+yes.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/five.png" width=350/>
 </p>
 
-### **🖼️ Low-quality Placeholders for Images**
+### **8. Low-quality Placeholders for Images 🖼️**
 To maintain performance and visual appeal, I used placeholder images (provided by Sanity CMS) to optimise load times.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/six.gif" width=400/>
 </p>
 
-### **✉️ In-Site Contact System:**
+### **9. In-Site Contact System 💌**
 You can contact and provide me feedback without having to leave your browser through the contact form.
 
 Makes use of [Formspree](https://formspree.io/)
