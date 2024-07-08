@@ -3,12 +3,12 @@
 	<hr />
 	<img
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
-		alt="goodbye"
+		alt="wave"
 	/>
 	<p>'Sup?</p>
 	<p />
 	<p>
-		Hi, I'm Yasho! I'm a 17 y/o guy from India. My interests include reading books, singing, and music of course. I wanna get into data visualisation, hacking and scientific research (big dreams ik). I started coding back in 2020. This blog was supposed to be an online diary or something, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content. Don't worry though, I'll get back here ASAP<s>
+		Hi, I'm Yasho! I'm a {new Date().getFullYear() - 2007} y/o guy from India. My hobbies include reading books, music, and disappointing myself. I wanna get into data visualisation, hacking, writing automation scripts, and scientific research (big dreams ik). I started coding back in 2020, when I taught myself python. This blog was supposed to be an online diary or something, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content. Don't worry though, I'll get back here ASAP<s>
 	</p>
         <p>
                 I publish the articles from a CMS <a href="sanity.io">Sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite janky at times. And now that I look back, some of the elements here really cringe me out lmao
