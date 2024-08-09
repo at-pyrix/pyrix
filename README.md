@@ -11,6 +11,8 @@
 
 ---
 
+## Features
+
 ### 1. **Good Looking and Functional UI ✨**
 I took inspiration from many sites and interfaces before coming up with this design. Besides, purple is my favourite color anyway :P
 
@@ -77,6 +79,44 @@ Makes use of [Formspree](https://formspree.io/)
 </p>
 
 ---
+
+## License
+
+This project is licensed under the GNU General Public License (GPL) Version 3 (with some additional restrictions).
+
+- You are free to use, modify, and distribute this software, provided that you comply with the terms of the GPLv3.
+- Additional restrictions:
+  - Attribution is required when redistributing this software.
+  - Commercial use of this software is not permitted.
+  - The source code must be made public and licensed under the same GPLv3 license.
+  - The software is provided "as is," without any warranty of any kind.
+
+
+```
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2024 at-pyrix (pyrix)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software Foundation,
+Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Attribution is required when distributing this software.
+
+Commercial use of this software is not permitted.
+```
+
 
 <p align="center">
   <a href="https://kit.svelte.dev/" ><img src="https://img.shields.io/badge/-SvelteKit-black?style=for-the-badge&logo=svelte&color=orangered&logoColor=white"/></a>
