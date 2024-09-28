@@ -63,9 +63,10 @@
         h3 {
 font-family: 'Monument Extended', sans-serif !important;
 text-transform: uppercase;
-font-size: 1.3rem;
+font-size: 1.2rem;
 color: hsl(170, 36%, 55%) !important;
 margin-top: 2rem;
+margin-top: 1.5rem;
         }
 
 	.title-line {
