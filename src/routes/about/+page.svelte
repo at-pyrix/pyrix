@@ -53,7 +53,7 @@
 	}
 
 	h1 {
-		font-size: 2rem;
+		font-size: 2.3rem;
 		margin-bottom: 3rem;
 		text-align: center;
 		font-family: 'Monument Extended', sans-serif !important;
@@ -70,13 +70,14 @@ color: hsl(170, 36%, 55%) !important;
         }
 
 	.title-line {
-		border-color: #223b39;
+		border-color: #2f524f;
 		margin-block: 2rem;
 		width: 100%;
 	}
 
         hr:not(.title-line) {
         margin-block: 1rem;
+        border-color: #223b39;
 	}
 
 
