@@ -65,8 +65,8 @@ font-family: 'Monument Extended', sans-serif !important;
 text-transform: uppercase;
 font-size: 1.2rem;
 color: hsl(170, 36%, 55%) !important;
-margin-top: 2rem;
-margin-top: 1.5rem;
+margin-top: 2rem !important;
+margin-top: 1.5rem !important;
         }
 
 	.title-line {
