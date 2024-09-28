@@ -1,21 +1,22 @@
 <main>
 	<h1>ABOUT</h1>
-	<hr />
+	<hr class="title-line" />
 	<img
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
 		alt="wave"
 	/>
-	<p>'Sup?</p>
-	<p />
-<strong>About me</strong><hr/>
+	
+	
+<strong># About me</strong><hr/>
+<p>'Sup?</p>
 	<p>
 		 Hi! I'm @pyrix, a {new Date().getFullYear() - 2007} y/o guy from India. I'm interested in reading books about science, history and philosophy, graphic designing, drawing and tinkering with my computer. I want get into data visualisation, cybersecurity and networking, writing automation scripts, and scientific research. I want to learn everything about computers! <br><br> I started coding back in 2020, during the COVID-19 pandemic, when I taught myself python. This blog was supposed to be an online diary, where I would share my blog my development process and other stuff, but I never really got the time to write anything as I'm quite busy with school currently, and it's tough to manage both. Which is why, nearly all of the articles here are merely placeholders for actual content. Don't worry though, I'll get back here ASAP<s>
 	</p>
-<strong>About this site</strong><hr/> 
+<strong># About this site</strong><hr/> 
         <p>
                 I publish the articles from a CMS <a href="sanity.io">Sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite janky at times. And now that I look back, some of the elements here really cringe me out lmao
         </p>
-<strong>future plans</strong><hr/>
+<strong># future plans</strong><hr/>
 	<p>
 
 		With all the AI stuff going on currently, I'm quite pessimistic about the future of devs lol. However, I still love coding and when I'm back, I'm planning to get into Android app development with the MDY guidelines and want to do more privacy-friendly FOSS projects in the future.
@@ -64,15 +65,20 @@
         strong {
 font-family: monospace;
 text-transform: uppercase;
-font-size: 1.35rem;
+font-size: 1.3rem;
 color: hsl(170, 36%, 55%) !important;
         }
 
-	hr {
+	.title-line {
 		border-color: #223b39;
 		margin-block: 2rem;
 		width: 100%;
 	}
+
+        hr:not(.title-line) {
+        margin-block: 1rem;
+	}
+
 
 	img {
 		float: right;
