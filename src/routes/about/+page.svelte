@@ -77,7 +77,7 @@ color: hsl(170, 36%, 55%) !important;
 
         hr:not(.title-line) {
         margin-block: 1rem;
-        border-color: #2f524f;
+        border-color: transparent;
 	}
 
 
