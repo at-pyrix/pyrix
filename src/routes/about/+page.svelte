@@ -70,20 +70,20 @@ color: hsl(170, 36%, 55%) !important;
         }
 
 	.title-line {
-		border-color: #2f524f;
+		border-color: #3f6e6a;
 		margin-block: 2rem;
 		width: 100%;
 	}
 
         hr:not(.title-line) {
         margin-block: 1rem;
-        border-color: #223b39;
+        border-color: #2f524f;
 	}
 
 
 	img {
 		float: right;
-		margin: 0 1.5rem 1.5rem 1.5rem;
+		margin: 0 1.5rem 2rem 1.5rem;
 		border-radius: 3rem;
 		@media screen and (max-width: $tablet) {
 			float: none;
