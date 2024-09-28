@@ -14,6 +14,7 @@
                 <strong>About this site</strong><br> I publish the articles from a CMS <a href="sanity.io">Sanity</a>. Honestly there's a lot of work left to do on this site, so it's quite janky at times. And now that I look back, some of the elements here really cringe me out lmao
         </p>
 	<p>
+<strong>future plans</strong><br>
 		With all the AI stuff going on currently, I'm quite pessimistic about the future of devs lol. However, I still love coding and when I'm back, I'm planning to get into Android app development with the MDY guidelines and want to do more privacy-friendly FOSS projects in the future.
 		<br />
 		<br />
