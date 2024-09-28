@@ -25,10 +25,10 @@
 	<p>Until we meet again 👋</p>
 	<p>
 		Best regards, <br />
-		<s>probablynot</s>yasho 
+		at-pyrix
 
                <br/>
-                <span><i>Last updated: March 26, 2024</i></span>
+                <span><i>Last updated: September 28, 2024</i></span>
 	</p>
 </main>
 
@@ -56,6 +56,10 @@
 		display: block;
 		color: hsl(170, 36%, 55%);
 	}
+
+        strong, a {
+color: hsl(170, 36%, 55%) !important;
+        }
 
 	hr {
 		border-color: #223b39;
