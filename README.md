@@ -100,20 +100,16 @@ Check the [LICENSE](LICENSE) file for more details.
 ```
 Copyright (C) 2024 at-pyrix (pyrix)
 
-This program is free software; you can redistribute it and/or modify
+This program is free* software; you can redistribute it and/or modify
 it under the terms of this license.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-You should have received a copy of this license
-along with this program.
+*Attribution is required when distributing this software.
 
-Attribution is required when distributing this software.
-
-Commercial use of this software is not permitted.
+*Commercial use of this software is not permitted.
 ```
 
 
