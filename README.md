@@ -87,11 +87,11 @@ Makes use of [Formspree](https://formspree.io/)
 
 ## License
 
-- You are free to use, modify, and distribute this software, provided that you comply with the terms of the GPLv3.
+- You are free to use, modify, and distribute this software, provided that you comply with the terms.
 - Additional restrictions:
   - Attribution is required when redistributing this software.
   - Commercial use of this software is not permitted.
-  - The source code must be made public and licensed under the same GPLv3 license.
+  - The source code must be made public and licensed under the same license.
   - The software is provided "as is," without any warranty of any kind.
 
 Check the [LICENSE](LICENSE) file for more details.
