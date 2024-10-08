@@ -12,7 +12,7 @@
 > [!WARNING]
 > This project is NO LONGER MAINTAINED. I might get back to it in the future, but as of now, I'm not working on it.
 > 
-> [Learn more](https://notyasho.netlify.app/blogs)
+> [Learn more](https://notyasho.netlify.app/about)
 
 ---
 
