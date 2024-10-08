@@ -1,5 +1,3 @@
-This program is *generally* licensed under the GPL 3.0 license. However, there are some exceptions to it.
-
 --------------------------------------------------------------------------------------
 |                                  EXCEPTIONS                                        |
 |                                                                                    |
@@ -9,3 +7,16 @@ This program is *generally* licensed under the GPL 3.0 license. However, there a
 | - The software is provided "as is," without any warranty of any kind.              |
 |                                                                                    |
 --------------------------------------------------------------------------------------
+
+Copyright (C) 2024 at-pyrix (pyrix)
+
+This program is free* software; you can redistribute it and/or modify
+it under the terms of this license.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+*Attribution is required when distributing this software.
+
+*Commercial use of this software is not permitted.
