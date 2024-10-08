@@ -9,6 +9,11 @@
 
 <p align=center><i>A digital garden made with SvelteKit, using Sanity for content management.</i></p>
 
+> [!WARNING]
+> This project is NO LONGER MAINTAINED. I might get back to it in the future, but as of now, I'm not working on it.
+> 
+> [Learn more](https://notyasho.netlify.app/blogs)
+
 ---
 
 ## Features
@@ -21,7 +26,7 @@ I took inspiration from many sites and interfaces before coming up with this des
 </p>
 
 ### 2. Responsive Design  📱
-I have tested the responsiveness on various devices to provide an (almost) consistent look and feel on various screen sizes.
+I have tested the responsiveness on various devices to provide an (almost) consistent look and feel on various screen sizes. (I'm aware of the overflowing tags issue)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/eight.gif" width=800/>
@@ -35,7 +40,7 @@ The search feature queries the title and the description for a term.
 </p>
 
 ### **4. Categorization of Articles 🏷️**
-This is done manually upon the creation of an article. Helps in the navigating the site much faster. It's specially handy if you've got a bunch of stuff on here.
+This is done manually upon the creation of an article. Helps in navigating the site much faster. It's specially handy if you've got a bunch of stuff on here.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/thumbnails/two.jpeg" width=500/>
