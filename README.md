@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://notyasho.netlify.app/blogs" ><img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/favicon/android-chrome-192x192.png"/></a></p>
+  <a href="https://pyrix.netlify.app/blogs" ><img src="https://raw.githubusercontent.com/at-pyrix/pyrix/master/static/img/favicon/android-chrome-192x192.png"/></a></p>
 <h1 align=center>personal weblog</h1>
 
 <p align="center">
@@ -12,7 +12,7 @@
 > [!WARNING]
 > This project is NO LONGER MAINTAINED. I might get back to it in the future, but as of now, I'm not working on it.
 > 
-> [Learn more](https://notyasho.netlify.app/about)
+> [Learn more](https://pyrix.netlify.app/about)
 
 ---
 
